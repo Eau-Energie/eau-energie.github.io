@@ -1,12 +1,368 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Eau-Energie � Bureau d'�tudes hydraulique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO principal -->
+  <title>Eau-Energie — Bureau d'études hydraulique | Denis Bouzon | Pau (64)</title>
+  <meta name="description" content="Bureau d'études spécialisé en petite hydroélectricité, continuité écologique, droit d'eau fondé en titre, débit réservé et turbinage AEP. Denis Bouzon, ingénieur hydraulicien à Pau (Pyrénées-Atlantiques).">
+  <meta name="keywords" content="bureau études hydraulique, petite hydroélectricité, continuité écologique, droit eau fondé en titre, débit réservé, desman Pyrénées, turbinage eau potable, Pau, Pyrénées-Atlantiques">
+  <meta name="author" content="Denis Bouzon">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.eau-energie.fr/">
+
+  <!-- Dublin Core -->
+  <meta name="DC.title" content="Eau-Energie — Bureau d'études hydraulique">
+  <meta name="DC.creator" content="Denis Bouzon">
+  <meta name="DC.subject" content="Hydraulique, Hydroélectricité, Continuité écologique, Pyrénées">
+  <meta name="DC.description" content="Bureau d'études spécialisé en petite hydroélectricité et hydraulique fluviale, Pau, France.">
+  <meta name="DC.publisher" content="Eau-Energie">
+  <meta name="DC.type" content="Service">
+  <meta name="DC.format" content="text/html">
+  <meta name="DC.language" content="fr">
+  <meta name="DC.coverage" content="France">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eau-Energie — Bureau d'études hydraulique">
+  <meta property="og:description" content="Spécialiste petite hydroélectricité, continuité écologique et hydraulique fluviale. Pau, Pyrénées-Atlantiques.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.eau-energie.fr/">
+  <meta property="og:image" content="https://www.eau-energie.fr/bandeau.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Eau-Energie",
+    "description": "Bureau d'études spécialisé en petite hydroélectricité, continuité écologique et hydraulique fluviale.",
+    "url": "https://www.eau-energie.fr",
+    "email": "contact@eau-energie.fr",
+    "founder": {
+      "@type": "Person",
+      "name": "Denis Bouzon"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pau",
+      "addressRegion": "Pyrénées-Atlantiques",
+      "addressCountry": "FR"
+    },
+    "areaServed": "France",
+    "serviceType": "Bureau d'études hydraulique",
+    "taxID": "111111111"
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 11pt;
+      color: #111;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    /* BANDEAU */
+    #bandeau {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #bandeau img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    #bandeau-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.55));
+      padding: 18px 32px;
+    }
+
+    #bandeau-overlay h1 {
+      font-family: Georgia, serif;
+      font-size: 22pt;
+      font-weight: normal;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    #bandeau-overlay p {
+      font-size: 10pt;
+      color: #ddd;
+      letter-spacing: 0.5px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #1a2a4a;
+      border-bottom: 3px solid #2e4a8a;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 12px 18px;
+      color: #c8d0dd;
+      text-decoration: none;
+      font-family: Georgia, serif;
+      font-size: 9.5pt;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #2e4a8a;
+      color: #fff;
+    }
+
+    /* CONTENU */
+    #contenu {
+      max-width: 860px;
+      margin: 42px auto;
+      padding: 0 24px;
+    }
+
+    #contenu h2 {
+      font-family: Georgia, serif;
+      font-size: 16pt;
+      font-weight: normal;
+      color: #1a2a4a;
+      border-bottom: 1px solid #2e4a8a;
+      padding-bottom: 8px;
+      margin-bottom: 22px;
+    }
+
+    #contenu h3 {
+      font-family: Georgia, serif;
+      font-size: 12pt;
+      font-weight: bold;
+      color: #1a2a4a;
+      margin: 28px 0 10px 0;
+    }
+
+    #contenu p {
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    /* GRILLE EXPERTISES */
+    .grille {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .carte {
+      border: 1px solid #c8d0dd;
+      border-left: 4px solid #2e4a8a;
+      padding: 16px 18px;
+      background: #f8f9fb;
+    }
+
+    .carte h4 {
+      font-family: Georgia, serif;
+      font-size: 10.5pt;
+      color: #1a2a4a;
+      margin-bottom: 8px;
+    }
+
+    .carte p {
+      font-size: 9.5pt;
+      color: #444;
+      margin: 0;
+      text-align: left;
+    }
+
+    /* ENCADRÉ CONTACT */
+    .encadre-contact {
+      border: 1px solid #2e4a8a;
+      padding: 20px 24px;
+      margin: 36px 0 0 0;
+      background: #f0f3f7;
+    }
+
+    .encadre-contact p {
+      margin: 4px 0;
+      font-size: 10pt;
+    }
+
+    .encadre-contact a {
+      color: #2e4a8a;
+      text-decoration: none;
+    }
+
+    .encadre-contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* PIED DE PAGE */
+    footer {
+      margin-top: 60px;
+      border-top: 1px solid #c8d0dd;
+      padding: 18px 24px;
+      text-align: center;
+      font-size: 8.5pt;
+      color: #777;
+      background: #f8f9fb;
+    }
+
+    footer a {
+      color: #2e4a8a;
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      .grille { grid-template-columns: 1fr; }
+      #bandeau { height: 160px; }
+      #bandeau-overlay h1 { font-size: 16pt; }
+      nav ul li a { padding: 10px 12px; font-size: 9pt; }
+    }
+  </style>
 </head>
 <body>
-<h1>Eau-Energie</h1>
-<p>Bureau d'�tudes sp�cialis� petite hydro�lectricit�.</p>
-<p>Contact : contact@eau-energie.fr</p>
+
+  <!-- BANDEAU -->
+  <div id="bandeau">
+    <img src="bandeau.jpg" alt="Moulin hydraulique, turbine et canal d'irrigation — Eau-Energie bureau d'études hydraulique">
+    <div id="bandeau-overlay">
+      <h1>Eau-Energie</h1>
+      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Présentation</a></li>
+      <li><a href="hydroelectricite.html">Hydroélectricité</a></li>
+      <li><a href="reglementaire.html">Réglementaire</a></li>
+      <li><a href="environnement.html">Environnement</a></li>
+      <li><a href="hydraulique.html">Hydraulique</a></li>
+      <li><a href="foncier.html">Foncier</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main id="contenu">
+
+    <h2>Bureau d'études spécialisé en hydraulique et petite hydroélectricité</h2>
+
+    <p>
+      Eau-Energie est un bureau d'études indépendant basé à Pau (Pyrénées-Atlantiques), 
+      spécialisé dans l'ingénierie hydraulique, la petite hydroélectricité et la gestion 
+      réglementaire des ouvrages sur cours d'eau. Fondé par Denis Bouzon, ingénieur 
+      hydraulicien, le cabinet intervient sur l'ensemble du territoire national.
+    </p>
+
+    <p>
+      Notre approche associe expertise technique de terrain et maîtrise du cadre 
+      réglementaire — Loi sur l'Eau, continuité écologique, droits fondés en titre — 
+      pour accompagner les porteurs de projets, propriétaires d'ouvrages et collectivités 
+      à chaque étape de leurs projets hydrauliques.
+    </p>
+
+    <h3>Domaines d'expertise</h3>
+
+    <div class="grille">
+      <div class="carte">
+        <h4>Petite hydroélectricité</h4>
+        <p>Études de faisabilité, calcul de productible, choix technologique (Kaplan, Francis, vis d'Archimède), turbinage de réseaux AEP.</p>
+      </div>
+      <div class="carte">
+        <h4>Cadre réglementaire</h4>
+        <p>Dossiers Loi sur l'Eau, droits fondés en titre, continuité écologique, renouvellement d'autorisation, instruction DDT/DDTM.</p>
+      </div>
+      <div class="carte">
+        <h4>Environnement et biodiversité</h4>
+        <p>Études d'impact faune semi-aquatique, desman des Pyrénées, débit minimum biologique, dimensionnement passes à poissons.</p>
+      </div>
+      <div class="carte">
+        <h4>Hydraulique fluviale</h4>
+        <p>Calcul de débit réservé, courbe des débits classés, dimensionnement d'ouvrages, analyse hydrologique.</p>
+      </div>
+      <div class="carte">
+        <h4>Conseil foncier et juridique</h4>
+        <p>Due diligence avant acquisition de moulin, diagnostic hydraulique, analyse des droits d'eau attachés à un ouvrage.</p>
+      </div>
+      <div class="carte">
+        <h4>Publications techniques</h4>
+        <p>Notes techniques en accès libre (Zenodo, HAL), références citables avec DOI, ressources pour porteurs de projets et administrations.</p>
+      </div>
+    </div>
+
+    <h3>Pourquoi faire appel à Eau-Energie ?</h3>
+
+    <p>
+      La petite hydroélectricité et la gestion des ouvrages hydrauliques font l'objet 
+      d'une réglementation complexe et en constante évolution. Entre les obligations 
+      de continuité écologique, les droits fondés en titre, les procédures 
+      d'autorisation et les enjeux environnementaux — notamment la protection 
+      d'espèces comme le desman des Pyrénées — les porteurs de projets se trouvent 
+      souvent face à un vide de conseils techniques accessibles et indépendants.
+    </p>
+
+    <p>
+      Eau-Energie apporte une expertise de terrain documentée, des publications 
+      techniques en accès libre et un accompagnement rigoureux depuis le diagnostic 
+      initial jusqu'à l'instruction administrative.
+    </p>
+
+    <div class="encadre-contact">
+      <p><strong>Denis Bouzon — Eau-Energie</strong></p>
+      <p>Bureau d'études hydraulique — NAF 7112B</p>
+      <p>Pau, Pyrénées-Atlantiques (64) — Interventions France entière</p>
+      <p>SIREN : 111 111 111</p>
+      <p>Contact : <a href="mailto:contact@eau-energie.fr">contact@eau-energie.fr</a></p>
+      <p><a href="contact.html">→ Formulaire de contact</a></p>
+    </div>
+
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <p>© 2026 Eau-Energie — Denis Bouzon — Bureau d'études hydraulique — Pau (64) — 
+    <a href="mailto:contact@eau-energie.fr">contact@eau-energie.fr</a> — 
+    SIREN 111 111 111 — NAF 7112B</p>
+    <p style="margin-top:6px;">
+      <a href="index.html">Présentation</a> · 
+      <a href="hydroelectricite.html">Hydroélectricité</a> · 
+      <a href="reglementaire.html">Réglementaire</a> · 
+      <a href="environnement.html">Environnement</a> · 
+      <a href="hydraulique.html">Hydraulique</a> · 
+      <a href="foncier.html">Foncier</a> · 
+      <a href="publications.html">Publications</a> · 
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
 </body>
 </html>
