@@ -43,22 +43,40 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <!-- Portail multilingue Desman -->
   <url>
     <loc>https://www.eau-energie.fr/papers/desman-hydro.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro-FR.html"/>
     <xhtml:link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html"/>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <!-- Version française longue -->
+  <url>
+    <loc>https://www.eau-energie.fr/papers/desman-hydro-FR.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro-FR.html"/>
+    <xhtml:link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html"/>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Version catalane Andorre / Pirineus -->
   <url>
     <loc>https://www.eau-energie.fr/papers/desman-hydro-CA.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro-FR.html"/>
     <xhtml:link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/papers/nivellement-hydro.html</loc>
     <lastmod>2026-05-22</lastmod>
