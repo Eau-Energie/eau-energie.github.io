@@ -13,6 +13,8 @@
   <meta name="bingbot" content="index, follow">
   <link rel="canonical" href="https://www.eau-energie.fr/papers/desman-hydro.html">
   <link rel="alternate" type="application/pdf" title="PDF — Desman des Pyrénées et prises d'eau de centrale hydroélectrique" href="https://www.eau-energie.fr/papers/desman-hydro.pdf">
+  <link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html">
+  <link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro.html">
   <link rel="preload" href="../bandeau.jpg" as="image">
 
   <!-- Open Graph -->
@@ -275,15 +277,25 @@
     .section-tech p{margin-bottom:10px}
     .alerte{background:#fff7e6;border:1px solid #ead7a4;border-left:4px solid #c04a00;padding:13px 15px;margin:16px 0;font-size:9.8pt}
     .alerte strong{color:#c04a00}
+
+    .language-switch{position:absolute;top:18px;right:24px;z-index:5;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.94);color:#1a2a4a;border:2px solid rgba(255,255,255,0.85);border-radius:999px;padding:9px 15px;text-decoration:none;font-family:Georgia,serif;font-size:10pt;font-weight:bold;box-shadow:0 4px 16px rgba(0,0,0,0.24);transition:transform .2s,box-shadow .2s,background .2s}
+    .language-switch:hover{background:#fff;text-decoration:none;transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,0.30)}
+    .language-switch .flag{width:30px;height:20px;object-fit:cover;border:1px solid rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.18)}
+    .language-switch .lang-label{white-space:nowrap;letter-spacing:.2px}
     footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
     footer a{color:#2e4a8a;text-decoration:none}
-    @media(max-width:680px){.grid{grid-template-columns:1fr}}
+    @media(max-width:680px){.grid{grid-template-columns:1fr}.language-switch{top:12px;right:12px;padding:7px 10px;font-size:8.5pt}.language-switch .flag{width:24px;height:16px}.language-switch .lang-label{max-width:110px;overflow:hidden;text-overflow:ellipsis}}
     @media print{nav,#bandeau,.actions,.breadcrumb{display:none}#contenu{max-width:none;margin:0;padding:0}.publication{box-shadow:none}}
   </style>
 </head>
 <body>
 
   <div id="bandeau">
+    <a class="language-switch" href="desman-hydro-CA.html" hreflang="ca-AD" title="Versió catalana — Andorra / Unió Europea" aria-label="Accéder à la version catalane Andorre de cette note technique">
+      <img class="flag" src="../andore-flag.png" alt="Drapeau d'Andorre">
+      <img class="flag" src="../UEflag.png" alt="Drapeau de l'Union européenne">
+      <span class="lang-label">Version catalane</span>
+    </a>
     <img src="../bandeau.jpg" alt="Hydraulique, hydroélectricité, biodiversité pyrénéenne — Eau-Energie" width="1600" height="500">
     <div id="bandeau-overlay">
       <h1>Eau-Energie</h1>
@@ -358,6 +370,7 @@
 
       <div class="actions">
         <a class="button" href="desman-hydro.pdf" type="application/pdf">⬇ Télécharger le PDF</a>
+        <a class="button" href="desman-hydro-CA.html" hreflang="ca-AD" style="background:#f5c400;border-color:#d9a600;color:#1a2a4a!important">🇦🇩 🇪🇺 Version catalane</a>
         <a class="button zen" href="https://doi.org/10.5281/zenodo.20352515" target="_blank" rel="noopener">DOI Zenodo</a>
         <a class="button hal" href="https://hal.science/hal-05628774" target="_blank" rel="noopener">Notice HAL</a>
         <a class="button" style="background:#0a66c2;border-color:#0a66c2" href="https://www.linkedin.com/posts/denis-bouzon-a7343a313_hydroaezlectricitaez-environnement-desmandespyraeznaezes-share-7463549378914406400-rr1N" target="_blank" rel="noopener">LinkedIn</a>
