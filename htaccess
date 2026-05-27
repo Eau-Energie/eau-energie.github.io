@@ -1,0 +1,6 @@
+# Redirections permanentes 301 — anciennes pages Desman vers Cahier technique n° 1
+# À placer à la racine du site : https://www.eau-energie.fr/.htaccess
+
+Redirect 301 /papers/desman-hydro.html https://www.eau-energie.fr/papers/cahier1.html
+Redirect 301 /papers/desman-hydro-FR.html https://www.eau-energie.fr/papers/cahier1-fr.html
+Redirect 301 /papers/desman-hydro-CA.html https://www.eau-energie.fr/papers/cahier1-ca.html
