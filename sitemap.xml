@@ -1,52 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://www.eau-energie.fr/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/hydroelectricite.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/reglementaire.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/environnement.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/hydraulique.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/foncier.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.eau-energie.fr/publications.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
-
-
-  <!-- Cahier technique Eau-Energie n° 1 — édition multilingue -->
+  <!-- Cahier technique Eau-Energie n° 1 — page de présentation multilingue -->
   <url>
     <loc>https://www.eau-energie.fr/papers/cahier1.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/cahier1.html"/>
@@ -70,7 +75,15 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Cahier technique Eau-Energie n° 1 — versió catalana -->
+  <!-- PDF Cahier technique Eau-Energie n° 1 — version française -->
+  <url>
+    <loc>https://www.eau-energie.fr/papers/cahier1-fr.pdf</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cahier technique Eau-Energie n° 1 — version catalane -->
   <url>
     <loc>https://www.eau-energie.fr/papers/cahier1-ca.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/cahier1.html"/>
@@ -82,7 +95,15 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Cahier technique Eau-Energie n° 1 — versión española -->
+  <!-- PDF Cahier technique Eau-Energie n° 1 — version catalane -->
+  <url>
+    <loc>https://www.eau-energie.fr/papers/cahier1-ca.pdf</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cahier technique Eau-Energie n° 1 — version espagnole -->
   <url>
     <loc>https://www.eau-energie.fr/papers/cahier1-es.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/cahier1.html"/>
@@ -94,49 +115,51 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Portail multilingue Desman -->
+  <!-- PDF Cahier technique Eau-Energie n° 1 — version espagnole -->
   <url>
-    <loc>https://www.eau-energie.fr/papers/desman-hydro.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro-FR.html"/>
-    <xhtml:link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html"/>
-    <lastmod>2026-05-26</lastmod>
+    <loc>https://www.eau-energie.fr/papers/cahier1-es.pdf</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cahier technique Eau-Energie n° 2 -->
+  <url>
+    <loc>https://www.eau-energie.fr/papers/cahier2.html</loc>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- Version française longue -->
+  <!-- PDF du Cahier technique Eau-Energie n° 2 -->
   <url>
-    <loc>https://www.eau-energie.fr/papers/desman-hydro-FR.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro-FR.html"/>
-    <xhtml:link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html"/>
-    <lastmod>2026-05-26</lastmod>
+    <loc>https://www.eau-energie.fr/papers/cahier2.pdf</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Cahier technique Eau-Energie n° 3 -->
+  <url>
+    <loc>https://www.eau-energie.fr/papers/cahier3.html</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
-  <!-- Version catalane Andorre / Pirineus -->
+  <!-- PDF du Cahier technique Eau-Energie n° 3 -->
   <url>
-    <loc>https://www.eau-energie.fr/papers/desman-hydro-CA.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.eau-energie.fr/papers/desman-hydro.html"/>
-    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.eau-energie.fr/papers/desman-hydro-FR.html"/>
-    <xhtml:link rel="alternate" hreflang="ca-AD" href="https://www.eau-energie.fr/papers/desman-hydro-CA.html"/>
-    <lastmod>2026-05-26</lastmod>
+    <loc>https://www.eau-energie.fr/papers/cahier3.pdf</loc>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.85</priority>
   </url>
 
-  <url>
-    <loc>https://www.eau-energie.fr/papers/nivellement-hydro.html</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
   <url>
     <loc>https://www.eau-energie.fr/contact.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+
 </urlset>
