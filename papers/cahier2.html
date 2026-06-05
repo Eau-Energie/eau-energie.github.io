@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- FORCE FINAL: cahier2.pdf links, no series-box, no visible badges in metadata, author/date centered. 2026-06-05 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -255,10 +256,11 @@
     .breadcrumb span{color:#999;margin:0 6px}
     .publication{border:1px solid #c8d0dd;border-left:5px solid #1a2a4a;padding:22px 24px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,0.05);margin:18px 0}
     .publication p{font-size:13pt;color:#333;margin:7px 0;text-align:justify}
-    .metadata{font-size:9pt;color:#555;margin:10px 0 14px 0}
+    .metadata{font-size:13pt;color:#333;margin:10px 0 14px 0;text-align:center!important;display:block!important}
+    .metadata .badge{display:none!important}
 
     .cahier-label{font-size:9pt;text-transform:uppercase;color:#2e4a8a;letter-spacing:0.7px;margin-bottom:8px;text-align:left!important}
-    .series-box{background:#f8f9fb;border:1px solid #d8dde8;padding:14px 16px;margin:0 0 18px 0;font-size:9.5pt;color:#333}
+    .series-box{display:none!important;background:#f8f9fb;border:1px solid #d8dde8;padding:14px 16px;margin:0 0 18px 0;font-size:9.5pt;color:#333}
     .series-box strong{color:#1a2a4a}
     .badge.issn{background:#6b4a8a}
     .badge{display:inline-block;background:#2e4a8a;color:#fff;font-size:8pt;padding:2px 8px;margin:0 5px 5px 0;font-family:Georgia,serif;letter-spacing:.2px}
@@ -360,11 +362,16 @@
       <h3 itemprop="headline" style="margin-top:0;font-size:13.5pt">Nivellement technique de seuils anciens dégradés en vue de l'alimentation hydraulique d'ouvrages de franchissement piscicole</h3>
       <p style="font-style:italic;color:#444;margin-bottom:10px;font-size:13pt">Cadre de qualification technique, réglementaire et obligations applicables</p>
 
+      <div class="actions">
+        <a class="button" href="cahier2.pdf" type="application/pdf">⬇ Télécharger le PDF</a>
+        <a class="button zen" href="https://doi.org/10.5281/zenodo.20355968" target="_blank" rel="noopener">DOI Zenodo</a>
+        <a class="button hal" href="https://hal.science/hal-05630435" target="_blank" rel="noopener">Notice HAL</a>
+        <a class="button" style="background:#0a66c2;border-color:#0a66c2" href="https://www.linkedin.com/posts/denis-bouzon-a7343a313_hydroaezlectricitaez-loisurleau-iota-share-7463597595379044354-rtCZ" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="button secondary" href="../publications.html">← Tous les cahiers</a>
+        <a class="button secondary" href="#citation">Citation</a>
+      </div>
+
       <p class="metadata">
-        <span class="badge open">Accès libre</span>
-        <span class="badge tech">Note technique</span>
-        <span class="badge local">PDF</span>
-        <span class="badge issn">ISSN en cours</span>
         <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <span itemprop="name">Denis Bouzon</span>
         </span> — Cabinet Eau-Energie, Pau — 22 mai 2026 — version 2.0 — licence <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener license">CC BY 4.0</a>
@@ -382,14 +389,7 @@
         <div class="fact"><strong>Destinataires</strong>Propriétaires, exploitants, maîtres d'ouvrage, bureaux d'études, porteurs de projets.</div>
       </div>
 
-      <div class="actions">
-        <a class="button" href="cahier2.pdf" type="application/pdf">⬇ Télécharger le PDF</a>
-        <a class="button zen" href="https://doi.org/10.5281/zenodo.20355968" target="_blank" rel="noopener">DOI Zenodo</a>
-        <a class="button hal" href="https://hal.science/hal-05630435" target="_blank" rel="noopener">Notice HAL</a>
-        <a class="button" style="background:#0a66c2;border-color:#0a66c2" href="https://www.linkedin.com/posts/denis-bouzon-a7343a313_hydroaezlectricitaez-loisurleau-iota-share-7463597595379044354-rtCZ" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="button secondary" href="../publications.html">← Tous les cahiers</a>
-        <a class="button secondary" href="#citation">Citation</a>
-      </div>
+
     </article>
 
     <!-- SOMMAIRE -->
