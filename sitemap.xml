@@ -180,6 +180,15 @@
     <priority>0.8</priority>
   </url>
 
+
+  <!-- PDF de la note réglementaire — réglementation hydraulique -->
+  <url>
+    <loc>https://www.eau-energie.fr/papers/note-reglementaire.pdf</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.eau-energie.fr/contact.html</loc>
     <lastmod>2026-06-09</lastmod>
