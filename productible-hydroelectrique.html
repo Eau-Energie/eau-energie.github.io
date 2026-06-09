@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Simulation de productible hydroélectrique pour moulin et petite centrale | Eau-Energie</title>
+  <meta name="description" content="Méthode Eau-Energie de simulation de productible hydroélectrique sur chronique journalière : débit réservé, débit dérivable, chute nette, rendement turbine, kWh/jour, MWh/an et recettes prévisionnelles.">
+  <meta name="keywords" content="simulation productible hydroélectrique, calcul productible hydroélectrique, productible hydroélectrique moulin, estimation production hydroélectricité moulin, calcul MWh hydroélectricité, petite centrale hydroélectrique, moulin, droit d'eau, débit réservé, débit dérivable, courbe des débits classés, chronique journalière, hydrologie DREAL, chute nette, rendement turbine, turbine Kaplan, turbine siphon, vis d'Archimède, pertes de charge, fermeture en crue, turbidité, recettes hydroélectricité, tarif H16, obligation d'achat, Eau-Energie, Denis Bouzon">
+  <meta name="author" content="Denis Bouzon">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://www.eau-energie.fr/productible-hydroelectrique.html">
+  <link rel="preload" href="bandeau.jpg" as="image">
+
+  <meta property="og:title" content="Simulation de productible hydroélectrique pour moulin et petite centrale">
+  <meta property="og:description" content="Méthode de calcul du productible hydroélectrique annuel à partir des débits journaliers, du débit réservé, de la chute nette, du rendement turbine et des contraintes d’exploitation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.eau-energie.fr/productible-hydroelectrique.html">
+  <meta property="og:image" content="https://www.eau-energie.fr/bandeau.jpg">
+  <meta property="og:site_name" content="Cabinet Eau-Energie">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="article:published_time" content="2026-06-09">
+  <meta property="article:modified_time" content="2026-06-09">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Simulation de productible hydroélectrique pour moulin et petite centrale">
+  <meta name="twitter:description" content="Débits journaliers, débit réservé, chute nette, rendement turbine, kWh/jour, MWh/an et recettes prévisionnelles.">
+
+  <meta name="citation_title" content="Simulation de productible hydroélectrique pour moulin et petite centrale">
+  <meta name="citation_author" content="Bouzon, Denis">
+  <meta name="citation_publication_date" content="2026/06/09">
+  <meta name="citation_publisher" content="Cabinet Eau-Energie">
+  <meta name="citation_language" content="fr">
+  <meta name="citation_online_date" content="2026/06/09">
+  <meta name="citation_abstract_html_url" content="https://www.eau-energie.fr/productible-hydroelectrique.html">
+  <meta name="citation_keywords" content="simulation productible hydroélectrique; calcul productible hydroélectrique; productible hydroélectrique moulin; estimation MWh hydroélectricité; chronique journalière; débit réservé; débit dérivable; chute nette; rendement turbine; courbe des débits classés; recettes H16; obligation d’achat; petite centrale hydroélectrique">
+
+  <meta name="DC.title" content="Simulation de productible hydroélectrique pour moulin et petite centrale">
+  <meta name="DC.creator" content="Denis Bouzon">
+  <meta name="DC.publisher" content="Cabinet Eau-Energie">
+  <meta name="DC.type" content="Text">
+  <meta name="DC.format" content="text/html">
+  <meta name="DC.identifier" content="https://www.eau-energie.fr/productible-hydroelectrique.html">
+  <meta name="DC.relation" content="https://www.eau-energie.fr/hydroelectricite.html">
+  <meta name="DC.relation" content="https://www.eau-energie.fr/reglementaire.html">
+  <meta name="DC.relation" content="https://www.eau-energie.fr/publications.html">
+  <meta name="DC.isPartOf" content="https://www.eau-energie.fr/hydroelectricite.html">
+  <meta name="DC.language" content="fr">
+  <meta name="DC.rights" content="CC BY 4.0">
+  <meta name="DC.date" content="2026-06-09">
+  <meta name="DC.subject" content="simulation productible hydroélectrique; calcul MWh; moulin; petite centrale hydroélectrique; débit réservé; chute nette; rendement turbine; recettes prévisionnelles">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.eau-energie.fr/#organization",
+        "name": "Cabinet Eau-Energie",
+        "url": "https://www.eau-energie.fr/",
+        "email": "contact@eau-energie.fr"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.eau-energie.fr/#denis-bouzon",
+        "name": "Denis Bouzon",
+        "identifier": "https://orcid.org/0009-0007-8894-8902",
+        "url": "https://orcid.org/0009-0007-8894-8902",
+        "affiliation": {"@id": "https://www.eau-energie.fr/#organization"},
+        "email": "contact@eau-energie.fr"
+      },
+      {
+        "@type": "TechArticle",
+        "@id": "https://www.eau-energie.fr/productible-hydroelectrique.html#simulation-productible",
+        "headline": "Simulation de productible hydroélectrique pour moulin et petite centrale",
+        "alternativeHeadline": "Méthode de calcul du productible annuel en MWh sur chronique journalière",
+        "name": "Simulation de productible hydroélectrique",
+        "url": "https://www.eau-energie.fr/productible-hydroelectrique.html",
+        "sameAs": [
+          "https://www.eau-energie.fr/productible-hydroelectrique.html",
+          "https://www.eau-energie.fr/hydroelectricite.html"
+        ],
+        "datePublished": "2026-06-09",
+        "dateModified": "2026-06-09",
+        "author": {"@id": "https://www.eau-energie.fr/#denis-bouzon"},
+        "publisher": {"@id": "https://www.eau-energie.fr/#organization"},
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.eau-energie.fr/#website",
+          "name": "Cabinet Eau-Energie"
+        },
+        "inLanguage": "fr-FR",
+        "isAccessibleForFree": true,
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "identifier": "https://www.eau-energie.fr/productible-hydroelectrique.html",
+        "keywords": "simulation productible hydroélectrique, calcul productible hydroélectrique, productible hydroélectrique moulin, estimation production hydroélectricité, calcul MWh hydroélectricité, chronique journalière, débit réservé, débit dérivable, chute nette, rendement turbine, turbine Kaplan, obligation d’achat, tarif H16",
+        "abstract": "Cette page présente une méthode de simulation de productible hydroélectrique appliquée aux moulins, seuils, canaux et petites centrales existantes. Le calcul s’appuie sur une chronique journalière de débits, la déduction du débit réservé, la capacité de dérivation, la chute nette, le rendement de l’équipement turbine, les périodes de fermeture en crue et l’évaluation des recettes prévisionnelles."
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.eau-energie.fr/productible-hydroelectrique.html#service-productible",
+        "name": "Simulation de productible hydroélectrique",
+        "serviceType": "Étude de productible hydroélectrique sur moulin, seuil, canal ou petite centrale existante",
+        "provider": {"@id": "https://www.eau-energie.fr/#organization"},
+        "areaServed": ["France", "Pyrénées-Atlantiques", "Nouvelle-Aquitaine", "Occitanie", "Pyrénées"],
+        "url": "https://www.eau-energie.fr/productible-hydroelectrique.html",
+        "description": "Simulation du productible annuel en MWh à partir des débits journaliers, du débit réservé, du débit dérivable, de la chute nette, du rendement turbine et des contraintes d’exploitation."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.eau-energie.fr/productible-hydroelectrique.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu’est-ce qu’une simulation de productible hydroélectrique ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Une simulation de productible hydroélectrique consiste à estimer l’énergie annuelle produite par un site, en kWh ou en MWh, à partir d’une chronique de débits, du débit réservé, de la chute nette, du débit d’équipement, du rendement turbine et des contraintes d’exploitation."}
+          },
+          {
+            "@type": "Question",
+            "name": "Pourquoi utiliser une chronique journalière plutôt qu’un débit moyen ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Le débit moyen ne suffit pas à estimer un productible. Une chronique journalière permet de tenir compte des étiages, des crues, des périodes non turbinables, du débit réservé et du débit maximal réellement absorbable par la turbine."}
+          },
+          {
+            "@type": "Question",
+            "name": "Le productible théorique est-il équivalent au productible vendable ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Non. Le productible théorique doit être corrigé par les pertes de charge, les rendements, les arrêts, les contraintes de crue, la turbidité, la maintenance et les indisponibilités. Le productible vendable correspond à une estimation plus prudente et exploitable économiquement."}
+          },
+          {
+            "@type": "Question",
+            "name": "La simulation peut-elle servir avant l’achat d’un moulin ?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Oui. Une simulation de productible peut aider un acquéreur à vérifier le potentiel énergétique d’un moulin ou d’un ouvrage ancien avant compromis, en complément d’une analyse du droit d’eau, du foncier hydraulique et des contraintes réglementaires."}
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.eau-energie.fr/"},
+          {"@type": "ListItem", "position": 2, "name": "Hydroélectricité", "item": "https://www.eau-energie.fr/hydroelectricite.html"},
+          {"@type": "ListItem", "position": 3, "name": "Simulation de productible", "item": "https://www.eau-energie.fr/productible-hydroelectrique.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
+    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
+    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
+    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
+    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
+    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
+    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+    nav ul li{position:relative}
+    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
+    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
+    nav ul li.dropdown > a::after{content:" ▾";font-size:8pt;color:#c8d0dd}
+    nav ul li .submenu{display:none;position:absolute;left:0;top:100%;background:#1a2a4a;border:1px solid #2e4a8a;min-width:245px;z-index:50;box-shadow:0 8px 18px rgba(0,0,0,0.25)}
+    nav ul li .submenu li{display:block;width:100%}
+    nav ul li .submenu a{white-space:nowrap;padding:10px 14px;font-size:9pt}
+    nav ul li.dropdown:hover .submenu,nav ul li.dropdown:focus-within .submenu{display:block}
+    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
+    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
+    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
+    #contenu p{margin-bottom:16px;text-align:justify}
+    #contenu a{color:#2e4a8a;text-decoration:none}
+    #contenu a:hover{text-decoration:underline}
+    .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
+    .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
+    .badge.open{background:#2f6b3f;color:#fff}
+    .badge.tech{background:#1a2a4a;color:#fff}
+    .badge.droit{background:#5c3b1e;color:#fff}
+    .badge.env{background:#2f6b3f;color:#fff}
+    .badge.hydro{background:#2e4a8a;color:#fff}
+    .badge.method{background:#fff;color:#1a2a4a;border:1px solid #1a2a4a}
+    .landing-head{background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin-bottom:26px}
+    .landing-head .numero{font-size:9pt;text-transform:uppercase;color:#2e4a8a;letter-spacing:0.6px;margin-bottom:6px}
+    .landing-head h2{border:0;margin:0 0 8px 0;padding:0}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px 0}
+    .actions a{display:inline-block;border:1px solid #2e4a8a;padding:8px 12px;font-size:9pt;background:#2e4a8a;color:#fff !important;text-decoration:none}
+    .actions a.primary{background:#1a2a4a;color:#fff !important;border-color:#1a2a4a}
+    .actions a:hover{background:#1a2a4a;color:#fff !important;border-color:#1a2a4a}
+    .chaine{background:#fff8e1;border:1px solid #f0c040;border-left:4px solid #e6a817;padding:14px 18px;margin:14px 0;font-size:9.5pt;line-height:2}
+    .module{border-left:3px solid #2e4a8a;padding:10px 14px;margin:10px 0;font-size:10pt;background:#f4f7fb}
+    .module strong{color:#1a2a4a}
+    .sobre{border-left:3px solid #2f6b3f;padding:10px 14px;margin:12px 0;font-size:10pt;background:#f4fbf6}
+    .risque{border-left:3px solid #c0392b;padding:8px 14px;margin:8px 0;font-size:10pt;background:#fdf5f4}
+    .keywords-box{border:1px solid #d8dde8;background:#f8f9fb;padding:12px 16px;margin:18px 0 26px 0;font-size:9.4pt;color:#333}
+    .keywords-box strong{color:#1a2a4a}
+    .archive-box{border:1px solid #c8d0dd;background:#f4f7fb;padding:14px 18px;margin:20px 0 28px 0;font-size:9.4pt}
+    .archive-box p{margin-bottom:8px !important;text-align:left !important}
+    .archive-box strong{color:#1a2a4a}
+    .formula{font-family:Georgia,'Times New Roman',serif;background:#f8f9fb;border:1px solid #d8dde8;padding:12px 16px;margin:16px 0;text-align:center;color:#1a2a4a;font-size:12pt}
+    .steps{counter-reset:step;margin:16px 0}
+    .step{counter-increment:step;border-left:3px solid #2e4a8a;background:#f4f7fb;padding:10px 14px;margin:10px 0;font-size:10pt}
+    .step::before{content:counter(step) ". ";font-weight:bold;color:#1a2a4a}
+    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
+    footer a{color:#2e4a8a;text-decoration:none}
+    @media(max-width:760px){nav ul li .submenu{position:static;display:block;border:0;box-shadow:none;background:#15233f;margin-left:10px}nav ul li.dropdown > a::after{content:""}}
+    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
+    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
+  </style>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+</head>
+<body>
+
+  <div id="bandeau">
+    <img src="bandeau.jpg" alt="Hydraulique, hydroélectricité et simulation de productible Eau-Energie" width="1600" height="500">
+    <div id="bandeau-overlay">
+      <h1>Eau-Energie</h1>
+      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
+    </div>
+  </div>
+
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html">Présentation</a></li>
+      <li class="dropdown">
+        <a href="hydroelectricite.html" class="active" aria-current="page">Hydroélectricité</a>
+        <ul class="submenu" aria-label="Sous-menu Hydroélectricité">
+          <li><a href="hydroelectricite.html">Méthodologie hydroélectricité</a></li>
+          <li><a href="productible-hydroelectrique.html" class="active">Simulation de productible</a></li>
+        </ul>
+      </li>
+      <li><a href="reglementaire.html">Réglementaire</a></li>
+      <li><a href="environnement.html">Environnement</a></li>
+      <li><a href="partenaires.html">Partenaires</a></li>
+      <li><a href="foncier.html">Foncier</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenu">
+
+    <div class="landing-head">
+      <p class="numero">Méthode Eau-Energie — Simulation de productible — 09 juin 2026</p>
+      <h2>Simulation de productible hydroélectrique sur chronique journalière</h2>
+      <p><em>Méthode d’estimation du productible annuel en MWh à partir des débits journaliers, du débit réservé, de la chute nette, du rendement turbine et des contraintes d’exploitation.</em></p>
+      <p class="pub-meta">
+        <span class="badge open">Accès libre</span>
+        <span class="badge method">Méthodologie</span>
+        <span class="badge hydro">Hydroélectricité</span>
+        <span class="badge tech">Productible</span>
+        <span class="badge droit">Droit d’eau</span>
+        <span class="badge env">Débit réservé</span>
+      </p>
+    </div>
+
+    <div class="actions">
+      <a class="primary" href="contact.html">Demander une simulation</a>
+      <a href="hydroelectricite.html">Méthodologie hydroélectricité</a>
+      <a href="foncier.html">Diagnostic foncier moulin</a>
+      <a href="reglementaire.html">Cadre réglementaire</a>
+      <a href="publications.html">Publications</a>
+    </div>
+
+    <h3>Résumé</h3>
+    <p>Cette page présente la méthode Eau-Energie pour simuler le productible hydroélectrique d’un moulin, d’un seuil, d’un canal ou d’une petite centrale existante. L’objectif est d’estimer une production annuelle réaliste, exprimée en kWh ou en MWh, à partir d’une chronique de débits journaliers et des caractéristiques hydrauliques du site.</p>
+    <p>La simulation ne se limite pas à appliquer une puissance théorique sur une durée annuelle. Elle tient compte du débit réservé, du débit réellement dérivable, du débit maximal absorbable par la turbine, de la chute nette, des pertes de charge, des rendements, des périodes de crue, de la turbidité et des indisponibilités d’exploitation.</p>
+    <p>Elle constitue un outil d’aide à la décision pour un propriétaire, un acquéreur, un exploitant ou un investisseur souhaitant apprécier le potentiel réel d’un site avant achat, remise en service, renouvellement d’autorisation, consultation turbine ou dépôt d’un dossier administratif.</p>
+
+    <div class="keywords-box">
+      <strong>Mots-clés :</strong> simulation productible hydroélectrique ; calcul productible hydroélectrique ; productible hydroélectrique moulin ; estimation production hydroélectricité moulin ; calcul MWh hydroélectricité ; chronique journalière ; courbe des débits classés ; débit réservé ; débit dérivable ; chute nette ; rendement turbine ; turbine Kaplan ; turbine siphon ; vis d’Archimède ; pertes de charge ; fermeture en crue ; turbidité ; obligation d’achat ; tarif H16 ; recettes hydroélectricité.
+    </div>
+
+    <div class="archive-box">
+      <p><strong>Page de référence :</strong> simulation de productible hydroélectrique, version du 09 juin 2026.</p>
+      <p><strong>Page mère :</strong> <a href="hydroelectricite.html">méthodologie d’étude de droit d’eau et valorisation hydroélectrique</a>.</p>
+      <p><strong>Compléments utiles :</strong> <a href="reglementaire.html">cadre réglementaire des ouvrages hydrauliques</a> · <a href="foncier.html">diagnostic foncier avant achat d’un moulin</a>.</p>
+    </div>
+
+    <h3 id="methode-calcul-productible">Objet d’une simulation de productible</h3>
+    <p>Le productible hydroélectrique correspond à l’énergie qu’un ouvrage peut produire sur une période donnée, généralement une année moyenne, en tenant compte de la variabilité réelle des débits. Pour un moulin ou une petite centrale, il dépend moins d’une puissance nominale affichée que de la fréquence des débits exploitables et de la capacité réelle de l’ouvrage à dériver, turbiner et restituer l’eau.</p>
+    <p>Une simulation sérieuse doit donc partir de l’hydrologie et non de la turbine. Le débit disponible varie chaque jour. Certains jours sont limités par l’étiage, d’autres par le débit réservé, d’autres par le débit d’équipement, d’autres encore par les crues, la turbidité ou les contraintes d’exploitation.</p>
+
+    <h3>Chaîne de calcul</h3>
+    <div class="chaine">
+      <strong>Chronique journalière</strong> &#8594;
+      débit naturel au droit du site<br>
+      <strong>Débit réservé</strong> &#8594;
+      débit maintenu dans le lit naturel<br>
+      <strong>Débit dérivable</strong> &#8594;
+      débit disponible pour la prise d’eau<br>
+      <strong>Débit turbiné</strong> &#8594;
+      limite par la turbine, la grille, le canal et l’exploitation<br>
+      <strong>Chute nette</strong> &#8594;
+      chute brute corrigée des pertes et niveaux d’eau<br>
+      <strong>Énergie</strong> &#8594;
+      puissance instantanée, kWh/jour, MWh/an, recettes prévisionnelles
+    </div>
+
+    <h3>Formule de base</h3>
+    <p>La puissance hydraulique disponible s’estime à partir du débit turbiné, de la chute nette et du rendement global de l’installation. Cette formule donne un ordre de grandeur physique, mais elle ne remplace pas une simulation sur chronique journalière.</p>
+    <div class="formula">P = ρ × g × Q × H × η</div>
+    <p>Dans cette expression, <strong>P</strong> désigne la puissance électrique estimée, <strong>ρ</strong> la masse volumique de l’eau, <strong>g</strong> l’accélération de la pesanteur, <strong>Q</strong> le débit turbiné, <strong>H</strong> la chute nette et <strong>η</strong> le rendement global turbine, transmission et génératrice.</p>
+    <div class="sobre"><strong>Point méthodologique :</strong> le calcul de puissance devient utile seulement lorsqu’il est répété jour par jour, sur plusieurs années de données hydrologiques, après déduction du débit réservé et limitation par le débit d’équipement.</div>
+
+    <h3>1. Reconstituer la chronique de débits au droit du site</h3>
+    <p>La première étape consiste à choisir une station hydrométrique de référence et à récupérer une chronique de débits journaliers suffisamment longue. Une période de dix ans constitue un minimum ; une période de vingt ans permet une lecture plus robuste des années sèches, humides et moyennes.</p>
+    <div class="module"><strong>Données hydrologiques :</strong> station DREAL ou banque hydrométrique, module interannuel, débits journaliers, années sèches, années humides, courbe des débits classés.</div>
+    <p>Lorsque la station de référence ne se situe pas exactement au droit du site, la chronique doit être corrigée par un rapport de bassin versant ou par une approche hydrologique adaptée. Cette correction est essentielle pour éviter de surestimer ou sous-estimer le débit réellement disponible.</p>
+
+    <h3>2. Déduire le débit réservé</h3>
+    <p>Le débit réservé est le débit minimal maintenu dans le cours d’eau à l’aval de l’ouvrage. Il doit être retranché du débit naturel avant de calculer le débit dérivable. Cette étape est centrale : un site qui semble intéressant au module peut devenir très limité en période d’étiage lorsque le débit réservé est correctement intégré.</p>
+    <div class="module"><strong>Calcul journalier :</strong> débit naturel corrigé − débit réservé = débit théoriquement dérivable, sous réserve de la capacité de la prise d’eau et du canal.</div>
+    <p>Le débit réservé n’est pas seulement une valeur réglementaire abstraite. Il modifie directement la production annuelle, la durée de fonctionnement, le nombre de jours non turbinables et la rentabilité du projet.</p>
+
+    <h3>3. Limiter le débit par la capacité réelle de l’ouvrage</h3>
+    <p>Le débit exploitable n’est pas nécessairement le débit restant après déduction du débit réservé. Il est aussi limité par la prise d’eau, le plan de grille, le canal d’amenée, les vannes, la section disponible, la vitesse admissible et le débit maximal de la turbine.</p>
+    <div class="risque"><strong>Risque classique :</strong> dimensionner la production sur un débit théorique que le canal, la grille ou la turbine ne peuvent pas absorber durablement. Cette erreur conduit à un productible artificiel.</div>
+    <p>La simulation retient donc, pour chaque jour, le plus petit des débits disponibles : débit dérivable, capacité hydraulique des ouvrages et débit d’équipement de la turbine.</p>
+
+    <h3>4. Calculer la chute nette</h3>
+    <p>La chute brute correspond à la différence de niveau entre l’amont et l’aval. La chute nette est la hauteur réellement disponible à la turbine après prise en compte des pertes de charge, des niveaux d’eau, de la mise en charge du canal, du canal de fuite et des remontées aval.</p>
+    <p>Sur les basses chutes, quelques centimètres de perte peuvent modifier sensiblement le productible. Il est donc nécessaire d’être prudent sur les hypothèses de chute, surtout en crue ou lorsque le canal de fuite influence le niveau aval.</p>
+    <div class="module"><strong>Paramètres suivis :</strong> chute brute, pertes de charge, niveau amont, niveau aval, canal de fuite, rugosité, vitesse, chute nette disponible à la turbine.</div>
+
+    <h3>5. Choisir un rendement réaliste</h3>
+    <p>Le rendement global ne se réduit pas au rendement maximal annoncé par le constructeur. Il doit intégrer le comportement de la turbine à charge partielle, la transmission, la génératrice, les auxiliaires, les pertes électriques et les conditions réelles d’exploitation.</p>
+    <p>Pour une turbine Kaplan, une turbine siphon ou une vis d’Archimède, le rendement varie selon le débit turbiné. La simulation peut donc intégrer une courbe de rendement simplifiée ou, à défaut, un rendement prudent moyen selon la plage de fonctionnement.</p>
+
+    <h3>6. Simuler jour par jour la production</h3>
+    <p>La production journalière est calculée en appliquant la formule de puissance au débit turbiné de chaque jour, puis en multipliant par la durée de fonctionnement. Les jours d’étiage, de débit insuffisant ou d’arrêt sont comptabilisés comme jours non productifs ou partiellement productifs.</p>
+    <div class="steps">
+      <div class="step">débit naturel journalier au droit du site ;</div>
+      <div class="step">déduction du débit réservé ;</div>
+      <div class="step">limitation par le débit d’équipement et les ouvrages ;</div>
+      <div class="step">application de la chute nette ;</div>
+      <div class="step">application du rendement global ;</div>
+      <div class="step">calcul de l’énergie journalière en kWh ;</div>
+      <div class="step">somme annuelle en MWh et comparaison des années.</div>
+    </div>
+    <p>Cette approche permet de distinguer une année sèche, une année moyenne et une année humide. Elle permet également de tester plusieurs débits d’équipement pour éviter un surdimensionnement coûteux et peu productif.</p>
+
+    <h3>7. Intégrer les fermetures en crue et la turbidité</h3>
+    <p>Un productible réaliste doit intégrer les jours où l’installation ne fonctionne pas, même si le débit est disponible. Les crues, les embâcles, la turbidité, les charriages, les feuilles, la maintenance, les incidents de grille ou les consignes d’exploitation peuvent réduire le productible vendable.</p>
+    <div class="sobre"><strong>Lecture opérationnelle :</strong> une crue de printemps en eau claire peut parfois être turbinée ; une crue d’automne fortement chargée en sédiments peut justifier une fermeture préventive. La turbidité peut devenir un critère d’exploitation plus pertinent que le seul débit.</div>
+
+    <h3>8. Convertir le productible en recettes prévisionnelles</h3>
+    <p>Le productible annuel en MWh doit ensuite être confronté au cadre économique : obligation d’achat, tarif H16, vente au marché, autoconsommation, PPA ou valorisation spécifique. La recette prévisionnelle dépend du volume produit, mais aussi de la structure tarifaire, des périodes de production et des conditions contractuelles.</p>
+    <p>Cette étape ne transforme pas la simulation en promesse de recette. Elle permet d’établir une base économique prudente pour décider si le projet justifie des études complémentaires, une consultation de fabricants, une demande administrative ou un investissement.</p>
+
+    <h3>9. Utilisation avant achat ou remise en service</h3>
+    <p>La simulation de productible est particulièrement utile avant l’achat d’un moulin ou d’un site hydraulique. Elle évite de confondre présence d’un droit d’eau, existence d’une chute et productible réellement exploitable. Elle doit être croisée avec l’analyse foncière, le droit d’eau, les servitudes, les accès, l’état des ouvrages et les contraintes réglementaires.</p>
+    <div class="module"><strong>Avant compromis :</strong> une simulation de productible peut être associée à un <a href="foncier.html">diagnostic foncier de moulin avec droit d’eau</a> et à une vérification du <a href="reglementaire.html">cadre réglementaire applicable</a>.</div>
+
+    <h3>10. Livrables possibles</h3>
+    <p>Une étude de productible peut produire un tableau de simulation journalière, une courbe des débits classés, plusieurs scénarios de débit d’équipement, une estimation du productible annuel, une comparaison années sèches / moyennes / humides et un tableau de recettes prévisionnelles.</p>
+    <p>Ces livrables peuvent ensuite alimenter une étude de faisabilité hydroélectrique, une consultation turbine, une analyse de raccordement, un dossier IOTA, un renouvellement d’autorisation ou une décision d’acquisition.</p>
+
+    <h3>Questions fréquentes</h3>
+    <p><strong>Un calcul de puissance suffit-il ?</strong><br>Non. Un calcul instantané donne une puissance à un débit donné. Le productible annuel suppose de répéter ce calcul sur une chronique de débits et d’intégrer les limites réelles du site.</p>
+    <p><strong>Une courbe des débits classés suffit-elle ?</strong><br>Elle est très utile, mais elle doit être complétée par une simulation journalière, notamment pour tester les arrêts, les débits réservés, les étiages et les périodes de crue.</p>
+    <p><strong>Le meilleur débit d’équipement est-il le débit maximal disponible ?</strong><br>Pas nécessairement. Un débit d’équipement trop élevé augmente le coût et peut ne fonctionner que peu de jours par an. La simulation aide à rechercher un équilibre entre productible, coût et régularité d’exploitation.</p>
+    <p><strong>Cette page remplace-t-elle une étude de site ?</strong><br>Non. Elle présente une méthode. Chaque site doit être vérifié avec ses données propres : hydrologie, chute, ouvrages, droit d’eau, état du canal, environnement, raccordement et contraintes administratives.</p>
+
+    <h3>Référence conseillée</h3>
+    <p>Denis Bouzon, « Simulation de productible hydroélectrique pour moulin et petite centrale », Cabinet Eau-Energie, page méthodologique, version du 09 juin 2026, licence CC BY 4.0. URL : <a href="https://www.eau-energie.fr/productible-hydroelectrique.html">https://www.eau-energie.fr/productible-hydroelectrique.html</a>.</p>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Eau-Energie — Denis Bouzon — Bureau d'études hydraulique — Pau (64) — <a href="mailto:contact@eau-energie.fr">contact@eau-energie.fr</a></p>
+    <p style="margin-top:6px">
+      <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="noopener">ORCID 0009-0007-8894-8902</a> ·
+      <a href="https://www.linkedin.com/in/denis-bouzon-a7343a313/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="hydroelectricite.html">Méthodologie hydroélectricité</a>
+    </p>
+    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="productible-hydroelectrique.html">Productible</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <!-- GoatCounter analytics -->
+  <script data-goatcounter="https://eau-energie.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+
+</body>
+</html>
