@@ -1,275 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>Denis Bouzon — Page auteur | Hydraulique, hydroélectricité et droits d’eau</title>
-  <meta name="description" content="Page auteur de Denis Bouzon, fondateur d’Eau-Energie à Pau : publications techniques en hydraulique, hydroélectricité, droits d’eau, réglementation, DOI Zenodo, HAL, ORCID et Google Scholar.">
-  <meta name="keywords" content="Denis Bouzon, Eau-Energie, bureau d’études hydraulique, hydroélectricité, droits d’eau, Pau, publications techniques, DOI Zenodo, HAL, ORCID, Google Scholar, Code de l’environnement, Code de l’énergie, ouvrages hydrauliques, moulins, seuils, prises d’eau">
-  <meta name="author" content="Denis Bouzon">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://www.eau-energie.fr/denis-bouzon.html">
-
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Denis Bouzon — Page auteur | Eau-Energie">
-  <meta property="og:description" content="Page auteur de Denis Bouzon : publications techniques, DOI Zenodo, HAL, ORCID, Google Scholar, hydraulique, hydroélectricité et droits d’eau.">
-  <meta property="og:url" content="https://www.eau-energie.fr/denis-bouzon.html">
-  <meta property="og:site_name" content="Eau-Energie">
-  <meta property="og:image" content="https://www.eau-energie.fr/images/eau-energie-og.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Denis Bouzon — Page auteur | Eau-Energie">
-  <meta name="twitter:description" content="Publications techniques de Denis Bouzon en hydraulique, hydroélectricité, droits d’eau et réglementation des ouvrages en rivière.">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <style>
-    :root {
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --ink: #18212f;
-      --muted: #5d6b7a;
-      --line: #d9e2ec;
-      --accent: #0f5d7f;
-      --accent-dark: #083f59;
-      --soft: #eaf3f7;
-      --gold: #b57b22;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-      color: var(--ink);
-      background: var(--bg);
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .wrap {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    header.site-header {
-      background: linear-gradient(135deg, #082f44, #0f5d7f);
-      color: white;
-      padding: 28px 0 22px;
-      border-bottom: 4px solid var(--gold);
-    }
-
-    .brand {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .brand-title {
-      font-size: clamp(1.8rem, 3vw, 2.8rem);
-      margin: 0;
-      letter-spacing: -0.03em;
-    }
-
-    .brand-subtitle {
-      margin: 4px 0 0;
-      color: #dcecf3;
-      font-size: 1.05rem;
-    }
-
-    nav.main-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    nav.main-nav a {
-      color: white;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: 0.95rem;
-    }
-
-    main { padding: 32px 0 48px; }
-
-    .hero {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: clamp(24px, 5vw, 44px);
-      box-shadow: 0 18px 40px rgba(8, 47, 68, 0.08);
-      margin-bottom: 24px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      color: var(--accent-dark);
-      background: var(--soft);
-      border: 1px solid #cfe2ea;
-      padding: 5px 11px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      font-size: clamp(2.1rem, 5vw, 4.2rem);
-      line-height: 1.05;
-      margin: 0 0 12px;
-      letter-spacing: -0.05em;
-    }
-
-    .subtitle {
-      font-size: clamp(1.1rem, 2vw, 1.35rem);
-      color: var(--muted);
-      max-width: 880px;
-      margin: 0 0 22px;
-    }
-
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid var(--accent);
-      background: var(--accent);
-      color: white;
-      font-weight: 700;
-    }
-
-    .btn.secondary {
-      background: white;
-      color: var(--accent-dark);
-      border-color: #b9d3de;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    section, aside.card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 24px;
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      font-size: 1.45rem;
-      margin: 0 0 12px;
-      letter-spacing: -0.02em;
-    }
-
-    h3 {
-      margin: 0 0 8px;
-      font-size: 1.1rem;
-    }
-
-    .meta-list, .expertise-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .meta-list li, .expertise-list li {
-      padding: 8px 0;
-      border-bottom: 1px solid #eef2f5;
-    }
-
-    .meta-list li:last-child, .expertise-list li:last-child { border-bottom: 0; }
-
-    .pub {
-      border: 1px solid #e3ebf0;
-      border-radius: 16px;
-      padding: 18px;
-      margin: 14px 0;
-      background: #fbfdff;
-    }
-
-    .pub p { margin: 8px 0; }
-
-    .pub-meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .links a {
-      border: 1px solid #cfe2ea;
-      background: var(--soft);
-      color: var(--accent-dark);
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 0.92rem;
-      font-weight: 650;
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .author-reference {
-      background: #fffaf0;
-      border-color: #efd9ad;
-    }
-
-    footer {
-      background: #0b2838;
-      color: #dcecf3;
-      padding: 28px 0;
-    }
-
-    footer a { color: white; }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 10px;
-    }
-
-    @media (max-width: 820px) {
-      .grid { grid-template-columns: 1fr; }
-      section, aside.card { padding: 20px; }
-    }
-  </style>
-
+  <meta content="Page auteur de Denis Bouzon, fondateur d’Eau-Energie à Pau : publications techniques en hydraulique, hydroélectricité, droits d’eau, réglementation, DOI Zenodo, HAL, ORCID et Google Scholar." name="description"/>
+  <meta content="Denis Bouzon" name="author"/>
+  <meta content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots"/>
+  <link href="https://www.eau-energie.fr/denis-bouzon.html" rel="canonical"/>
+  <meta content="profile" property="og:type"/>
+  <meta content="Denis Bouzon — Page auteur | Eau-Energie" property="og:title"/>
+  <meta content="Page auteur de Denis Bouzon : publications techniques, DOI Zenodo, HAL, ORCID, Google Scholar, hydraulique, hydroélectricité et droits d’eau." property="og:description"/>
+  <meta content="https://www.eau-energie.fr/denis-bouzon.html" property="og:url"/>
+  <meta content="Eau-Energie" property="og:site_name"/>
+  <meta content="https://www.eau-energie.fr/portrait-denis-bouzon.jpg" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Denis Bouzon — Page auteur | Eau-Energie" name="twitter:title"/>
+  <meta content="Publications techniques de Denis Bouzon en hydraulique, hydroélectricité, droits d’eau et réglementation des ouvrages en rivière." name="twitter:description"/>
+  <link href="/favicon.ico" rel="icon"/>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Denis Bouzon",
     "url": "https://www.eau-energie.fr/denis-bouzon.html",
-    "image": "https://www.eau-energie.fr/images/denis-bouzon.jpg",
+    "image": "https://www.eau-energie.fr/portrait-denis-bouzon.jpg",
     "jobTitle": "Fondateur d’Eau-Energie — bureau d’études hydraulique",
     "worksFor": {
       "@type": "Organization",
@@ -285,7 +41,7 @@
     "email": "contact@eau-energie.fr",
     "sameAs": [
       "https://orcid.org/0009-0007-8894-8902",
-      "https://fr.linkedin.com/in/denis-bouzon-744023327",
+      "https://www.linkedin.com/in/denis-bouzon-a7343a313/",
       "https://hal.science/hal-05628774",
       "https://hal.science/hal-05630435",
       "https://hal.science/hal-05642488v1",
@@ -311,7 +67,6 @@
     ]
   }
   </script>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -330,225 +85,249 @@
     }
   }
   </script>
+  <style>
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
+    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
+    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
+    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
+    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
+    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
+    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
+    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
+    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
+    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
+    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
+    #contenu p{margin-bottom:16px;text-align:justify}
+    #contenu a{color:#2e4a8a;text-decoration:none}
+    #contenu a:hover{text-decoration:underline}
+    .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
+    .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
+    .badge.open{background:#2f6b3f;color:#fff}
+    .badge.foncier{background:#5c3b1e;color:#fff}
+    .badge.hydro{background:#2e4a8a;color:#fff}
+    .badge.droit{background:#1a2a4a;color:#fff}
+    .badge.env{background:#2f6b3f;color:#fff}
+    .badge.method{background:#fff;color:#1a2a4a;border:1px solid #1a2a4a}
+    .landing-head{background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin-bottom:26px}
+    .landing-head .numero{font-size:9pt;text-transform:uppercase;color:#2e4a8a;letter-spacing:0.6px;margin-bottom:6px}
+    .landing-head h2{border:0;margin:0 0 8px 0;padding:0}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px 0}
+    .actions a{display:inline-block;border:1px solid #2e4a8a;padding:8px 12px;font-size:9pt;background:#2e4a8a;color:#fff !important;text-decoration:none}
+    .actions a.primary{background:#1a2a4a;color:#fff !important;border-color:#1a2a4a}
+    .actions a:hover{background:#1a2a4a;color:#fff !important;border-color:#1a2a4a}
+    .chaine{background:#fff8e1;border:1px solid #f0c040;border-left:4px solid #e6a817;padding:14px 18px;margin:14px 0;font-size:9.5pt;line-height:2}
+    .module{border-left:3px solid #2e4a8a;padding:10px 14px;margin:10px 0;font-size:10pt;background:#f4f7fb}
+    .module strong{color:#1a2a4a}
+    .sobre{border-left:3px solid #2f6b3f;padding:10px 14px;margin:12px 0;font-size:10pt;background:#f4fbf6}
+    .risque{border-left:3px solid #c0392b;padding:8px 14px;margin:8px 0;font-size:10pt;background:#fdf5f4}
+    .keywords-box{border:1px solid #d8dde8;background:#f8f9fb;padding:12px 16px;margin:18px 0 26px 0;font-size:9.4pt;color:#333}
+    .keywords-box strong{color:#1a2a4a}
+    .archive-box{border:1px solid #c8d0dd;background:#f4f7fb;padding:14px 18px;margin:20px 0 28px 0;font-size:9.4pt}
+    .archive-box p{margin-bottom:8px !important;text-align:left !important}
+    .archive-box strong{color:#1a2a4a}
+
+    .story-card{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:start;background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin:18px 0 28px 0}
+    .story-card img{width:150px;height:150px;object-fit:cover;border:1px solid #c8d0dd;background:#fff}
+    .story-card .signature{font-size:9pt;color:#2e4a8a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;text-align:left!important}
+    .story-card p{text-align:left!important;margin-bottom:10px!important}
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 26px 0}
+    .story-grid .module{margin:0}
+    .timeline{border-left:2px solid #2e4a8a;margin:18px 0 28px 8px;padding-left:18px}
+    .timeline p{position:relative;text-align:left!important;margin-bottom:12px!important}
+    .timeline p:before{content:"";position:absolute;left:-24px;top:.55em;width:9px;height:9px;border-radius:50%;background:#2e4a8a}
+    .callout{background:#f4fbf6;border:1px solid #c8dccf;border-left:4px solid #2f6b3f;padding:14px 18px;margin:18px 0 28px 0;font-size:10pt}
+    @media(max-width:700px){.story-card{display:block}.story-card img{margin:0 0 14px 0}.story-grid{display:block}.story-grid .module{margin:10px 0}}
+
+    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
+    footer a{color:#2e4a8a;text-decoration:none}
+    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
+    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
+
+    .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px 0}
+    .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px 0}
+    .author-seo-card p{font-size:10.5pt;line-height:1.65;margin:0 0 8px 0;text-align:left}
+    .author-seo-card a{color:#2e4a8a;text-decoration:none}
+    .author-seo-card a:hover{text-decoration:underline}
+  
+
+    .author-title{background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin-bottom:26px}
+    .author-title .numero{font-size:9pt;text-transform:uppercase;color:#2e4a8a;letter-spacing:.6px;margin-bottom:6px;text-align:left!important}
+    .author-title h2{border:0;margin:0 0 8px 0;padding:0;font-size:19pt}
+    .author-title p{text-align:left!important;margin-bottom:0!important}
+    .author-actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px 0}
+    .author-actions a{display:inline-block;border:1px solid #2e4a8a;padding:8px 12px;font-size:9pt;background:#2e4a8a;color:#fff!important;text-decoration:none}
+    .author-actions a.secondary{background:#fff;color:#1a2a4a!important;border-color:#1a2a4a}
+    .author-actions a:hover{background:#1a2a4a;color:#fff!important;border-color:#1a2a4a}
+    .author-layout{display:grid;grid-template-columns:1fr 280px;gap:22px;align-items:start;margin:18px 0 28px 0}
+    .author-photo{border:1px solid #d8dde8;background:#f8f9fb;padding:14px}
+    .author-photo img{width:100%;height:auto;display:block;border:1px solid #c8d0dd;background:#fff}
+    .author-photo p{text-align:left!important;margin:10px 0 0 0!important;font-size:9pt;color:#555}
+    .identity-list{list-style:none;margin:0;padding:0}
+    .identity-list li{border-bottom:1px solid #d8dde8;padding:7px 0;font-size:10pt}
+    .identity-list li:last-child{border-bottom:0}
+    .publication-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:14px 18px;margin:14px 0}
+    .publication-card h3{margin:0 0 8px 0!important;text-transform:none!important;font-size:11.5pt!important;letter-spacing:0!important;color:#1a2a4a!important}
+    .publication-card p{text-align:left!important;margin-bottom:8px!important;font-size:10pt}
+    .publication-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+    .publication-links a,.tag-link{display:inline-block;border:1px solid #2e4a8a;background:#fff;color:#2e4a8a!important;padding:3px 8px;font-size:8.5pt;text-decoration:none}
+    .publication-links a:hover,.tag-link:hover{background:#2e4a8a;color:#fff!important;text-decoration:none!important}
+    .author-columns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 26px 0}
+    .note-auteur{border:1px solid #d8dde8;background:#fff;padding:14px 18px;margin:18px 0;font-size:10pt}
+    .note-auteur p{text-align:left!important;margin-bottom:8px!important}
+    @media(max-width:780px){.author-layout,.author-columns{display:block}.author-photo{margin-top:16px}.author-actions{display:block}.author-actions a{display:block;margin-bottom:8px}}
+
+  </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <div class="brand">
-        <div>
-          <p class="brand-title">Eau-Energie</p>
-          <p class="brand-subtitle">Bureau d’études hydraulique — Pau, Pyrénées-Atlantiques</p>
-        </div>
-      </div>
-
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="/">Présentation</a>
-        <a href="/denis-bouzon.html" aria-current="page">Denis Bouzon</a>
-        <a href="/hydroelectricite.html">Hydroélectricité</a>
-        <a href="/reglementaire.html">Réglementaire</a>
-        <a href="/environnement.html">Environnement</a>
-        <a href="/foncier.html">Foncier</a>
-        <a href="/publications.html">Publications</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
+  <div id="bandeau">
+    <img src="bandeau.jpg" width="1600" height="500" alt="Moulin ancien, droit d’eau et diagnostic foncier Eau-Energie">
+    <div id="bandeau-overlay">
+      <h1>Eau-Energie</h1>
+      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <div class="wrap">
-      <article class="hero">
-        <span class="eyebrow">Page auteur</span>
-        <h1>Denis Bouzon</h1>
-        <p class="subtitle">
-          Auteur de publications techniques en hydraulique, hydroélectricité, droits d’eau,
-          réglementation des ouvrages en rivière et valorisation des petites centrales hydroélectriques.
-        </p>
-        <div class="cta-row">
-          <a class="btn" href="/publications.html">Publications techniques</a>
-          <a class="btn secondary" href="/papers/CV.pdf">CV PDF</a>
-          <a class="btn secondary" href="https://orcid.org/0009-0007-8894-8902">ORCID</a>
-          <a class="btn secondary" href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&hl=fr&authuser=1">Google Scholar</a>
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="index.html">Présentation</a></li>
+      <li><a href="hydroelectricite.html">Hydroélectricité</a></li>
+      <li><a href="reglementaire.html">Réglementaire</a></li>
+      <li><a href="environnement.html">Environnement</a></li>
+      <li><a href="partenaires.html">Partenaires</a></li>
+      <li><a href="foncier.html">Foncier</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="denis-bouzon.html" class="active" aria-current="page">Denis Bouzon</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenu">
+    <div class="author-actions">
+      <a class="primary" href="publications.html">Publications techniques</a>
+      <a class="secondary" href="/papers/CV.pdf" target="_blank" rel="noopener">CV PDF</a>
+      <a class="secondary" href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a>
+      <a class="secondary" href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr&amp;authuser=1" target="_blank" rel="me noopener">Google Scholar</a>
+      <a class="secondary" href="contact.html">Contact</a>
+    </div>
+
+    <section class="author-title">
+      <p class="numero">Page auteur — Eau-Energie</p>
+      <h2>Denis Bouzon</h2>
+      <p>Auteur de publications techniques en hydraulique, hydroélectricité, droits d’eau, réglementation des ouvrages en rivière et valorisation des petites centrales hydroélectriques.</p>
+    </section>
+
+    <div class="author-layout">
+      <div>
+        <h3>Profil auteur</h3>
+        <p>Denis Bouzon est le fondateur d’Eau-Energie, bureau d’études hydraulique basé à Pau, dans les Pyrénées-Atlantiques. Ses travaux portent sur l’hydroélectricité, les droits d’eau, la consistance légale des ouvrages, les seuils, les prises d’eau, les moulins, les canaux, le productible hydroélectrique et la réglementation applicable aux projets hydrauliques.</p>
+        <p>Son approche croise l’analyse de terrain, l’histoire des ouvrages, l’hydrologie, le droit de l’eau, le foncier hydraulique et l’évaluation énergétique. Les publications Eau-Energie sont conçues comme des notes techniques ouvertes, indexables, vérifiables et reliées aux dépôts HAL, Zenodo, ORCID et Google Scholar.</p>
+        <div class="callout">
+          <p><strong>Positionnement :</strong> Denis Bouzon — Eau-Energie — bureau d’études hydraulique — Pau — hydroélectricité — droits d’eau — publications techniques.</p>
         </div>
-      </article>
-
-      <div class="grid">
-        <div>
-          <section id="profil-auteur">
-            <h2>Profil auteur</h2>
-            <p>
-              Denis Bouzon est le fondateur d’Eau-Energie, bureau d’études hydraulique basé à Pau,
-              dans les Pyrénées-Atlantiques. Ses travaux portent sur l’hydroélectricité, les droits d’eau,
-              la consistance légale des ouvrages, les seuils, les prises d’eau, les moulins, les canaux,
-              le productible hydroélectrique et la réglementation applicable aux projets hydrauliques.
-            </p>
-            <p>
-              Son approche croise l’analyse de terrain, l’histoire des ouvrages, l’hydrologie, le foncier,
-              la continuité écologique, le Code de l’environnement, le Code de l’énergie et les contraintes
-              administratives rencontrées par les propriétaires de moulins, exploitants de petites centrales
-              et maîtres d’ouvrage en rivière.
-            </p>
-          </section>
-
-          <section id="domaines-expertise">
-            <h2>Domaines d’expertise</h2>
-            <ul class="expertise-list">
-              <li>Étude de droit d’eau, droit fondé en titre, règlement d’eau et consistance légale.</li>
-              <li>Valorisation hydroélectrique : chute nette, débit d’équipement, productible, turbines, recettes prévisionnelles.</li>
-              <li>Ouvrages hydrauliques existants : moulins, seuils, prises d’eau, canaux d’amenée, canaux de fuite, anciennes usines.</li>
-              <li>Procédures Loi sur l’eau, dossiers IOTA, échanges avec DDT/DDTM et services instructeurs.</li>
-              <li>Continuité écologique, débits réservés, passes à poissons, environnement aquatique et espèces protégées.</li>
-              <li>Diagnostic foncier hydraulique avant acquisition, cession ou rénovation d’un site de moulin ou de centrale.</li>
-            </ul>
-          </section>
-
-          <section id="publications">
-            <h2>Publications techniques de Denis Bouzon</h2>
-
-            <article class="pub">
-              <h3>Cahier technique n° 1 — Desman des Pyrénées et prises d’eau hydroélectriques</h3>
-              <p class="pub-meta">Cahiers techniques Eau-Energie, n° 1, 2026 — Denis Bouzon — Cabinet Eau-Energie, Pau — CC BY 4.0.</p>
-              <p>
-                Analyse critique des prescriptions applicables aux prises d’eau de centrales hydroélectriques
-                en contexte de Desman des Pyrénées. Proposition d’un double critère de protection : vitesse
-                d’aspiration au plan de grille et entrefer garde-fou.
-              </p>
-              <div class="links">
-                <a href="/papers/cahier1-fr.html">HTML français</a>
-                <a href="/papers/cahier1-en.html">English</a>
-                <a href="/papers/cahier1-ca.html">Català</a>
-                <a href="/papers/cahier1-es.html">Español</a>
-                <a href="/papers/cahier1-fr.pdf">PDF</a>
-                <a href="https://doi.org/10.5281/zenodo.20352515">DOI Zenodo</a>
-                <a href="https://hal.science/hal-05628774">HAL</a>
-              </div>
-            </article>
-
-            <article class="pub">
-              <h3>Cahier technique n° 2 — Nivellement technique des seuils anciens dégradés</h3>
-              <p class="pub-meta">Cahiers techniques Eau-Energie, n° 2, 2026 — Denis Bouzon — Cabinet Eau-Energie, Pau — CC BY 4.0.</p>
-              <p>
-                Cadre d’analyse technique et réglementaire des nivellements altimétriques limités de seuils anciens
-                dégradés, lorsqu’ils sont nécessaires au fonctionnement hydraulique d’un ouvrage de franchissement piscicole.
-              </p>
-              <div class="links">
-                <a href="/papers/cahier2.html">Version HTML</a>
-                <a href="/papers/cahier2.pdf">PDF</a>
-                <a href="https://doi.org/10.5281/zenodo.20341767">DOI Zenodo</a>
-                <a href="https://hal.science/hal-05630435">HAL</a>
-              </div>
-            </article>
-
-            <article class="pub">
-              <h3>Cahier technique n° 3 — Le renouvellement d’autorisation hydroélectrique</h3>
-              <p class="pub-meta">Cahiers techniques Eau-Energie, n° 3, 2026 — Denis Bouzon — Cabinet Eau-Energie, Pau — CC BY 4.0.</p>
-              <p>
-                Reconstitution de la chaîne juridique applicable au renouvellement des autorisations hydroélectriques
-                inférieures à 4 500 kW : Code de l’énergie, Code de l’environnement, existence légale,
-                prescriptions administratives et stratégie de cadrage préalable.
-              </p>
-              <div class="links">
-                <a href="/papers/cahier3.html">Version HTML</a>
-                <a href="/papers/cahier3.pdf">PDF</a>
-                <a href="https://doi.org/10.5281/zenodo.20524364">DOI Zenodo</a>
-                <a href="https://hal.science/hal-05642488v1">HAL</a>
-              </div>
-            </article>
-
-            <article class="pub">
-              <h3>Cahier technique n° 4 — Proposition de loi hydroélectricité n° 2334 rectifié du 13 janvier 2026</h3>
-              <p class="pub-meta">Cahiers techniques Eau-Energie, n° 4, 2026 — Denis Bouzon — Cabinet Eau-Energie, Pau — CC BY 4.0.</p>
-              <p>
-                Avis technique et juridique sur le nouveau régime d’autorisation applicable aux installations
-                hydroélectriques : ex-concessionnaires, propriété des ouvrages, CG3P, Code de l’énergie,
-                autorisation environnementale et continuité des titres.
-              </p>
-              <div class="links">
-                <a href="/papers/cahier4.html">Version HTML</a>
-                <a href="/papers/cahier4.pdf">PDF</a>
-                <a href="https://doi.org/10.5281/zenodo.20552893">DOI Zenodo</a>
-                <a href="https://hal.science/hal-05645588">HAL</a>
-              </div>
-            </article>
-
-            <article class="pub">
-              <h3>Note méthodologique — Étude de droit d’eau et valorisation hydroélectrique</h3>
-              <p class="pub-meta">Note méthodologique Eau-Energie, version 1.0, 8 juin 2026 — Denis Bouzon.</p>
-              <p>
-                Méthodologie professionnelle pour qualifier un droit d’eau, analyser l’hydrologie, calculer la chute nette,
-                choisir un équipement turbine, simuler le productible et évaluer les recettes prévisionnelles.
-              </p>
-              <div class="links">
-                <a href="/hydroelectricite.html">Page hydroélectricité</a>
-                <a href="/papers/note-etude.pdf">PDF méthodologique</a>
-              </div>
-            </article>
-          </section>
-
-          <section class="author-reference" id="citation">
-            <h2>Référence auteur conseillée</h2>
-            <p>
-              Denis Bouzon, fondateur d’Eau-Energie, bureau d’études hydraulique à Pau, auteur de publications techniques
-              en hydraulique, hydroélectricité, droits d’eau et réglementation des ouvrages en rivière.
-            </p>
-            <p class="note">
-              Page auteur : <a href="https://www.eau-energie.fr/denis-bouzon.html">https://www.eau-energie.fr/denis-bouzon.html</a>
-            </p>
-          </section>
-        </div>
-
-        <aside>
-          <section class="card" id="identifiants-auteur">
-            <h2>Identifiants auteur</h2>
-            <ul class="meta-list">
-              <li><strong>Nom :</strong> Denis Bouzon</li>
-              <li><strong>Affiliation :</strong> Eau-Energie, bureau d’études hydraulique</li>
-              <li><strong>Localisation :</strong> Pau, Pyrénées-Atlantiques, France</li>
-              <li><strong>ORCID :</strong> <a href="https://orcid.org/0009-0007-8894-8902">0009-0007-8894-8902</a></li>
-              <li><strong>Google Scholar :</strong> <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&hl=fr&authuser=1">profil Google Scholar</a></li>
-              <li><strong>HAL :</strong> <a href="https://hal.science/search/index/q/%22Denis%20Bouzon%22">dépôts HAL</a></li>
-              <li><strong>Zenodo :</strong> <a href="https://zenodo.org/search?q=%22Denis%20Bouzon%22%20%22Eau-Energie%22">publications Zenodo</a></li>
-              <li><strong>LinkedIn :</strong> <a href="https://fr.linkedin.com/in/denis-bouzon-744023327">profil Denis Bouzon</a></li>
-              <li><strong>CV :</strong> <a href="/papers/CV.pdf">CV PDF — Denis Bouzon</a></li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h2>Pages Eau-Energie associées</h2>
-            <ul class="meta-list">
-              <li><a href="/">Accueil Eau-Energie</a></li>
-              <li><a href="/hydroelectricite.html">Hydroélectricité et droit d’eau</a></li>
-              <li><a href="/reglementaire.html">Réglementation hydraulique</a></li>
-              <li><a href="/foncier.html">Foncier hydraulique</a></li>
-              <li><a href="/environnement.html">Environnement et biodiversité</a></li>
-              <li><a href="/publications.html">Cahiers techniques Eau-Energie</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-            </ul>
-          </section>
-
-          <section class="card">
-            <h2>Mots-clés structurants</h2>
-            <p class="note">
-              Denis Bouzon · Eau-Energie · bureau d’études hydraulique · Pau · hydroélectricité · droits d’eau · moulins · seuils · prises d’eau · petites centrales hydroélectriques · productible · consistance légale · Code de l’environnement · Code de l’énergie · DOI Zenodo · HAL · ORCID · Google Scholar.
-            </p>
-          </section>
-        </aside>
       </div>
+      <aside class="author-photo">
+        <img src="portrait-denis-bouzon.jpg" width="300" height="300" alt="Denis Bouzon, fondateur du cabinet Eau-Energie" loading="eager">
+        <p><strong>Denis Bouzon</strong><br>Fondateur du cabinet Eau-Energie</p>
+      </aside>
+    </div>
+
+    <h3>Domaines d’expertise</h3>
+    <div class="story-grid">
+      <div class="module"><strong>Hydroélectricité.</strong> Études de potentiel, productible, chute nette, débit dérivable, choix d’équipement, recettes prévisionnelles.</div>
+      <div class="module"><strong>Droits d’eau.</strong> Droit fondé en titre, règlement d’eau, consistance légale, ouvrages anciens, moulins et seuils.</div>
+      <div class="module"><strong>Réglementation.</strong> Code de l’environnement, IOTA, autorisation environnementale, Code de l’énergie, continuité écologique.</div>
+      <div class="module"><strong>Foncier hydraulique.</strong> Servitudes, canaux, emprises, vannes, prises d’eau, diagnostics avant achat ou cession.</div>
+    </div>
+
+    <h3>Identifiants auteur</h3>
+    <div class="archive-box">
+      <ul class="identity-list">
+        <li><strong>Page auteur :</strong> <a href="https://www.eau-energie.fr/denis-bouzon.html">https://www.eau-energie.fr/denis-bouzon.html</a></li>
+        <li><strong>ORCID :</strong> <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">0009-0007-8894-8902</a></li>
+        <li><strong>Google Scholar :</strong> <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr&amp;authuser=1" target="_blank" rel="me noopener">profil Google Scholar</a></li>
+        <li><strong>HAL :</strong> <a href="https://hal.science/search/index/q/%22Denis%20Bouzon%22" target="_blank" rel="noopener">dépôts HAL</a></li>
+        <li><strong>Zenodo :</strong> <a href="https://zenodo.org/search?q=%22Denis%20Bouzon%22%20%22Eau-Energie%22" target="_blank" rel="noopener">publications Zenodo</a></li>
+        <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/denis-bouzon-a7343a313/" target="_blank" rel="me noopener">profil Denis Bouzon</a></li>
+        <li><strong>CV :</strong> <a href="/papers/CV.pdf" target="_blank" rel="noopener">CV PDF — Denis Bouzon</a></li>
+      </ul>
+    </div>
+
+    <h3>Publications techniques de Denis Bouzon</h3>
+
+    <article class="publication-card">
+      <h3>Cahier technique n°1 — Desman des Pyrénées et hydroélectricité</h3>
+      <p class="pub-meta">Publication technique — Eau-Energie — Denis Bouzon — 2026.</p>
+      <p>Analyse des interactions entre prises d’eau haute chute, ouvrages hydroélectriques et enjeux de conservation du Desman des Pyrénées.</p>
+      <div class="publication-links">
+        <a href="/papers/cahier1-fr.html">HTML français</a>
+        <a href="/papers/cahier1-en.html">English</a>
+        <a href="/papers/cahier1-ca.html">Català</a>
+        <a href="/papers/cahier1-es.html">Español</a>
+        <a href="/papers/cahier1-fr.pdf">PDF</a>
+        <a href="https://doi.org/10.5281/zenodo.20352515" target="_blank" rel="noopener">DOI Zenodo</a>
+        <a href="https://hal.science/hal-05628774" target="_blank" rel="noopener">HAL</a>
+      </div>
+    </article>
+
+    <article class="publication-card">
+      <h3>Cahier technique n°2 — Nivellement technique des seuils anciens dégradés</h3>
+      <p class="pub-meta">Publication technique — Eau-Energie — Denis Bouzon — 2026.</p>
+      <p>Note méthodologique sur le nivellement altimétrique limité des seuils anciens dégradés, dans le cadre des rubriques IOTA et de la petite hydroélectricité.</p>
+      <div class="publication-links">
+        <a href="/papers/cahier2.html">Version HTML</a>
+        <a href="/papers/cahier2.pdf">PDF</a>
+        <a href="https://doi.org/10.5281/zenodo.20341767" target="_blank" rel="noopener">DOI Zenodo</a>
+        <a href="https://hal.science/hal-05630435" target="_blank" rel="noopener">HAL</a>
+      </div>
+    </article>
+
+    <article class="publication-card">
+      <h3>Cahier technique n°3 — Le renouvellement d’autorisation hydroélectrique</h3>
+      <p class="pub-meta">Publication technique — Eau-Energie — Denis Bouzon — 2026.</p>
+      <p>Analyse du renouvellement des autorisations hydroélectriques issues de la loi de 1919, et articulation avec le Code de l’environnement et le Code de l’énergie.</p>
+      <div class="publication-links">
+        <a href="/papers/cahier3.html">Version HTML</a>
+        <a href="/papers/cahier3.pdf">PDF</a>
+        <a href="https://doi.org/10.5281/zenodo.20524364" target="_blank" rel="noopener">DOI Zenodo</a>
+        <a href="https://hal.science/hal-05642488v1" target="_blank" rel="noopener">HAL</a>
+      </div>
+    </article>
+
+    <article class="publication-card">
+      <h3>Cahier technique n°4 — Avis sur la proposition de loi n°2334 rectifié du 13 janvier 2026</h3>
+      <p class="pub-meta">Publication technique — Eau-Energie — Denis Bouzon — 2026.</p>
+      <p>Analyse de la proposition de loi relative au régime des ouvrages hydroélectriques et aux difficultés de transfert entre concession, autorisation et propriété publique.</p>
+      <div class="publication-links">
+        <a href="/papers/cahier4.html">Version HTML</a>
+        <a href="/papers/cahier4.pdf">PDF</a>
+        <a href="https://doi.org/10.5281/zenodo.20552893" target="_blank" rel="noopener">DOI Zenodo</a>
+        <a href="https://hal.science/hal-05645588" target="_blank" rel="noopener">HAL</a>
+      </div>
+    </article>
+
+    <h3>Notes méthodologiques et pages associées</h3>
+    <div class="author-columns">
+      <div class="module"><strong>Hydroélectricité.</strong> <a href="/hydroelectricite.html">Méthodologie d’étude de droit d’eau et valorisation hydroélectrique</a> · <a href="/papers/note-etude.pdf">PDF méthodologique</a>.</div>
+      <div class="module"><strong>Productible.</strong> <a href="/productible-hydroelectrique.html">Simulation de productible hydroélectrique</a> sur chronique journalière.</div>
+      <div class="module"><strong>Réglementaire.</strong> <a href="/reglementaire.html">Cadre réglementaire des moulins, droits d’eau et petites centrales hydroélectriques</a>.</div>
+      <div class="module"><strong>Foncier.</strong> <a href="/foncier.html">Analyse foncière et hydraulique des moulins, prises d’eau et droits d’eau</a>.</div>
+    </div>
+
+    <div class="author-seo-card">
+      <h2>Page auteur — Denis Bouzon</h2>
+      <p>Cette page regroupe les publications techniques, identifiants auteur et ressources professionnelles de <a href="/denis-bouzon.html">Denis Bouzon</a>, fondateur d’Eau-Energie, bureau d’études hydraulique à Pau.</p>
+      <p><a href="/publications.html">Publications techniques</a> · <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a> · <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr&amp;authuser=1" target="_blank" rel="me noopener">Google Scholar</a> · <a href="/papers/CV.pdf" target="_blank" rel="noopener">CV PDF</a> · <a href="/contact.html">Contact</a></p>
     </div>
   </main>
 
   <footer>
-    <div class="wrap">
-      <p>© 2026 Eau-Energie — Denis Bouzon — Bureau d’études hydraulique — Pau (64) — contact@eau-energie.fr</p>
-      <div class="footer-links">
-        <a href="/denis-bouzon.html">Denis Bouzon</a>
-        <a href="/publications.html">Publications techniques</a>
-        <a href="https://orcid.org/0009-0007-8894-8902">ORCID</a>
-        <a href="https://fr.linkedin.com/in/denis-bouzon-744023327">LinkedIn</a>
-        <a href="/papers/CV.pdf">CV PDF</a>
-        <a href="/contact.html">Contact</a>
-      </div>
-    </div>
+    © 2026 Eau-Energie — <a href="/denis-bouzon.html">Denis Bouzon</a> — Bureau d'études hydraulique — Pau<br>
+    <a href="/">Accueil</a> · <a href="/hydroelectricite.html">Hydroélectricité</a> · <a href="/reglementaire.html">Réglementaire</a> · <a href="/publications.html">Publications</a> · <a href="/contact.html">Contact</a>
   </footer>
 </body>
 </html>
