@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap-news.xml — Cabinet Eau-Energie
+  Sitemap dédié à Google Actualités (Google News).
+
+  RÈGLES :
+  - Ne contient QUE les articles publiés au cours des 48 dernières heures.
+  - Maximum 1000 URL.
+  - Retirer une <url> dès qu'elle dépasse 48h (Google l'ignore de toute façon,
+    mais un fichier propre est préférable).
+  - Chaque article doit aussi exister dans le sitemap général (sitemap.xml),
+    en plus de celui-ci.
+  - <news:publication_date> au format ISO 8601, avec fuseau horaire.
+
+  À chaque nouvel article dans /news/ :
+  1. Ajouter un bloc <url> ci-dessous avec la date du jour.
+  2. Retirer les blocs des articles publiés il y a plus de 48h.
+  3. Soumettre ce fichier dans Google Search Console (Sitemaps) s'il n'y est
+     pas déjà déclaré une fois pour toutes.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- EXEMPLE — à dupliquer puis adapter pour chaque nouvel article
+  <url>
+    <loc>https://www.eau-energie.fr/news/slug-de-larticle.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Eau-Energie</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-30T08:00:00+02:00</news:publication_date>
+      <news:title>Titre exact de l'article</news:title>
+    </news:news>
+  </url>
+  -->
+
+</urlset>
