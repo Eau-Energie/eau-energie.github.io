@@ -114,7 +114,7 @@
       "height": 720
     },
     {
-      "@type": "Organization",
+      "@type": "NewsMediaOrganization",
       "@id": "https://www.eau-energie.fr/#organization",
       "name": "Eau-Energie",
       "legalName": "Cabinet Eau-Energie",
@@ -215,10 +215,7 @@
     nav ul li a{display:block;padding:10px 12px;color:#c8d0dd;text-decoration:none;font-size:9pt;letter-spacing:.2px;transition:background .2s,color .2s}
     nav ul li a:hover,nav ul li a.active{background:var(--blue);color:#fff}
 
-    .news-shell{max-width:1120px;margin:34px auto 0 auto;padding:0 24px}
-    .breadcrumb{font-size:9pt;color:var(--muted);margin:0 0 18px 0}
     .breadcrumb a{text-decoration:none}
-    .news-article{background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 30px rgba(20,33,61,.08)}
     .hero{display:block;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#f8f9fb 0%,#eef3fb 100%)}
     .hero-media{position:relative;height:clamp(280px,38vw,460px);background:#111;overflow:hidden;border-bottom:1px solid var(--line)}
     .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:saturate(.95) contrast(1.02)}
@@ -250,20 +247,14 @@
     .digest-card h2{font-size:10.5pt;color:var(--navy);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
     .digest-card p{font-size:10.2pt;line-height:1.55;color:#333;text-align:left;margin:0}
 
-    .article-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:30px;padding:30px}
-    .article-body{max-width:720px}
-    .article-body>p:first-child{font-size:14pt;line-height:1.62;color:#222;border-left:4px solid var(--orange);padding:2px 0 2px 18px;margin-bottom:20px;text-align:left}
-    .article-body p{margin-bottom:16px;text-align:justify}
     .article-section{margin:26px 0 0 0;scroll-margin-top:20px}
     .article-section h2{font-size:16pt;line-height:1.25;color:var(--navy);font-weight:bold;border-bottom:1px solid var(--line);padding-bottom:8px;margin:0 0 14px 0}
     .pullquote{margin:24px 0;padding:18px 20px;background:var(--orange-soft);border-left:5px solid var(--orange);font-size:15pt;line-height:1.45;color:#1a2a4a}
     .pullquote cite{display:block;margin-top:8px;font-size:9pt;color:#667085;font-style:normal}
 
-    .article-rail{border-left:1px solid #e4e9f2;padding-left:22px}
-    .rail-card{border:1px solid #d8e0ec;background:#fff;padding:15px 16px;margin-bottom:16px}
     .rail-card.accent{background:var(--green-soft);border-left:4px solid var(--green)}
-    .rail-card h2{font-size:11pt;color:var(--navy);margin:0 0 8px 0;text-transform:uppercase;letter-spacing:.45px}
-    .rail-card p,.rail-card li{font-size:9.8pt;line-height:1.55;color:#333;text-align:left}
+    .rail-card h2{margin:0 0 8px 0;text-transform:uppercase;letter-spacing:.45px}
+    .rail-card p,.rail-card li{line-height:1.55;color:#333;text-align:left}
     .rail-card ul{margin-left:17px}
     .tag-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
     .tag{font-size:8.5pt;border:1px solid #d8e0ec;background:#f8f9fb;color:#31405a;padding:3px 7px;border-radius:14px}
@@ -385,7 +376,7 @@
             Mis à jour le <time datetime="2026-07-03T14:00:00+02:00">3 juillet 2026 à 14h00</time>
 </p>
 <div class="actions">
-<a class="button button-primary" download="" href="/news/article1.pdf" type="application/pdf">Télécharger le PDF</a>
+<a class="button button-primary" download="eau-energie-canicule-riviere-article1.pdf" href="/news/article1.pdf" type="application/pdf">Télécharger le PDF</a>
 <a class="button button-secondary" href="/actualite.html">Retour aux actualités</a>
 </div>
 </div><div class="hero-media">
@@ -469,7 +460,7 @@
 <section class="rail-card">
 <h2>PDF</h2>
 <p>Version imprimable de l’article, à déposer sur le site sous <code>/news/article1.pdf</code>.</p>
-<p><a class="button button-primary" download="" href="/news/article1.pdf" type="application/pdf">Télécharger</a></p>
+<p><a class="button button-primary" download="eau-energie-canicule-riviere-article1.pdf" href="/news/article1.pdf" type="application/pdf">Télécharger</a></p>
 </section>
 <section class="rail-card">
 <h2>Mots-clés</h2>
@@ -499,7 +490,7 @@
 <p>URL stable : <strong>https://www.eau-energie.fr/news/actualite1.html</strong></p>
 <div class="actions">
 <a class="button button-secondary" href="/actualite.html">← Toutes les actualités</a>
-<a class="button button-primary" download="" href="/news/article1.pdf" type="application/pdf">PDF</a>
+<a class="button button-primary" download="eau-energie-canicule-riviere-article1.pdf" href="/news/article1.pdf" type="application/pdf">PDF</a>
 </div>
 </div>
 </article>
