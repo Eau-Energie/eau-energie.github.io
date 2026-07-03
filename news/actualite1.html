@@ -211,24 +211,27 @@
     .site-title{font-family:Georgia,serif;font-size:22pt;font-weight:normal;color:#fff;letter-spacing:1px}
     #bandeau-overlay p{font-size:10pt;color:#ddd;letter-spacing:.5px}
     nav{background:var(--navy);border-bottom:3px solid var(--blue)}
-    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1180px;margin:0 auto}
-    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-size:9.5pt;letter-spacing:.3px;transition:background .2s,color .2s}
+    nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;max-width:1280px;margin:0 auto}
+    nav ul li a{display:block;padding:10px 12px;color:#c8d0dd;text-decoration:none;font-size:9pt;letter-spacing:.2px;transition:background .2s,color .2s}
     nav ul li a:hover,nav ul li a.active{background:var(--blue);color:#fff}
 
     .news-shell{max-width:1120px;margin:34px auto 0 auto;padding:0 24px}
     .breadcrumb{font-size:9pt;color:var(--muted);margin:0 0 18px 0}
     .breadcrumb a{text-decoration:none}
     .news-article{background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 30px rgba(20,33,61,.08)}
-    .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.85fr);border-bottom:1px solid var(--line);background:linear-gradient(135deg,#f8f9fb 0%,#eef3fb 100%)}
-    .hero-media{position:relative;min-height:360px;background:#111;overflow:hidden}
-    .hero-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.93) contrast(1.03);transform:scale(1.01)}
-    .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.42))}
+    .hero{display:block;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#f8f9fb 0%,#eef3fb 100%)}
+    .hero-media{position:relative;height:clamp(280px,38vw,460px);background:#111;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:saturate(.95) contrast(1.02)}
+    .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.36))}
     .hero-caption{position:absolute;left:20px;right:20px;bottom:16px;color:#fff;font-size:9.2pt;z-index:1;text-shadow:0 1px 4px rgba(0,0,0,.6)}
-    .hero-copy{padding:30px 34px 26px 34px;display:flex;flex-direction:column;justify-content:center}
+    .hero-copy{padding:28px 38px 30px 38px;display:block}
+    .hero-copy .standfirst{max-width:880px}
+    .hero-copy .byline{max-width:880px}
+    .hero-copy .actions{max-width:880px}
     .kicker{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
     .label{display:inline-block;border:1px solid rgba(20,33,61,.18);background:#fff;color:var(--navy);font-size:8.3pt;letter-spacing:.65px;text-transform:uppercase;padding:4px 9px;font-weight:bold}
     .label.hot{background:var(--orange);color:#fff;border-color:var(--orange)}
-    h1{font-size:30pt;line-height:1.09;color:var(--navy);font-weight:normal;margin:0 0 14px 0;letter-spacing:-.4px}
+    h1{font-size:29pt;line-height:1.12;color:var(--navy);font-weight:normal;margin:0 0 14px 0;letter-spacing:-.4px;max-width:920px}
     .standfirst{font-size:13.7pt;color:#222;line-height:1.5;margin:0 0 18px 0}
     .byline{border-top:1px solid #dbe2ee;padding-top:14px;margin-top:4px;font-size:9.6pt;color:#475467}
     .byline strong{color:#1a2a4a}
@@ -274,8 +277,8 @@
     footer a{color:var(--blue);text-decoration:none}
 
     @media(max-width:920px){
-      .hero{grid-template-columns:1fr}
-      .hero-media{min-height:260px}
+      .hero-media{height:clamp(240px,48vw,360px)}
+      .hero-copy{padding:24px 24px 28px 24px}
       .news-digest{grid-template-columns:1fr}
       .article-layout{grid-template-columns:1fr;padding:24px 22px}
       .article-rail{border-left:0;border-top:1px solid #e4e9f2;padding-left:0;padding-top:22px}
@@ -284,13 +287,59 @@
     }
     @media(max-width:620px){
       .news-shell{padding:0 14px;margin-top:22px}
-      .hero-copy{padding:24px 20px}
+      .hero-media{height:240px}
+      .hero-copy{padding:22px 20px 24px 20px}
       h1{font-size:21pt}
       .standfirst{font-size:12.4pt}
       .news-digest{padding:18px}
       .return-zone{padding:20px}
     }
-  </style>
+  
+
+    /* Cadre article inspiré presse environnementale : titre, accroche, barre méta, image, puis corps */
+    .news-shell{max-width:980px;margin:34px auto 0 auto;padding:0 24px}
+    .breadcrumb{max-width:700px;margin:0 auto 18px auto;font-family:Arial,Helvetica,sans-serif;font-size:9pt;color:#5f6b7a}
+    .news-article{max-width:700px;margin:0 auto;background:#fff;border:1px solid #d6dce6;box-shadow:none}
+    .hero.ae-frame{display:block;background:#fff;border-bottom:0;padding:28px 30px 18px 30px}
+    .hero.ae-frame .hero-copy{padding:0;display:block}
+    .hero.ae-frame .kicker{display:none}
+    .hero.ae-frame h1{font-family:Arial,Helvetica,sans-serif;font-size:24pt;line-height:1.13;font-weight:700;color:#2d3748;letter-spacing:-.2px;max-width:none;margin:0 0 18px 0}
+    .hero.ae-frame h1::before{content:'☆';font-weight:400;color:#c8cdd6;margin-right:8px;font-size:20pt;vertical-align:2px}
+    .hero.ae-frame h1::after{content:'';display:block;width:70px;height:3px;background:var(--orange);margin:12px 0 0 0}
+    .hero.ae-frame .standfirst{font-family:Arial,Helvetica,sans-serif;font-size:12.6pt;line-height:1.45;font-weight:700;color:#20242a;max-width:none;margin:0 0 15px 0;text-align:left}
+    .hero.ae-frame .byline{font-family:Arial,Helvetica,sans-serif;border:1px solid #f3c47c;background:#fffaf2;color:#d87900;padding:8px 12px;margin:0 0 16px 0;font-size:9pt;line-height:1.5;max-width:none;border-radius:2px}
+    .hero.ae-frame .byline strong{color:#c96d00}
+    .hero.ae-frame .actions{margin:0 0 16px 0;max-width:none}
+    .hero.ae-frame .button{font-family:Arial,Helvetica,sans-serif;font-size:9pt;padding:7px 11px;border-radius:2px}
+    .hero.ae-frame .hero-media{position:relative;height:auto;aspect-ratio:16/9;background:#fff;overflow:hidden;border:1px solid #d6dce6;border-radius:4px;margin:0;box-shadow:none}
+    .hero.ae-frame .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:none;transform:none}
+    .hero.ae-frame .hero-media::after{display:none}
+    .hero.ae-frame .hero-caption{position:static;color:#5f6b7a;background:#f8f9fb;padding:7px 10px;font-family:Arial,Helvetica,sans-serif;font-size:8.5pt;text-shadow:none;line-height:1.35}
+    .news-digest{display:none}
+    .article-layout{display:block;padding:22px 30px 30px 30px}
+    .article-body{max-width:none}
+    .article-body>p:first-child{font-size:12.6pt;line-height:1.62;border-left:0;padding:0;margin-bottom:16px;text-align:justify;color:#111}
+    .article-body p{font-size:11.5pt;line-height:1.72;text-align:justify;margin-bottom:15px}
+    .article-section{margin:25px 0 0 0}
+    .article-section h2{font-family:Arial,Helvetica,sans-serif;font-size:15pt;color:#2d3748;border-bottom:0;padding-bottom:0;margin:0 0 12px 0;font-weight:700}
+    .article-section h2::after{content:'';display:block;width:52px;height:2px;background:var(--orange);margin:7px 0 0 0}
+    .pullquote{font-size:13.5pt;margin:22px 0;padding:16px 18px;border-left:4px solid var(--orange);background:#fffaf2;color:#1a2a4a}
+    .article-rail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;border-left:0;border-top:1px solid #e4e9f2;padding:22px 0 0 0;margin-top:24px}
+    .rail-card{margin:0;border:1px solid #d8e0ec;background:#fff;padding:14px 15px}
+    .rail-card h2{font-family:Arial,Helvetica,sans-serif;font-size:10pt;color:#2d3748}
+    .rail-card p,.rail-card li{font-family:Arial,Helvetica,sans-serif;font-size:9.2pt}
+    .return-zone{max-width:700px;margin:0 auto;border-top:1px solid #d6dce6;padding:18px 30px;background:#f8f9fb}
+    @media(max-width:760px){
+      .news-shell{padding:0 14px;margin-top:22px}
+      .news-article{max-width:none}
+      .hero.ae-frame{padding:22px 20px 16px 20px}
+      .hero.ae-frame h1{font-size:21pt}
+      .hero.ae-frame .standfirst{font-size:11.8pt}
+      .article-layout{padding:20px}
+      .article-rail{grid-template-columns:1fr}
+      .return-zone{padding:18px 20px}
+    }
+</style>
 <link href="/favicon48.png" rel="icon" sizes="48x48" type="image/png"/>
 <link href="/favicon32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="/favicon.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -322,12 +371,7 @@
 <main class="news-shell">
 <p class="breadcrumb"><a href="/index.html">Accueil</a> · <a href="/actualite.html">Actualités</a> · Canicule et rivière</p>
 <article class="news-article">
-<header class="hero">
-<div class="hero-media">
-<img alt="Lit de rivière asséché en période de canicule" src="/news/dry_river.jpg"/>
-<p class="hero-caption">Sécheresse et étiage : la question des lignes d’eau devient centrale dans la gestion hydraulique.</p>
-</div>
-<div class="hero-copy">
+<header class="hero ae-frame"><div class="hero-copy">
 <div aria-label="Rubriques" class="kicker">
 <span class="label hot">Actualité</span>
 <span class="label">Sécheresse</span>
@@ -344,8 +388,10 @@
 <a class="button button-primary" download="" href="/news/article1.pdf" type="application/pdf">Télécharger le PDF</a>
 <a class="button button-secondary" href="/actualite.html">Retour aux actualités</a>
 </div>
-</div>
-</header>
+</div><div class="hero-media">
+<img alt="Lit de rivière asséché en période de canicule" src="/news/dry_river.jpg"/>
+<p class="hero-caption">Sécheresse et étiage : la question des lignes d’eau devient centrale dans la gestion hydraulique.</p>
+</div></header>
 <section aria-label="Résumé de l'article" class="news-digest">
 <div class="digest-card">
 <h2>Le fait</h2>
