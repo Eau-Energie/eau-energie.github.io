@@ -1,28 +1,27 @@
-<!-- 
-  news/feed.xml — Cabinet Eau-Energie
-  Flux Atom des actualités. À mettre à jour à chaque nouvel article
-  publié dans /news/ (un <entry> par article, le plus récent en premier).
- -->
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-<title>Actualités — Eau-Energie</title>
-<subtitle>Cabinet Eau-Energie — Denis Bouzon — Pau, Pyrénées-Atlantiques</subtitle>
-<link href="https://www.eau-energie.fr/news/feed.xml" rel="self"/>
-<link href="https://www.eau-energie.fr/actualite.html"/>
-<id>https://www.eau-energie.fr/actualite.html</id>
-<updated>2026-06-30T00:00:00+02:00</updated>
-<author>
-<name>Denis Bouzon</name>
-<email>contact@eau-energie.fr</email>
-</author>
-<!--  EXEMPLE — à dupliquer puis adapter pour chaque nouvel article
+  <title>Actualités Eau-Energie</title>
+  <subtitle>Actualités du Cabinet Eau-Energie</subtitle>
+  <link href="https://www.eau-energie.fr/news/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.eau-energie.fr/actualite.html" rel="alternate" type="text/html"/>
+  <id>https://www.eau-energie.fr/news/feed.xml</id>
+  <updated>2026-07-03T14:00:00+02:00</updated>
+  <author>
+    <name>Denis Bouzon</name>
+    <email>contact@eau-energie.fr</email>
+    <uri>https://www.eau-energie.fr/denis-bouzon.html</uri>
+  </author>
   <entry>
-    <title>Titre de l'article</title>
-    <link href="https://www.eau-energie.fr/news/slug-de-larticle.html"/>
-    <id>https://www.eau-energie.fr/news/slug-de-larticle.html</id>
-    <published>2026-06-30T08:00:00+02:00</published>
-    <updated>2026-06-30T08:00:00+02:00</updated>
-    <summary>Accroche courte de l'article.</summary>
-    <author><name>Denis Bouzon</name></author>
+    <title>Canicule et rivière — La non-gestion catastrophique de l’État</title>
+    <link href="https://www.eau-energie.fr/news/actualite1.html" rel="alternate" type="text/html"/>
+    <id>https://www.eau-energie.fr/news/actualite1.html</id>
+    <published>2026-07-01T09:00:00+02:00</published>
+    <updated>2026-07-03T14:00:00+02:00</updated>
+    <summary>Face à la sécheresse, à l’accélération de la vidange des nappes et aux épisodes caniculaires, cet article défend le rétablissement de l’étagement des rivières françaises et critique la doctrine administrative d’arasement des seuils conduite au nom de la continuité écologique.</summary>
+    <author>
+      <name>Denis Bouzon</name>
+      <email>contact@eau-energie.fr</email>
+      <uri>https://www.eau-energie.fr/denis-bouzon.html</uri>
+    </author>
   </entry>
-   -->
 </feed>
