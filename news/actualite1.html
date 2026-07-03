@@ -240,12 +240,14 @@
     .button-secondary{background:#fff;color:var(--navy)!important}
     .button-secondary:hover{background:var(--soft-blue)}
 
-    .news-digest{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:22px 30px;background:#fff;border-bottom:1px solid var(--line)}
-    .digest-card{border:1px solid #dde4ef;border-left:4px solid var(--orange);padding:14px 15px;background:#fff}
-    .digest-card:nth-child(2){border-left-color:var(--blue)}
-    .digest-card:nth-child(3){border-left-color:var(--green)}
-    .digest-card h2{font-size:10.5pt;color:var(--navy);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
-    .digest-card p{font-size:10.2pt;line-height:1.55;color:#333;text-align:left;margin:0}
+    .news-digest{margin:22px 30px 0 30px;padding:16px 20px;background:#f4f5f7;border-left:4px solid var(--orange)}
+    .news-digest h2{font-size:9.5pt;color:var(--navy);margin-bottom:10px;text-transform:uppercase;letter-spacing:.6px;font-weight:bold}
+    .news-digest ul{list-style:none;margin:0;padding:0}
+    .news-digest li{position:relative;padding:9px 0 9px 18px;font-size:10.6pt;line-height:1.5;color:#333;text-align:left;border-top:1px solid #e2e5eb}
+    .news-digest li:first-child{border-top:0;padding-top:0}
+    .news-digest li:last-child{padding-bottom:0}
+    .news-digest li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+    .news-digest li:first-child::before{top:6px}
 
     .article-section{margin:26px 0 0 0;scroll-margin-top:20px}
     .article-section h2{font-size:16pt;line-height:1.25;color:var(--navy);font-weight:bold;border-bottom:1px solid var(--line);padding-bottom:8px;margin:0 0 14px 0}
@@ -270,7 +272,6 @@
     @media(max-width:920px){
       .hero-media{height:clamp(240px,48vw,360px)}
       .hero-copy{padding:24px 24px 28px 24px}
-      .news-digest{grid-template-columns:1fr}
       .article-layout{grid-template-columns:1fr;padding:24px 22px}
       .article-rail{border-left:0;border-top:1px solid #e4e9f2;padding-left:0;padding-top:22px}
       .article-body{max-width:none}
@@ -282,7 +283,6 @@
       .hero-copy{padding:22px 20px 24px 20px}
       h1{font-size:21pt}
       .standfirst{font-size:12.4pt}
-      .news-digest{padding:18px}
       .return-zone{padding:20px}
     }
   
@@ -306,7 +306,7 @@
     .hero.ae-frame .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:none;transform:none}
     .hero.ae-frame .hero-media::after{display:none}
     .hero.ae-frame .hero-caption{position:static;color:#5f6b7a;background:#f8f9fb;padding:7px 10px;font-family:Arial,Helvetica,sans-serif;font-size:8.5pt;text-shadow:none;line-height:1.35}
-    .news-digest{display:none}
+    .news-digest{margin:0 30px 20px 30px;padding:15px 18px}
     .article-layout{display:block;padding:22px 30px 30px 30px}
     .article-body{max-width:none}
     .article-body>p:first-child{font-size:12.6pt;line-height:1.62;border-left:0;padding:0;margin-bottom:16px;text-align:justify;color:#111}
@@ -327,6 +327,7 @@
       .hero.ae-frame h1{font-size:21pt}
       .hero.ae-frame .standfirst{font-size:11.8pt}
       .article-layout{padding:20px}
+      .news-digest{margin:0 20px 16px 20px;padding:14px 16px}
       .article-rail{grid-template-columns:1fr}
       .return-zone{padding:18px 20px}
     }
@@ -384,18 +385,12 @@
 <p class="hero-caption">Sécheresse et étiage : la question des lignes d’eau devient centrale dans la gestion hydraulique.</p>
 </div></header>
 <section aria-label="Résumé de l'article" class="news-digest">
-<div class="digest-card">
-<h2>Le fait</h2>
-<p>La sécheresse et la canicule replacent la tenue des lignes d’eau au centre de la gestion des rivières.</p>
-</div>
-<div class="digest-card">
-<h2>L’enjeu</h2>
-<p>Les seuils historiques sont présentés comme des ouvrages de soutien hydraulique des étiages et des nappes alluviales.</p>
-</div>
-<div class="digest-card">
-<h2>La thèse</h2>
-<p>La doctrine d’arasement produit, selon l’article, l’effet inverse de l’urgence hydraulique : évacuer l’eau au lieu de la retenir.</p>
-</div>
+<h2>Les points à retenir</h2>
+<ul>
+<li>La sécheresse et la canicule replacent la tenue des lignes d’eau au centre de la gestion des rivières.</li>
+<li>Les seuils historiques sont présentés comme des ouvrages de soutien hydraulique des étiages et des nappes alluviales.</li>
+<li>La doctrine d’arasement produit, selon l’article, l’effet inverse de l’urgence hydraulique : évacuer l’eau au lieu de la retenir.</li>
+</ul>
 </section>
 <div class="article-layout">
 <div class="article-body">
