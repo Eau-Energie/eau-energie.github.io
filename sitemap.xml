@@ -70,6 +70,30 @@
     <priority>0.95</priority>
   </url>
 
+  <!-- Page actualités — liste des articles Eau-Energie -->
+  <url>
+    <loc>https://www.eau-energie.fr/actualite.html</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Article d'actualité Eau-Energie n° 2 — Loi hydroélectricité -->
+  <url>
+    <loc>https://www.eau-energie.fr/news/actualite2.html</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Article d'actualité Eau-Energie n° 1 — Canicule et rivière -->
+  <url>
+    <loc>https://www.eau-energie.fr/news/actualite1.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <!-- Cahier technique Eau-Energie n° 1 — page de présentation multilingue -->
   <url>
     <loc>https://www.eau-energie.fr/papers/cahier1.html</loc>

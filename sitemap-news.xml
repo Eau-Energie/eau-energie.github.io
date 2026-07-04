@@ -35,4 +35,16 @@
   </url>
   -->
 
+  <url>
+    <loc>https://www.eau-energie.fr/news/actualite2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Eau-Energie</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-07-06T08:00:00+02:00</news:publication_date>
+      <news:title>Hydroélectricité : la loi promulguée ce 29 juin 2026 conserve les points de friction signalés</news:title>
+    </news:news>
+  </url>
+
 </urlset>
