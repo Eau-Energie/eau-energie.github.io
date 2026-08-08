@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Protocole de caractérisation hydraulique du risque de plaquage du Desman — Eau-Energie</title>
+  <meta name="description" content="Protocole technique en accès libre pour caractériser le fonctionnement hydraulique des prises d'eau hydroélectriques de montagne : cotations, mesures Flo-Mate 2000/2000CM, matrice spatiale des vitesses, débit au transect amont, colmatage et granulométrie.">
+  <meta name="author" content="Denis Bouzon">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  <link rel="canonical" href="https://www.eau-energie.fr/papers/protocole-fr.html">
+  <link rel="alternate" type="application/pdf" title="PDF — Protocole de caractérisation hydraulique du risque de plaquage du Desman" href="https://www.eau-energie.fr/papers/protocole-fr.pdf">
+  <link rel="preload" href="../bandeau.jpg" as="image">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Protocole de caractérisation hydraulique du risque de plaquage du Desman — Eau-Energie">
+  <meta property="og:description" content="Méthode de terrain reproductible pour caractériser les prises d'eau hydroélectriques de montagne : vitesses locales, matrice spatiale, débit, colmatage et granulométrie.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.eau-energie.fr/papers/protocole-fr.html">
+  <meta property="og:image" content="https://www.eau-energie.fr/bandeau.jpg">
+  <meta property="og:site_name" content="Cabinet Eau-Energie">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="article:author" content="Denis Bouzon">
+  <meta property="article:published_time" content="2026-08-08">
+  <meta property="article:section" content="Environnement, biodiversité et hydroélectricité">
+  <meta property="article:tag" content="Desman des Pyrénées">
+  <meta property="article:tag" content="Galemys pyrenaicus">
+  <meta property="article:tag" content="prise d'eau hydroélectrique">
+  <meta property="article:tag" content="Flo-Mate 2000">
+  <meta property="article:tag" content="matrice de vitesses">
+  <meta property="article:tag" content="granulométrie">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Protocole de caractérisation hydraulique du risque de plaquage du Desman — Eau-Energie">
+  <meta name="twitter:description" content="Protocole de terrain reproductible : mesures Flo-Mate, matrice de vitesses, débit amont, colmatage et granulométrie des prises d'eau hydroélectriques de montagne.">
+  <meta name="twitter:image" content="https://www.eau-energie.fr/bandeau.jpg">
+
+  <!-- Dublin Core -->
+  <meta name="DC.title" content="Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d'eau hydroélectriques de montagne">
+  <meta name="DC.creator" content="Denis Bouzon">
+  <meta name="DC.contributor" content="Cabinet Eau-Energie">
+  <meta name="DC.publisher" content="Cabinet Eau-Energie">
+  <meta name="DC.date" content="2026-08-08">
+  <meta name="DC.type" content="Text">
+  <meta name="DC.format" content="text/html">
+  <meta name="DC.identifier" content="https://www.eau-energie.fr/papers/protocole-fr.html">
+  <meta name="DC.relation" content="https://zenodo.org/records/21853937">
+  <meta name="DC.relation" content="https://www.eau-energie.fr/papers/protocole-fr.pdf">
+  <meta name="DC.relation" content="https://www.eau-energie.fr/papers/cahier1-fr.html">
+  <meta name="DC.language" content="fr">
+  <meta name="DC.rights" content="CC BY 4.0">
+  <meta name="DC.subject" content="Desman des Pyrénées; Galemys pyrenaicus; prise d'eau; hydroélectricité; Flo-Mate 2000; vitesse mesurée; matrice de vitesses; plan de grille; entrefer; colmatage; granulométrie; débit; métrologie">
+  <meta name="DC.description" content="Protocole technique de terrain destiné à produire des mesures hydrauliques comparables, vérifiables et reproductibles sur les prises d'eau hydroélectriques de montagne.">
+
+  <!-- Highwire Press / Google Scholar -->
+  <meta name="citation_title" content="Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d'eau hydroélectriques de montagne">
+  <meta name="citation_author" content="Bouzon, Denis">
+  <meta name="citation_author_institution" content="Cabinet Eau-Energie, bureau d'études hydraulique, Pau">
+  <meta name="citation_author_email" content="contact@eau-energie.fr">
+  <meta name="citation_publication_date" content="2026/08/08">
+  <meta name="citation_online_date" content="2026/08/08">
+  <meta name="citation_language" content="fr">
+  <meta name="citation_keywords" content="Desman des Pyrénées; Galemys pyrenaicus; prise d'eau hydroélectrique; Flo-Mate 2000; matrice de vitesses; plan de grille; entrefer; colmatage; granulométrie; métrologie; débit">
+  <meta name="citation_abstract_html_url" content="https://www.eau-energie.fr/papers/protocole-fr.html">
+  <meta name="citation_fulltext_html_url" content="https://www.eau-energie.fr/papers/protocole-fr.html">
+  <meta name="citation_pdf_url" content="https://www.eau-energie.fr/papers/protocole-fr.pdf">
+  <meta name="citation_technical_report_institution" content="Cabinet Eau-Energie">
+  <meta name="citation_license" content="https://creativecommons.org/licenses/by/4.0/">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.eau-energie.fr/#website",
+        "url": "https://www.eau-energie.fr/",
+        "name": "Cabinet Eau-Energie",
+        "inLanguage": "fr-FR",
+        "publisher": {"@id": "https://www.eau-energie.fr/#organization"}
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.eau-energie.fr/#organization",
+        "name": "Cabinet Eau-Energie",
+        "url": "https://www.eau-energie.fr/",
+        "email": "contact@eau-energie.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pau",
+          "addressRegion": "Pyrénées-Atlantiques",
+          "postalCode": "64000",
+          "addressCountry": "FR"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.eau-energie.fr/denis-bouzon.html#person",
+        "name": "Denis Bouzon",
+        "url": "https://www.eau-energie.fr/denis-bouzon.html",
+        "affiliation": {"@id": "https://www.eau-energie.fr/#organization"},
+        "email": "contact@eau-energie.fr",
+        "jobTitle": "Auteur — bureau d'études hydraulique",
+        "sameAs": [
+          "https://orcid.org/0009-0007-8894-8902",
+          "https://scholar.google.com/citations?user=MrwaiKwAAAAJ&hl=fr",
+          "https://www.linkedin.com/in/denis-bouzon-a7343a313/"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.eau-energie.fr/index.html"},
+          {"@type": "ListItem", "position": 2, "name": "Publications", "item": "https://www.eau-energie.fr/publications.html"},
+          {"@type": "ListItem", "position": 3, "name": "Cahier technique n° 1", "item": "https://www.eau-energie.fr/papers/cahier1-fr.html"},
+          {"@type": "ListItem", "position": 4, "name": "Protocole de mesure", "item": "https://www.eau-energie.fr/papers/protocole-fr.html"}
+        ]
+      },
+      {
+        "@type": ["TechArticle", "ScholarlyArticle"],
+        "@id": "https://www.eau-energie.fr/papers/protocole-fr.html#article",
+        "headline": "Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d'eau hydroélectriques de montagne",
+        "name": "Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d'eau hydroélectriques de montagne",
+        "url": "https://www.eau-energie.fr/papers/protocole-fr.html",
+        "identifier": "https://www.eau-energie.fr/papers/protocole-fr.html",
+        "sameAs": [
+          "https://zenodo.org/records/21853937",
+          "https://www.eau-energie.fr/papers/protocole-fr.pdf"
+        ],
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://www.eau-energie.fr/papers/protocole-fr.pdf",
+          "encodingFormat": "application/pdf"
+        },
+        "author": {"@id": "https://www.eau-energie.fr/denis-bouzon.html#person"},
+        "publisher": {"@id": "https://www.eau-energie.fr/#organization"},
+        "datePublished": "2026-08-08",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "copyrightYear": "2026",
+        "copyrightHolder": {"@id": "https://www.eau-energie.fr/denis-bouzon.html#person"},
+        "inLanguage": "fr-FR",
+        "isAccessibleForFree": true,
+        "isPartOf": {"@id": "https://www.eau-energie.fr/papers/cahier1-fr.html#article"},
+        "about": [
+          {"@type": "Thing", "name": "Desman des Pyrénées"},
+          {"@type": "Thing", "name": "Prise d'eau hydroélectrique"},
+          {"@type": "Thing", "name": "Métrologie hydraulique"}
+        ],
+        "abstract": "Méthode de terrain reproductible destinée à caractériser le fonctionnement hydraulique des prises d'eau hydroélectriques de montagne et à identifier les zones locales susceptibles de présenter un risque de plaquage. Les mesures locales de vitesse sont distinguées des grandeurs théoriques calculées et conservées sous forme de matrice spatiale. Le protocole comprend également la cotation de l'ouvrage, la métrologie, la mesure du débit amont, l'état de colmatage et la caractérisation granulométrique."
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
+    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
+    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
+    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
+    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
+    nav.main-nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
+    nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+    nav.main-nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-size:9.5pt;letter-spacing:0.3px;transition:background .2s,color .2s}
+    nav.main-nav ul li a:hover,nav.main-nav ul li a.active{background:#2e4a8a;color:#fff}
+    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
+    #contenu h2{font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
+    #contenu h3{font-weight:bold;color:#1a2a4a;margin:30px 0 12px;text-transform:uppercase;letter-spacing:.5px;font-size:9.5pt}
+    #contenu p{margin-bottom:16px;text-align:justify}
+    #contenu a{color:#2e4a8a;text-decoration:none}
+    #contenu a:hover{text-decoration:underline}
+    .breadcrumb{font-size:9pt;color:#777;margin-bottom:22px}
+    .breadcrumb a{color:#2e4a8a}.breadcrumb span{color:#999;margin:0 6px}
+    .landing-head{background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin-bottom:26px}
+    .landing-head .numero{font-size:9pt;text-transform:uppercase;color:#2e4a8a;letter-spacing:.6px;margin-bottom:6px}
+    .landing-head h2{border:0;margin:0 0 8px;padding:0;font-size:15pt}
+    .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
+    .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0}
+    .badge.open{background:#2f6b3f;color:#fff}.badge.tech{background:#1a2a4a;color:#fff}.badge.zen{background:#c04a00;color:#fff}.badge.local{background:#705f2e;color:#fff}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px}
+    .actions a,.button{display:inline-block;border:1px solid #2e4a8a;padding:8px 12px;font-size:9pt;background:#fff;color:#2e4a8a;text-decoration:none}
+    .actions a.primary,.button.primary{background:#1a2a4a;color:#fff!important;border-color:#1a2a4a}
+    .button.zen{background:#c04a00;border-color:#c04a00;color:#fff!important}
+    .button.secondary{background:#fff;color:#2e4a8a!important}
+    .button:hover,.actions a:hover{text-decoration:none!important;filter:brightness(.93)}
+    .abstract{background:#f8f9fb;border:1px solid #dde3ec;padding:14px 16px;margin:14px 0}
+    .abstract strong{color:#1a2a4a}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+    .fact{background:#f8f9fb;border:1px solid #dde3ec;padding:12px 14px;font-size:9.2pt}
+    .fact strong{display:block;color:#1a2a4a;margin-bottom:4px;font-size:9pt}
+    .sommaire{background:#f8f9fb;border:1px solid #dde3ec;padding:14px 18px;margin:20px 0;font-size:9.5pt}
+    .sommaire h3{font-size:10pt;margin-bottom:10px;color:#1a2a4a;text-transform:none;letter-spacing:0}
+    .sommaire ol{margin-left:18px;color:#2e4a8a}.sommaire ol li{margin-bottom:4px}
+    .section-tech{background:#f4f7fc;border-left:4px solid #2e4a8a;padding:14px 16px;margin:16px 0;font-size:9.8pt}
+    .section-tech p{margin-bottom:10px}
+    .citebox{font-size:9pt;background:#fbfbfb;border:1px dashed #9aa8bf;padding:13px 15px;margin-top:16px;color:#333}
+    .keywords{font-size:9pt;color:#444;background:#eef2f6;border-left:3px solid #2e4a8a;padding:10px 12px;margin-top:12px}
+    .related{background:#fff7e6;border:1px solid #ead7a4;border-left:4px solid #c04a00;padding:14px 16px;margin:18px 0;font-size:9.8pt}
+    .related strong{color:#c04a00}
+    .author-box-denis-bouzon{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:32px 0}
+    .author-box-denis-bouzon h2{font-size:15pt;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin-bottom:10px}
+    .author-box-denis-bouzon p{font-size:10.5pt;margin:0;text-align:left}
+    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
+    footer a{color:#2e4a8a;text-decoration:none}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px}}
+    @media print{nav.main-nav,#bandeau,.actions,.breadcrumb{display:none}#contenu{max-width:none;margin:0;padding:0}}
+  </style>
+
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
+<body>
+
+  <div id="bandeau">
+    <img src="../bandeau.jpg" alt="Hydraulique, hydroélectricité, biodiversité pyrénéenne — Eau-Energie" width="1600" height="500">
+    <div id="bandeau-overlay">
+      <h1>Eau-Energie</h1>
+      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Navigation principale">
+    <ul>
+      <li><a href="../index.html">Présentation</a></li>
+      <li><a href="../hydroelectricite.html">Hydroélectricité</a></li>
+      <li><a href="../reglementaire.html">Réglementaire</a></li>
+      <li><a href="../environnement.html">Environnement</a></li>
+      <li><a href="../hydraulique.html">Hydraulique</a></li>
+      <li><a href="../foncier.html">Foncier</a></li>
+      <li><a href="../publications.html" class="active" aria-current="page">Publications</a></li>
+      <li><a href="../denis-bouzon.html">Denis Bouzon</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenu">
+
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="../index.html">Accueil</a><span>›</span>
+      <a href="../publications.html">Publications</a><span>›</span>
+      <a href="cahier1-fr.html">Cahier technique n° 1</a><span>›</span>
+      Protocole de mesure
+    </nav>
+
+    <div class="landing-head">
+      <p class="numero">Protocole technique Eau-Energie — 2026 — Version française</p>
+      <h2>Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d’eau hydroélectriques de montagne</h2>
+      <p><em>Méthode de terrain reproductible pour la cotation, la mesure des vitesses, la caractérisation du débit, du colmatage et de la granulométrie.</em></p>
+      <p class="pub-meta">
+        <span class="badge open">Accès libre</span>
+        <span class="badge tech">Protocole technique</span>
+        <span class="badge local">PDF local</span>
+        <span class="badge zen">Zenodo</span>
+        <a href="../denis-bouzon.html">Denis Bouzon</a> — Cabinet Eau-Energie, Pau — août 2026 — licence <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener license">CC BY 4.0</a>
+      </p>
+    </div>
+
+    <article id="protocole-desman" itemscope itemtype="https://schema.org/TechArticle">
+      <meta itemprop="inLanguage" content="fr-FR">
+      <meta itemprop="datePublished" content="2026-08-08">
+      <meta itemprop="isAccessibleForFree" content="true">
+      <meta itemprop="license" content="https://creativecommons.org/licenses/by/4.0/">
+      <link itemprop="url" href="https://www.eau-energie.fr/papers/protocole-fr.html">
+      <link itemprop="sameAs" href="https://zenodo.org/records/21853937">
+      <link itemprop="sameAs" href="https://www.eau-energie.fr/papers/protocole-fr.pdf">
+
+      <div class="abstract" itemprop="abstract">
+        <p><strong>Résumé.</strong> Le présent protocole complète le Cahier technique n° 1 consacré au Desman des Pyrénées et aux prises d’eau hydroélectriques. Il définit une méthode de terrain reproductible pour caractériser le fonctionnement hydraulique d’une prise d’eau et identifier les zones locales susceptibles de présenter un risque de plaquage.</p>
+        <p>La méthode distingue les grandeurs hydrauliques théoriques calculées à partir du débit et de la géométrie de l’ouvrage des vitesses réellement mesurées au courantomètre électromagnétique Flo-Mate 2000/2000CM. Les mesures sont conservées sous forme de matrice spatiale afin de ne pas masquer les hétérogénéités locales. Le protocole intègre également la métrologie, le débit au transect amont, l’état de colmatage et une caractérisation granulométrique spatialisée.</p>
+      </div>
+
+      <div class="related">
+        <strong>Publication associée.</strong> Ce protocole constitue le volet opérationnel de la note <em>Desman des Pyrénées et prises d'eau de centrale hydroélectrique — Analyse critique des prescriptions existantes et proposition d'un double critère de protection proportionné</em>. <a href="cahier1-fr.html">Consulter le Cahier technique n° 1</a>.
+      </div>
+
+      <div class="actions">
+        <a class="button primary" href="protocole-fr.pdf" type="application/pdf">⬇ Télécharger le protocole PDF</a>
+        <a class="button zen" href="https://zenodo.org/records/21853937" target="_blank" rel="noopener">Publication Zenodo</a>
+        <a class="button secondary" href="cahier1-fr.html">← Cahier technique n° 1</a>
+        <a class="button secondary" href="../publications.html">← Toutes les publications</a>
+        <a class="button secondary" href="#citation">Citation</a>
+      </div>
+    </article>
+
+    <div class="sommaire">
+      <h3>Contenu du protocole</h3>
+      <ol>
+        <li><a href="#objet">Objet et positionnement</a></li>
+        <li><a href="#principes">Principes méthodologiques</a></li>
+        <li><a href="#terrain">Mesures et observations de terrain</a></li>
+        <li><a href="#metrologie">Métrologie et traçabilité</a></li>
+        <li><a href="#traitement">Traitement et comparaison des données</a></li>
+        <li><a href="#rendu">Rendu de campagne</a></li>
+        <li><a href="#publication">Publication et réutilisation</a></li>
+      </ol>
+    </div>
+
+    <h3 id="objet">1. Objet et positionnement</h3>
+    <p>Le protocole est conçu comme une méthode ouverte, reproductible et vérifiable. Son application à plusieurs prises d’eau doit permettre de constituer progressivement un corpus homogène de données hydrauliques et granulométriques comparables entre sites.</p>
+    <p>Il n’a pas de valeur réglementaire propre. Il fournit une méthode technique commune destinée à objectiver le fonctionnement réel des ouvrages et à permettre la vérification contradictoire des mesures et des calculs.</p>
+
+    <h3 id="principes">2. Principes méthodologiques</h3>
+    <div class="grid" aria-label="Principes méthodologiques">
+      <div class="fact"><strong>Mesure réelle / calcul théorique</strong>Les vitesses locales mesurées au Flo-Mate sont conservées comme données expérimentales. Elles sont distinguées des vitesses moyennes calculées à partir de Qd et de la géométrie de la grille.</div>
+      <div class="fact"><strong>Matrice spatiale</strong>Les valeurs restent attachées à leur position sur le plan de grille. Aucune moyenne spatiale globale ne vient masquer une accélération ou une dissymétrie locale.</div>
+      <div class="fact"><strong>Débit documenté</strong>Le débit dérivé Qd est déterminé à partir du fonctionnement réel de l’installation, de Qmax et, à charge partielle, d’une courbe ou d’un abaque fourni par l’exploitant.</div>
+      <div class="fact"><strong>Comparabilité inter-sites</strong>La même structure de mesures, de calculs et de restitution permet de comparer plusieurs ouvrages étudiés selon un protocole homogène.</div>
+    </div>
+
+    <h3 id="terrain">3. Mesures et observations de terrain</h3>
+    <div class="section-tech">
+      <p><strong>Cotation de l’ouvrage :</strong> tirants d’eau, largeur et longueur mouillée du plan de grille, dimensions des fers et des entrefers, profondeur des barreaux et contrôle de la régularité du pas.</p>
+      <p><strong>État du plan de grille :</strong> photographie dans l’état normal d’exploitation, localisation des zones de colmatage et d’atterrissement et, lorsque l’information est disponible, traçabilité du dernier dégrillage.</p>
+      <p><strong>Vitesses au plan de grille :</strong> mesures locales au courantomètre électromagnétique Flo-Mate 2000/2000CM, réparties sur la largeur du plan de grille et à plusieurs hauteurs dans la colonne d’eau.</p>
+      <p><strong>Transect amont :</strong> mesure des profondeurs et des vitesses par sous-sections à environ 10 m en amont afin de calculer le débit par sommation des débits élémentaires.</p>
+      <p><strong>Granulométrie :</strong> caractérisation spatialisée du substrat sur une bande transversale subdivisée en cellules de 50 × 50 cm, avec photographie et échelle métrique ; un prélèvement superficiel limité peut être utilisé lorsque la profondeur ou la turbidité empêche l’observation directe.</p>
+    </div>
+
+    <h3 id="metrologie">4. Métrologie et traçabilité</h3>
+    <p>Le protocole distingue la tolérance instrumentale de l’incertitude réelle de mise en œuvre sur le terrain. Pour les longueurs relevées directement sur un repère fixe, une incertitude instrumentale de lecture de ± 1 mm est retenue par convention ; une incertitude pratique supérieure est consignée lorsqu’elle résulte de l’agitation de la surface, de l’immersion ou de la géométrie de l’ouvrage.</p>
+    <p>Pour les vitesses, la méthode reprend les caractéristiques du Flo-Mate 2000 et conserve la traçabilité du contrôle du zéro, du moyennage temporel FPA, du positionnement et de l’orientation de la sonde. Les résultats calculés ne sont pas présentés avec une précision supérieure à celle des données qui les déterminent.</p>
+
+    <h3 id="traitement">5. Traitement et comparaison des données</h3>
+    <p>Le traitement sépare trois niveaux d’information : la donnée physique mesurée, les valeurs éventuellement normalisées pour comparer des conditions de débit différentes, et les grandeurs hydrauliques théoriques calculées à partir du débit et de la géométrie de l’ouvrage.</p>
+    <p>Le débit amont est calculé par sous-sections. Le débit restant dans le cours d’eau peut être estimé par différence entre le débit amont et le débit dérivé, sans être qualifié automatiquement de débit réservé si la configuration de l’ouvrage ne permet pas de l’établir.</p>
+    <p>La granulométrie, le colmatage et la matrice des vitesses sont mis en regard afin de rechercher des correspondances spatiales. Le protocole ne transforme pas une corrélation observée en relation causale sans élément complémentaire.</p>
+
+    <h3 id="rendu">6. Rendu de campagne</h3>
+    <p>Chaque campagne donne lieu à un rapport individualisé décrivant le site, les conditions de fonctionnement, les cotations, les photographies, la matrice des vitesses, le transect, la granulométrie, les calculs et leur interprétation. Un tableur XLSX regroupe les mesures brutes et les résultats traités dans des onglets clairement identifiés.</p>
+    <p>Lorsqu’un corpus de campagnes comparables existe, le site peut être positionné par rapport aux autres ouvrages au moyen d’une analyse descriptive, sans que cette comparaison se substitue à l’analyse propre de la prise d’eau étudiée.</p>
+
+    <h3 id="publication">7. Publication et réutilisation</h3>
+    <p>Le protocole est diffusé en accès libre sur le site Eau-Energie et déposé sur Zenodo. La publication séparée du protocole permet de conserver une méthode opérationnelle autonome et de faire évoluer ultérieurement sa version sans modifier le Cahier technique n° 1 auquel il se rattache.</p>
+
+    <div class="actions">
+      <a class="button primary" href="protocole-fr.pdf" type="application/pdf">⬇ PDF du protocole</a>
+      <a class="button zen" href="https://zenodo.org/records/21853937" target="_blank" rel="noopener">Zenodo — record 21853937</a>
+      <a class="button secondary" href="cahier1-fr.html">Note technique associée</a>
+    </div>
+
+    <div id="citation" class="citebox">
+      <strong>Citation recommandée :</strong><br>
+      Bouzon, D. (2026). <em>Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d’eau hydroélectriques de montagne</em>. Cabinet Eau-Energie, Pau. Publication Zenodo : <a href="https://zenodo.org/records/21853937" target="_blank" rel="noopener">https://zenodo.org/records/21853937</a> — PDF : <a href="https://www.eau-energie.fr/papers/protocole-fr.pdf">https://www.eau-energie.fr/papers/protocole-fr.pdf</a> — HTML : <a href="https://www.eau-energie.fr/papers/protocole-fr.html">https://www.eau-energie.fr/papers/protocole-fr.html</a>.
+    </div>
+
+    <p class="keywords"><strong>Mots-clés :</strong> Desman des Pyrénées ; <em>Galemys pyrenaicus</em> ; prise d'eau hydroélectrique ; centrale haute chute ; plan de grille ; Flo-Mate 2000 ; vitesse mesurée ; matrice de vitesses ; débit dérivé ; Qmax ; colmatage ; entrefer ; granulométrie ; métrologie ; hydroélectricité ; biodiversité pyrénéenne.</p>
+
+    <section class="author-box-denis-bouzon" aria-label="À propos de l’auteur">
+      <h2>À propos de l’auteur</h2>
+      <p>Ce protocole est publié par <a href="../denis-bouzon.html">Denis Bouzon</a>, fondateur d’Eau-Energie, bureau d’études hydraulique à Pau. Voir aussi son <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a>, son <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr" target="_blank" rel="me noopener">profil Google Scholar</a> et la page des <a href="../publications.html">publications techniques Eau-Energie</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Eau-Energie — <a href="../denis-bouzon.html">Denis Bouzon</a> — Bureau d'études hydraulique — Pau (64) — <a href="mailto:contact@eau-energie.fr">contact@eau-energie.fr</a> — NAF 7112B</p>
+    <p style="margin-top:6px">
+      <a href="../denis-bouzon.html">Page auteur Denis Bouzon</a> ·
+      <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID 0009-0007-8894-8902</a> ·
+      <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr" target="_blank" rel="me noopener">Google Scholar</a> ·
+      <a href="https://www.linkedin.com/in/denis-bouzon-a7343a313/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://zenodo.org" target="_blank" rel="noopener">Zenodo</a>
+    </p>
+    <p style="margin-top:6px"><a href="../index.html">Présentation</a> · <a href="../hydroelectricite.html">Hydroélectricité</a> · <a href="../reglementaire.html">Réglementaire</a> · <a href="../environnement.html">Environnement</a> · <a href="../hydraulique.html">Hydraulique</a> · <a href="../foncier.html">Foncier</a> · <a href="../publications.html">Publications</a> · <a href="../contact.html">Contact</a></p>
+  </footer>
+
+  <script data-goatcounter="https://eau-energie.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
