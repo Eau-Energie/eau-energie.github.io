@@ -54,6 +54,8 @@
   <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.20352515">
   <meta name="DC.relation" content="https://www.eau-energie.fr/papers/desman-hydro.pdf">
   <meta name="DC.relation" content="https://hal.science/hal-05628774">
+  <meta name="DC.relation" content="https://www.eau-energie.fr/papers/protocole-fr.html">
+  <meta name="DC.relation" content="https://zenodo.org/records/21853937">
   <meta name="DC.language" content="fr">
   <meta name="DC.rights" content="CC BY 4.0">
   <meta name="DC.subject" content="Desman des Pyrénées; Galemys pyrenaicus; prise d'eau; centrale hydroélectrique haute chute; plan de grille; vitesse d'aspiration; entrefer; colmatage; juvéniles; Loi sur l'Eau; biodiversité; continuité écologique; proportionnalité; prescriptions DDT">
@@ -174,6 +176,21 @@
           "@id": "https://www.eau-energie.fr/publications.html#cahiers",
           "name": "Cahiers techniques Eau-Energie",
           "issn": "ISSN en cours de demande"
+        },
+        "hasPart": {
+          "@type": "TechArticle",
+          "@id": "https://www.eau-energie.fr/papers/protocole-fr.html#article",
+          "name": "Protocole de caractérisation hydraulique du risque de plaquage du Desman aux prises d’eau hydroélectriques de montagne",
+          "url": "https://www.eau-energie.fr/papers/protocole-fr.html",
+          "sameAs": "https://zenodo.org/records/21853937",
+          "isAccessibleForFree": true,
+          "inLanguage": "fr-FR",
+          "author": {"@id": "https://www.eau-energie.fr/denis-bouzon.html#person"},
+          "encoding": {
+            "@type": "MediaObject",
+            "contentUrl": "https://www.eau-energie.fr/papers/protocole-fr.pdf",
+            "encodingFormat": "application/pdf"
+          }
         },
         "abstract": "Le Desman des Pyrénées (Galemys pyrenaicus), espèce protégée au titre de la directive Habitats 92/43/CEE, constitue un enjeu réglementaire majeur pour les projets hydrauliques en zone pyrénéenne. La note critique la recommandation d'un entrefer de grille inférieur à 15 mm lorsqu'elle est appliquée sans distinction de typologie d'ouvrage ni contrôle de la vitesse d'aspiration. Elle montre que, pour les prises d'eau haute chute avec bassin de mise en charge, le risque pertinent n'est pas la chute dans la chambre d'eau, mais le risque de plaquage contre un plan de grille colmaté. La proposition opérationnelle repose sur un double critère indissociable : vitesse d'aspiration au plan de grille inférieure à 35 cm/s et entrefer garde-fou supérieur ou égal à 20 mm. Une méthode de calcul vérifiable est fournie pour les dossiers Loi sur l'Eau."
       }
@@ -373,10 +390,22 @@
       <link itemprop="sameAs" href="https://doi.org/10.5281/zenodo.20352515">
       <link itemprop="sameAs" href="https://hal.science/hal-05628774">
       <link itemprop="sameAs" href="https://www.eau-energie.fr/papers/desman-hydro.pdf">
+      <link itemprop="hasPart" href="https://www.eau-energie.fr/papers/protocole-fr.html">
 
       <div class="abstract" itemprop="abstract">
         <p><strong>Résumé.</strong> Le Desman des Pyrénées (<em>Galemys pyrenaicus</em>), espèce protégée au titre de la directive Habitats 92/43/CEE, constitue un enjeu réglementaire majeur pour les projets hydrauliques en zone pyrénéenne. La note critique la recommandation d'un entrefer de grille inférieur à 15 mm lorsqu'elle est appliquée sans distinction de typologie d'ouvrage ni contrôle de la vitesse d'aspiration. Elle montre que, pour les prises d'eau haute chute avec bassin de mise en charge, le risque pertinent n'est pas la « chute » dans la chambre d'eau, mais le risque de plaquage contre un plan de grille colmaté.</p>
         <p>La proposition opérationnelle repose sur un double critère indissociable : vitesse d'aspiration au plan de grille inférieure à 35 cm/s et entrefer garde-fou supérieur ou égal à 20 mm. Une méthode de calcul vérifiable est fournie pour les dossiers Loi sur l'Eau.</p>
+      </div>
+
+      <!-- PROTOCOLE DE MESURE ASSOCIÉ -->
+      <div class="section-tech" id="protocole-mesure">
+        <p><strong>Protocole de mesure associé.</strong> Cette note technique est désormais complétée par un protocole de terrain dédié à la caractérisation hydraulique des prises d’eau hydroélectriques de montagne. Il décrit une méthode reproductible de cotation de l’ouvrage, de mesure des vitesses au courantomètre électromagnétique, de restitution sous forme de matrice spatiale, de mesure du débit amont et de caractérisation granulométrique.</p>
+        <p>Le protocole est publié séparément afin de conserver une méthode opérationnelle autonome, directement utilisable pour les campagnes de terrain et susceptible d’être actualisée indépendamment de la présente note. Il est disponible en accès libre sur le site Eau-Energie et archivé sur Zenodo.</p>
+        <div class="actions" aria-label="Accès au protocole de mesure" style="margin:14px 0 4px 0">
+          <a class="button primary" href="protocole-fr.html">Consulter le protocole de mesure</a>
+          <a class="button secondary" href="protocole-fr.pdf" type="application/pdf">Télécharger le PDF</a>
+          <a class="button zen" href="https://zenodo.org/records/21853937" target="_blank" rel="noopener">Publication Zenodo</a>
+        </div>
       </div>
 
       <div class="alerte">
@@ -470,6 +499,7 @@
       <p>— <strong>τ<sub>colmatage</sub></strong> : taux de colmatage conservatif retenu pour le calcul, typiquement 0,50 (50 % de la surface libre obstruée) pour les cours d'eau pyrénéens à fort transport solide.</p>
       <p>La vitesse ainsi calculée doit rester strictement inférieure à <strong>35 cm/s</strong>.</p>
     </div>
+    <p><strong>Mesure in situ :</strong> la méthode de calcul ci-dessus est complétée par le <a href="protocole-fr.html">protocole de caractérisation hydraulique du risque de plaquage du Desman</a>, qui organise la mesure réelle des vitesses, leur positionnement sur le plan de grille, le contrôle du débit et la caractérisation du substrat. Le <a href="protocole-fr.pdf" type="application/pdf">PDF du protocole</a> est également disponible en accès libre.</p>
     <p>Ce calcul doit figurer dans le dossier Loi sur l'Eau ou la demande d'autorisation environnementale, avec indication de la surface géométrique totale de la grille, des dimensions des barreaux, du débit de dimensionnement et du coefficient de colmatage retenu. Il constitue la pièce justificative vérifiable de la conformité au critère hydraulique.</p>
 
     <!-- SECTION 7 -->
