@@ -9,7 +9,9 @@
   <meta name="author" content="Denis Bouzon">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://www.eau-energie.fr/">
-  <link rel="preload" href="bandeau.jpg" as="image">
+  <link rel="preload" href="/bandeau.jpg" as="image">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 
   <meta property="og:title" content="Eau-Energie — Bureau d’études hydraulique">
   <meta property="og:description" content="Le parcours Eau-Energie : hydraulique, hydroélectricité, droit d’eau, foncier hydraulique, environnement aquatique et réglementation des ouvrages en rivière.">
@@ -139,24 +141,7 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
-    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
-    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
-    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
-    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
-    #contenu p{margin-bottom:16px;text-align:justify}
-    #contenu a{color:#2e4a8a;text-decoration:none}
-    #contenu a:hover{text-decoration:underline}
+    /* Accueil — styles spécifiques. Les styles communs sont dans /assets/site.css */
     .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
     .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
     .badge.open{background:#2f6b3f;color:#fff}
@@ -165,46 +150,37 @@
     .badge.droit{background:#1a2a4a;color:#fff}
     .badge.env{background:#2f6b3f;color:#fff}
     .badge.method{background:#fff;color:#1a2a4a;border:1px solid #1a2a4a}
-    .landing-head{background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin-bottom:26px}
-    .landing-head .numero{font-size:9pt;text-transform:uppercase;color:#2e4a8a;letter-spacing:0.6px;margin-bottom:6px}
-    .landing-head h2{border:0;margin:0 0 8px 0;padding:0}
-    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px 0}
-    .actions a{display:inline-block;border:1px solid #2e4a8a;padding:8px 12px;font-size:9pt;background:#2e4a8a;color:#fff !important;text-decoration:none}
-    .actions a.primary{background:#1a2a4a;color:#fff !important;border-color:#1a2a4a}
-    .actions a:hover{background:#1a2a4a;color:#fff !important;border-color:#1a2a4a}
     .chaine{background:#fff8e1;border:1px solid #f0c040;border-left:4px solid #e6a817;padding:14px 18px;margin:14px 0;font-size:9.5pt;line-height:2}
     .module{border-left:3px solid #2e4a8a;padding:10px 14px;margin:10px 0;font-size:10pt;background:#f4f7fb}
     .module strong{color:#1a2a4a}
     .sobre{border-left:3px solid #2f6b3f;padding:10px 14px;margin:12px 0;font-size:10pt;background:#f4fbf6}
     .risque{border-left:3px solid #c0392b;padding:8px 14px;margin:8px 0;font-size:10pt;background:#fdf5f4}
-    .keywords-box{border:1px solid #d8dde8;background:#f8f9fb;padding:12px 16px;margin:18px 0 26px 0;font-size:9.4pt;color:#333}
+    .keywords-box{border:1px solid #d8dde8;background:#f8f9fb;padding:12px 16px;margin:18px 0 26px;font-size:9.4pt;color:#333}
     .keywords-box strong{color:#1a2a4a}
-    .archive-box{border:1px solid #c8d0dd;background:#f4f7fb;padding:14px 18px;margin:20px 0 28px 0;font-size:9.4pt}
-    .archive-box p{margin-bottom:8px !important;text-align:left !important}
+    .archive-box{border:1px solid #c8d0dd;background:#f4f7fb;padding:14px 18px;margin:20px 0 28px;font-size:9.4pt}
+    .archive-box p{margin-bottom:8px!important;text-align:left!important}
     .archive-box strong{color:#1a2a4a}
-
-    .story-card{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:start;background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin:18px 0 28px 0}
+    .story-card{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:start;background:#f8f9fb;border:1px solid #d8dde8;padding:18px 22px;margin:18px 0 28px}
     .story-card img{width:150px;height:150px;object-fit:cover;border:1px solid #c8d0dd;background:#fff}
     .story-card .signature{font-size:9pt;color:#2e4a8a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;text-align:left!important}
     .story-card p{text-align:left!important;margin-bottom:10px!important}
-    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 26px 0}
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 26px}
     .story-grid .module{margin:0}
     .timeline{border-left:2px solid #2e4a8a;margin:18px 0 28px 8px;padding-left:18px}
     .timeline p{position:relative;text-align:left!important;margin-bottom:12px!important}
     .timeline p:before{content:"";position:absolute;left:-24px;top:.55em;width:9px;height:9px;border-radius:50%;background:#2e4a8a}
-    .callout{background:#f4fbf6;border:1px solid #c8dccf;border-left:4px solid #2f6b3f;padding:14px 18px;margin:18px 0 28px 0;font-size:10pt}
-    @media(max-width:700px){.story-card{display:block}.story-card img{margin:0 0 14px 0}.story-grid{display:block}.story-grid .module{margin:10px 0}}
-
-    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
-    footer a{color:#2e4a8a;text-decoration:none}
-    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
-    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
-
-    .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px 0}
-    .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px 0}
-    .author-seo-card p{font-size:10.5pt;line-height:1.65;margin:0 0 8px 0;text-align:left}
+    .callout{background:#f4fbf6;border:1px solid #c8dccf;border-left:4px solid #2f6b3f;padding:14px 18px;margin:18px 0 28px;font-size:10pt}
+    .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px}
+    .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px}
+    .author-seo-card p{font-size:10.5pt;line-height:1.65;margin:0 0 8px;text-align:left}
     .author-seo-card a{color:#2e4a8a;text-decoration:none}
     .author-seo-card a:hover{text-decoration:underline}
+    @media(max-width:700px){
+      .story-card{display:block}
+      .story-card img{margin:0 0 14px}
+      .story-grid{display:block}
+      .story-grid .module{margin:10px 0}
+    }
   </style>
 
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
@@ -213,38 +189,17 @@
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
 </head>
 <body>
+  <div id="site-head"></div>
+  <script src="/assets/head-frame.js"></script>
 
-  <div id="bandeau">
-    <img src="bandeau.jpg" alt="Moulin ancien, droit d’eau et diagnostic foncier Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
-
-    <nav aria-label="Navigation principale">
-    <ul>
-      <li><a href="index.html" class="active" aria-current="page">Présentation</a></li>
-      <li><a href="hydroelectricite.html">Hydroélectricité</a></li>
-      <li><a href="productible-hydroelectrique.html">Productible</a></li>
-      <li><a href="reglementaire.html">Réglementaire</a></li>
-      <li><a href="environnement.html">Environnement</a></li>
-      <li><a href="partenaires.html">Partenaires</a></li>
-      <li><a href="foncier.html">Foncier</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="actualite.html">Actualités</a></li>
-      <li><a href="denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main id="contenu">
+<main id="contenu">
 
     <div class="actions">
       <a class="primary" href="contact.html">Prendre contact</a>
       <a href="denis-bouzon.html">Page auteur Denis Bouzon</a>
       <a href="/papers/CV.pdf" target="_blank" rel="noopener">CV — Denis Bouzon</a>
       <a href="hydroelectricite.html">Étude hydroélectrique</a>
+      <a href="due-diligence.html">Due Diligence</a>
       <a href="foncier.html">Diagnostic foncier</a>
       <a href="publications.html">Cahiers techniques</a>
     </div>
@@ -284,7 +239,7 @@
     <p>Les missions croisent l’hydraulique, l’hydrologie, le droit d’eau, le foncier, l’environnement aquatique et le cadre réglementaire. L’objectif est de produire des analyses directement utilisables pour décider, sécuriser un site, dialoguer avec l’administration ou préparer un projet.</p>
 
     <div class="keywords-box">
-      <strong>Axes principaux :</strong> étude de droit d’eau ; valorisation hydroélectrique ; diagnostic foncier de moulin ; réglementation IOTA ; continuité écologique ; débit réservé ; courbe des débits classés ; passes à poissons ; Desman des Pyrénées ; ouvrages en rivière.
+      <strong>Axes principaux :</strong> étude de droit d’eau ; valorisation hydroélectrique ; diagnostic foncier de moulin ; réglementation IOTA ; continuité écologique ; débit réservé ; courbe des débits classés ; passes à poissons ; Desman des Pyrénées ; audit technique avant acquisition ; due diligence hydroélectrique ; ouvrages en rivière.
     </div>
 
     <div class="story-grid">
@@ -292,11 +247,16 @@
       <div class="module"><strong>Réalité physique :</strong><br>Géologie locale, profils, pente, chute, débits, maçonneries, vannages, continuité hydraulique et contraintes de site.</div>
       <div class="module"><strong>Technique hydroélectrique :</strong><br>Calcul de chute nette, choix turbine, raccordement, productible, recettes, rénovation et mise en conformité.</div>
       <div class="module"><strong>Cadre réglementaire :</strong><br>Loi sur l’eau, IOTA, débit réservé, continuité écologique, prescriptions, échanges avec les services instructeurs.</div>
+      <div class="module"><strong>Investisseurs & acquisitions :</strong><br>Audit technique et réglementaire avant acquisition, financement ou refinancement : droits d’eau, productible, ouvrages, CAPEX et risques.</div>
     </div>
 
     <h3>Hydroélectricité</h3>
     <p>La page hydroélectricité présente la méthodologie Eau-Energie pour qualifier un droit d’eau, analyser l’hydrologie, calculer la chute nette, choisir un équipement turbine, simuler le productible et évaluer les recettes prévisionnelles.</p>
     <div class="module"><strong>Page dédiée :</strong> <a href="hydroelectricite.html">Méthodologie d’étude de droit d’eau et de valorisation hydroélectrique</a>.</div>
+
+    <h3>Investisseurs & acquisitions</h3>
+    <p>Eau-Energie propose une mission indépendante d’audit technique et réglementaire de centrales hydroélectriques existantes ou en développement, destinée aux investisseurs, fonds d’infrastructure, banques et acquéreurs.</p>
+    <div class="module"><strong>Page dédiée :</strong> <a href="due-diligence.html">Audit technique de centrales hydroélectriques — Hydropower Technical Due Diligence</a>.</div>
 
     <h3>Foncier hydraulique</h3>
     <p>La page foncier traite des acquisitions et cessions de moulins avec droit d’eau : titres, cadastre, canaux, servitudes, accès, propriété des ouvrages et risques avant compromis.</p>
@@ -327,7 +287,7 @@
       <a href="/papers/CV.pdf">CV PDF</a> ·
       <a href="/papers/note-etude.pdf">PDF méthodologique</a>
     </p>
-    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="due-diligence.html">Due Diligence</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
   </footer>
 
   <!-- GoatCounter analytics -->
