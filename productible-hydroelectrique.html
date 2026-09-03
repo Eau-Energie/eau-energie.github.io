@@ -193,30 +193,6 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav ul li{position:relative}
-    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
-    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
-    nav ul li.dropdown > a::after{content:" ▾";font-size:8pt;color:#c8d0dd}
-    nav ul li .submenu{display:none;position:absolute;left:0;top:100%;background:#1a2a4a;border:1px solid #2e4a8a;min-width:245px;z-index:50;box-shadow:0 8px 18px rgba(0,0,0,0.25)}
-    nav ul li .submenu li{display:block;width:100%}
-    nav ul li .submenu a{white-space:nowrap;padding:10px 14px;font-size:9pt}
-    nav ul li.dropdown:hover .submenu,nav ul li.dropdown:focus-within .submenu{display:block}
-    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
-    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
-    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
-    #contenu p{margin-bottom:16px;text-align:justify}
-    #contenu a{color:#2e4a8a;text-decoration:none}
-    #contenu a:hover{text-decoration:underline}
     .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
     .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
     .badge.open{background:#2f6b3f;color:#fff}
@@ -246,49 +222,21 @@
     .steps{counter-reset:step;margin:16px 0}
     .step{counter-increment:step;border-left:3px solid #2e4a8a;background:#f4f7fb;padding:10px 14px;margin:10px 0;font-size:10pt}
     .step::before{content:counter(step) ". ";font-weight:bold;color:#1a2a4a}
-    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
-    footer a{color:#2e4a8a;text-decoration:none}
-    @media(max-width:760px){nav ul li .submenu{position:static;display:block;border:0;box-shadow:none;background:#15233f;margin-left:10px}nav ul li.dropdown > a::after{content:""}}
-    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
-    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
-
     .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px 0}
     .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px 0}
     .author-seo-card p{font-size:10.5pt;line-height:1.65;margin:0 0 8px 0;text-align:left}
     .author-seo-card a{color:#2e4a8a;text-decoration:none}
     .author-seo-card a:hover{text-decoration:underline}
+    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
+    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
   </style>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+<link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 </head>
 <body>
+  <div id="site-head"></div>
+  <script src="/assets/head-frame.js"></script>
 
-  <div id="bandeau">
-    <img src="bandeau.jpg" alt="Hydraulique, hydroélectricité et simulation de productible Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
-
-    <nav aria-label="Navigation principale">
-    <ul>
-      <li><a href="index.html">Présentation</a></li>
-      <li><a href="hydroelectricite.html">Hydroélectricité</a></li>
-      <li><a href="productible-hydroelectrique.html" class="active" aria-current="page">Productible</a></li>
-      <li><a href="reglementaire.html">Réglementaire</a></li>
-      <li><a href="environnement.html">Environnement</a></li>
-      <li><a href="partenaires.html">Partenaires</a></li>
-      <li><a href="foncier.html">Foncier</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="actualite.html">Actualités</a></li>
-      <li><a href="denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main id="contenu">
 
@@ -309,6 +257,7 @@
     <div class="actions">
       <a class="primary" href="contact.html">Demander une simulation</a>
       <a href="hydroelectricite.html">Méthodologie hydroélectricité</a>
+      <a href="/due-diligence.html">Due Diligence investisseurs</a>
       <a href="foncier.html">Diagnostic foncier moulin</a>
       <a href="reglementaire.html">Cadre réglementaire</a>
       <a href="publications.html">Publications</a>
@@ -318,6 +267,7 @@
     <p>Cette page présente la méthode Eau-Energie pour simuler le productible hydroélectrique d’un moulin, d’un seuil, d’un canal ou d’une petite centrale existante. L’objectif est d’estimer une production annuelle réaliste, exprimée en kWh ou en MWh, à partir d’une chronique de débits journaliers et des caractéristiques hydrauliques du site.</p>
     <p>La simulation ne se limite pas à appliquer une puissance théorique sur une durée annuelle. Elle tient compte du débit réservé, du débit réellement dérivable, du débit maximal absorbable par la turbine, de la chute nette, des pertes de charge, des rendements, des périodes de crue, de la turbidité et des indisponibilités d’exploitation.</p>
     <p>Elle constitue un outil d’aide à la décision pour un propriétaire, un acquéreur, un exploitant ou un investisseur souhaitant apprécier le potentiel réel d’un site avant achat, remise en service, renouvellement d’autorisation, consultation turbine ou dépôt d’un dossier administratif.</p>
+    <div class="module"><strong>Analyse investisseur :</strong> dans une mission d’<a href="/due-diligence.html">Hydropower Technical Due Diligence</a>, cette simulation sert à confronter le productible annoncé aux données hydrologiques, aux contraintes d’exploitation, au droit d’eau et aux besoins de CAPEX avant acquisition ou financement.</div>
 
     <div class="keywords-box">
       <strong>Mots-clés :</strong> simulation productible hydroélectrique ; calcul productible hydroélectrique ; productible hydroélectrique moulin ; estimation production hydroélectricité moulin ; calcul MWh hydroélectricité ; chronique journalière ; courbe des débits classés ; débit réservé ; débit dérivable ; chute nette ; rendement turbine ; turbine Kaplan ; turbine siphon ; vis d’Archimède ; pertes de charge ; fermeture en crue ; turbidité ; obligation d’achat ; tarif H16 ; recettes hydroélectricité.
@@ -434,7 +384,7 @@
       <a href="https://www.linkedin.com/in/denis-bouzon-a7343a313/" target="_blank" rel="noopener">LinkedIn</a> ·
       <a href="hydroelectricite.html">Méthodologie hydroélectricité</a>
     </p>
-    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="productible-hydroelectrique.html">Productible</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="due-diligence.html">Due Diligence</a> · <a href="productible-hydroelectrique.html">Productible</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
   </footer>
 
   <!-- GoatCounter analytics -->
