@@ -157,19 +157,7 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav.main-nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav.main-nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-size:9.5pt;letter-spacing:0.3px;transition:background .2s,color .2s}
-    nav.main-nav ul li a:hover,nav.main-nav ul li a.active{background:#2e4a8a;color:#fff}
-    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
+#contenu{max-width:920px;margin:42px auto;padding:0 24px}
     #contenu h2{font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
     #contenu h3{font-weight:bold;color:#1a2a4a;margin:30px 0 12px;text-transform:uppercase;letter-spacing:.5px;font-size:9.5pt}
     #contenu p{margin-bottom:16px;text-align:justify}
@@ -210,36 +198,18 @@
     footer a{color:#2e4a8a;text-decoration:none}
     @media(max-width:760px){.grid{grid-template-columns:1fr}#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px}}
     @media print{nav.main-nav,#bandeau,.actions,.breadcrumb{display:none}#contenu{max-width:none;margin:0;padding:0}}
-  </style>
+</style>
 
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
+
+
+<link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 </head>
 <body>
 
-  <div id="bandeau">
-    <img src="../bandeau.jpg" alt="Hydraulique, hydroélectricité, biodiversité pyrénéenne — Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
+  <div id="site-head"></div>
+<script src="/assets/head-frame.js"></script>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <ul>
-      <li><a href="../index.html">Présentation</a></li>
-      <li><a href="../hydroelectricite.html">Hydroélectricité</a></li>
-      <li><a href="../reglementaire.html">Réglementaire</a></li>
-      <li><a href="../environnement.html">Environnement</a></li>
-      <li><a href="../hydraulique.html">Hydraulique</a></li>
-      <li><a href="../foncier.html">Foncier</a></li>
-      <li><a href="../publications.html" class="active" aria-current="page">Publications</a></li>
-      <li><a href="../denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main id="contenu">
 
