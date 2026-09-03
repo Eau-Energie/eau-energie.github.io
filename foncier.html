@@ -167,24 +167,6 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
-    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
-    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
-    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
-    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
-    #contenu p{margin-bottom:16px;text-align:justify}
-    #contenu a{color:#2e4a8a;text-decoration:none}
-    #contenu a:hover{text-decoration:underline}
     .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
     .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
     .badge.open{background:#2f6b3f;color:#fff}
@@ -210,48 +192,21 @@
     .archive-box{border:1px solid #c8d0dd;background:#f4f7fb;padding:14px 18px;margin:20px 0 28px 0;font-size:9.4pt}
     .archive-box p{margin-bottom:8px !important;text-align:left !important}
     .archive-box strong{color:#1a2a4a}
-    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
-    footer a{color:#2e4a8a;text-decoration:none}
-    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
-    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
-
     .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px 0}
     .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px 0}
     .author-seo-card p{font-size:10.5pt;line-height:1.65;margin:0 0 8px 0;text-align:left}
     .author-seo-card a{color:#2e4a8a;text-decoration:none}
     .author-seo-card a:hover{text-decoration:underline}
+    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
+    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
   </style>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+<link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 </head>
 <body>
+  <div id="site-head"></div>
+  <script src="/assets/head-frame.js"></script>
 
-  <div id="bandeau">
-    <img src="bandeau.jpg" alt="Moulin ancien, droit d’eau et diagnostic foncier Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
-
-    <nav aria-label="Navigation principale">
-    <ul>
-      <li><a href="index.html">Présentation</a></li>
-      <li><a href="hydroelectricite.html">Hydroélectricité</a></li>
-      <li><a href="productible-hydroelectrique.html">Productible</a></li>
-      <li><a href="reglementaire.html">Réglementaire</a></li>
-      <li><a href="environnement.html">Environnement</a></li>
-      <li><a href="partenaires.html">Partenaires</a></li>
-      <li><a href="foncier.html" class="active" aria-current="page">Foncier</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="actualite.html">Actualités</a></li>
-      <li><a href="denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main id="contenu">
 
@@ -272,6 +227,7 @@
     <div class="actions">
       <a class="primary" href="contact.html">Demander un diagnostic</a>
       <a href="hydroelectricite.html">Méthodologie hydroélectrique</a>
+      <a href="/due-diligence.html">Due Diligence investisseurs</a>
       <a href="/papers/note-etude.pdf">PDF méthodologique</a>
       <a href="publications.html">Publications</a>
     </div>
@@ -314,6 +270,7 @@
     <p>La première étape consiste à distinguer ce qui est vendu de ce qui est simplement évoqué. Un moulin peut être présenté avec un « droit d’eau » sans que la prise d’eau, le seuil, le canal ou les vannes soient entièrement compris dans le périmètre foncier vendu. Inversement, certains droits ou usages peuvent subsister sans être correctement décrits dans les pièces commerciales.</p>
     <div class="module"><strong>À vérifier avant compromis :</strong> désignation cadastrale des parcelles, continuité physique entre la prise d’eau et le bâtiment, propriété ou maîtrise du canal de fuite, accès aux ouvrages, existence d’un titre ou d’un règlement d’eau, cohérence entre les plans anciens et l’état actuel.</div>
     <p>Le diagnostic vise à produire une lecture claire pour l’acquéreur, le vendeur, le notaire ou l’investisseur : ce qui est établi, ce qui est incertain, ce qui doit être régularisé et ce qui peut affecter la valeur réelle du site.</p>
+    <div class="module"><strong>Pour une acquisition de centrale ou un audit investisseur plus large :</strong> voir la page <a href="/due-diligence.html">Audit technique de centrales hydroélectriques — Hydropower Technical Due Diligence</a>, qui complète l’analyse foncière par l’examen technique, réglementaire, hydraulique, environnemental et CAPEX.</div>
 
     <h3>Analyse des droits d’eau attachés à un ouvrage</h3>
     <p>L’analyse du droit d’eau repose sur le croisement des archives et de l’état actuel du site : cartes anciennes, cadastre napoléonien, carte d’État-Major, actes notariés, arrêtés préfectoraux, règlements d’eau, plans d’alignement, bases administratives et éléments de terrain.</p>
@@ -372,7 +329,7 @@
       <a href="https://www.linkedin.com/in/denis-bouzon-a7343a313/" target="_blank" rel="noopener">LinkedIn</a> ·
       <a href="/papers/note-etude.pdf">PDF méthodologique</a>
     </p>
-    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="due-diligence.html">Due Diligence</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
   </footer>
 
   <!-- GoatCounter analytics -->
