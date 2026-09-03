@@ -1,0 +1,34 @@
+EAU-ENERGIE — intégration Due Diligence
+03 septembre 2026
+
+Fichiers à ajouter :
+  /assets/site.css
+  /assets/head-frame.js
+  /due-diligence.html
+
+Pour migrer une page existante vers la head frame commune :
+
+1. Dans <head>, ajouter :
+   <link rel="stylesheet" href="/assets/site.css">
+
+2. Supprimer de la page le bloc HTML actuel :
+   <div id="bandeau">...</div>
+   <nav ...>...</nav>
+
+3. Le remplacer juste après <body> par :
+   <div id="site-head"></div>
+
+4. Avant </body>, ajouter :
+   <script src="/assets/head-frame.js" defer></script>
+
+IMPORTANT :
+- Les styles spécifiques à chaque page peuvent rester dans son <style> local.
+- Les styles communs du body, bandeau, nav, contenu et footer sont désormais dans /assets/site.css.
+- Le JS détermine automatiquement la page active selon location.pathname.
+- Le bouton « Due Diligence » est placé après « Hydroélectricité ».
+- Les liens utilisent des chemins absolus /... pour fonctionner également depuis des sous-répertoires.
+
+Déploiement prudent conseillé :
+1. Ajouter d'abord /assets/ et due-diligence.html.
+2. Vérifier la nouvelle page en production.
+3. Migrer ensuite index.html puis les autres pages une par une vers la head frame commune.
