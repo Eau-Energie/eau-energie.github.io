@@ -173,24 +173,6 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
-    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
-    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
-    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
-    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
-    #contenu p{margin-bottom:16px;text-align:justify}
-    #contenu a{color:#2e4a8a;text-decoration:none}
-    #contenu a:hover{text-decoration:underline}
     .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
     .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
     .badge.open{background:#2f6b3f;color:#fff}
@@ -221,48 +203,21 @@
     .timeline td{vertical-align:top;padding:8px;border:1px solid #c8d0dd}
     .timeline td:first-child{font-weight:bold;color:#1f527a;white-space:nowrap;width:90px}
     .faq{border-left:3px solid #5c3b1e;padding:10px 14px;margin:12px 0;font-size:10pt;background:#fbf8f4}
-    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
-    footer a{color:#2e4a8a;text-decoration:none}
-    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}.timeline{font-size:8.5pt}}
-    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
-
     .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px 0}
     .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px 0}
     .author-seo-card p{font-size:10.5pt;line-height:1.65;margin:0 0 8px 0;text-align:left}
     .author-seo-card a{color:#2e4a8a;text-decoration:none}
     .author-seo-card a:hover{text-decoration:underline}
+    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}.timeline{font-size:8.5pt}}
+    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
   </style>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+<link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 </head>
 <body>
+  <div id="site-head"></div>
+  <script src="/assets/head-frame.js"></script>
 
-  <div id="bandeau">
-    <img src="bandeau.jpg" alt="Hydraulique, réglementation de l’eau et hydroélectricité Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
-
-    <nav aria-label="Navigation principale">
-    <ul>
-      <li><a href="index.html">Présentation</a></li>
-      <li><a href="hydroelectricite.html">Hydroélectricité</a></li>
-      <li><a href="productible-hydroelectrique.html">Productible</a></li>
-      <li><a href="reglementaire.html" class="active" aria-current="page">Réglementaire</a></li>
-      <li><a href="environnement.html">Environnement</a></li>
-      <li><a href="partenaires.html">Partenaires</a></li>
-      <li><a href="foncier.html">Foncier</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="actualite.html">Actualités</a></li>
-      <li><a href="denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main id="contenu">
 
@@ -283,6 +238,7 @@
     <div class="actions">
       <a class="primary" href="/papers/note-reglementaire.pdf">&#8595; Télécharger le PDF</a>
       <a href="hydroelectricite.html">Méthodologie hydroélectrique</a>
+      <a href="/due-diligence.html">Due Diligence investisseurs</a>
       <a href="foncier.html">Diagnostic foncier moulin</a>
       <a href="publications.html">Publications</a>
       <a href="contact.html">Demander une analyse</a>
@@ -291,6 +247,7 @@
     <h3>Résumé</h3>
     <p>Cette note présente les principaux jalons historiques et réglementaires du droit français applicable aux moulins, seuils, prises d’eau, canaux et petites centrales hydroélectriques. Elle montre que le régime actuel ne peut pas être compris comme une simple procédure contemporaine : il résulte d’une stratification longue, depuis le domaine royal et les droits riverains jusqu’au Code de l’environnement, au Code de l’énergie et à l’autorisation environnementale unique.</p>
     <p>L’objectif est de replacer chaque ouvrage hydraulique dans son histoire juridique avant de raisonner en termes de déclaration IOTA, d’autorisation environnementale, de débit réservé, de continuité écologique, de renouvellement ou de modification de puissance.</p>
+    <div class="module"><strong>Analyse investisseur :</strong> dans une mission d’<a href="/due-diligence.html">Hydropower Technical Due Diligence</a>, cette reconstitution réglementaire permet de vérifier la validité des titres, les obligations attachées à l’actif, les risques de conformité et les éventuels CAPEX réglementaires avant acquisition, financement ou refinancement.</div>
 
     <div class="keywords-box">
       <strong>Mots-clés :</strong> droit d’eau ; droit fondé en titre ; règlement d’eau ; moulin ; seuil ; prise d’eau ; canal ; police de l’eau ; loi de 1898 ; loi du 16 octobre 1919 ; énergie hydraulique ; débit réservé ; continuité écologique ; IOTA ; autorisation environnementale ; Code de l’environnement ; Code de l’énergie.
@@ -410,6 +367,7 @@
     <p style="margin-top:6px">
       <a href="index.html">Présentation</a> ·
       <a href="hydroelectricite.html">Hydroélectricité</a> ·
+      <a href="due-diligence.html">Due Diligence</a> ·
       <a href="reglementaire.html">Réglementaire</a> ·
       <a href="environnement.html">Environnement</a> ·
       <a href="partenaires.html">Partenaires</a> ·
