@@ -10,6 +10,8 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://www.eau-energie.fr/hydroelectricite.html">
   <link rel="preload" href="bandeau.jpg" as="image">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 
   <meta property="og:title" content="Méthodologie — Étude de droit d’eau et valorisation hydroélectrique">
   <meta property="og:description" content="Cadre méthodologique Eau-Energie pour moulins, seuils, canaux et centrales existantes : droit d’eau, hydrologie, hydraulique, turbine, simulation de productible et recettes OA.">
@@ -144,24 +146,6 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.7}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
-    nav ul li a:hover,nav ul li a.active{background:#2e4a8a;color:#fff}
-    #contenu{max-width:920px;margin:42px auto;padding:0 24px}
-    #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
-    #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
-    #contenu p{margin-bottom:16px;text-align:justify}
-    #contenu a{color:#2e4a8a;text-decoration:none}
-    #contenu a:hover{text-decoration:underline}
     .pub-meta{font-size:8.8pt;color:#666;margin-bottom:8px}
     .badge{display:inline-block;font-size:7.8pt;padding:2px 7px;margin:0 4px 4px 0;font-family:Georgia,serif}
     .badge.open{background:#2f6b3f;color:#fff}
@@ -187,10 +171,8 @@
     .archive-box{border:1px solid #c8d0dd;background:#f4f7fb;padding:14px 18px;margin:20px 0 28px 0;font-size:9.4pt}
     .archive-box p{margin-bottom:8px !important;text-align:left !important}
     .archive-box strong{color:#1a2a4a}
-    footer{margin-top:60px;border-top:1px solid #c8d0dd;padding:18px 24px;text-align:center;font-size:8.5pt;color:#777;background:#f8f9fb}
-    footer a{color:#2e4a8a;text-decoration:none}
-    @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
-    @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
+    @media(max-width:640px){.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
+    @media print{nav,#bandeau,.actions{display:none}}
 
     .author-seo-card{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:34px 0 8px 0}
     .author-seo-card h2{font-family:Georgia,serif;font-size:14pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin:0 0 12px 0}
@@ -198,37 +180,11 @@
     .author-seo-card a{color:#2e4a8a;text-decoration:none}
     .author-seo-card a:hover{text-decoration:underline}
   </style>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
 </head>
 <body>
 
-  <div id="bandeau">
-    <img src="bandeau.jpg" alt="Hydraulique, hydroélectricité et méthodologies Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
-
-    <nav aria-label="Navigation principale">
-    <ul>
-      <li><a href="index.html">Présentation</a></li>
-      <li><a href="hydroelectricite.html" class="active" aria-current="page">Hydroélectricité</a></li>
-      <li><a href="productible-hydroelectrique.html">Productible</a></li>
-      <li><a href="reglementaire.html">Réglementaire</a></li>
-      <li><a href="environnement.html">Environnement</a></li>
-      <li><a href="partenaires.html">Partenaires</a></li>
-      <li><a href="foncier.html">Foncier</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="actualite.html">Actualités</a></li>
-      <li><a href="denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div id="site-head"></div>
+  <script src="/assets/head-frame.js"></script>
 
   <main id="contenu">
 
@@ -249,6 +205,7 @@
     <div class="actions">
       <a class="primary" href="/papers/note-etude.pdf">&#8595; Télécharger le PDF</a>
       <a href="hydroelectricite.html">Page hydroélectricité</a>
+      <a href="due-diligence.html">Due Diligence</a>
       <a href="productible-hydroelectrique.html">Simulation de productible</a>
       <a href="foncier.html">Diagnostic foncier moulin</a>
       <a href="publications.html">Publications</a>
@@ -260,6 +217,7 @@
     <p>Contrairement à une étude environnementale généraliste, cette méthodologie est centrée sur les ouvrages hydrauliques existants : moulins, seuils, prises d’eau, canaux d’amenée, canaux de fuite, anciennes centrales, droits d’eau et potentiel hydroélectrique réellement exploitable.</p>
     <p>La démarche est structurée en dix modules : identification et historique du droit d’eau, statut du cours d’eau, hydrologie sur chronique longue, hydraulique des ouvrages de dérivation, choix et dimensionnement de l’équipement turbine, simulation de productible, évaluation tarifaire et recettes prévisionnelles, recommandations d’exploitation, puis livrables et suites possibles.</p>
     <p>L’objectif est de produire un document utile à la décision : cession ou acquisition d’un site, opportunité d’investissement, renouvellement d’autorisation, sécurisation administrative, dépôt d’un dossier IOTA ou engagement d’une phase de conception détaillée.</p>
+    <p>Pour les investisseurs, fonds d’infrastructure, banques et acquéreurs, cette méthodologie peut également constituer le socle d’un <a href="due-diligence.html">audit technique et réglementaire — Hydropower Technical Due Diligence</a>.</p>
 
     <div class="keywords-box">
       <strong>Mots-clés :</strong> bureau d’études hydroélectricité ; étude potentiel hydroélectrique moulin ; droit d’eau ; moulin ; ouvrage hydraulique existant ; seuil ; canal ; valorisation hydroélectrique ; basse chute ; turbine Kaplan ; turbine siphon ; vis d’Archimède ; débit réservé ; débit d’étiage ; courbe des débits classés ; module interannuel ; bassin versant ; coefficient correctif ; Manning-Strickler ; chute nette ; pertes de charge ; simulation de productible ; obligation d’achat ; tarif H16 ; IOTA ; Code de l’environnement ; Code de l’énergie ; droit fondé en titre ; continuité écologique ; Natura 2000.
@@ -352,7 +310,7 @@
       <a href="/papers/note-etude.pdf">PDF méthodologique</a> ·
       <a href="productible-hydroelectrique.html">Simulation de productible</a>
     </p>
-    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="productible-hydroelectrique.html">Productible</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
+    <p style="margin-top:6px"><a href="index.html">Présentation</a> · <a href="hydroelectricite.html">Hydroélectricité</a> · <a href="due-diligence.html">Due Diligence</a> · <a href="productible-hydroelectrique.html">Productible</a> · <a href="reglementaire.html">Réglementaire</a> · <a href="environnement.html">Environnement</a> · <a href="partenaires.html">Partenaires</a> · <a href="foncier.html">Foncier</a> · <a href="publications.html">Publications</a> · <a href="contact.html">Contact</a></p>
   </footer>
 
   <!-- GoatCounter analytics -->
