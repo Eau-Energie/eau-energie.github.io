@@ -137,19 +137,7 @@
   </script>
 
   <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;background:#fff;line-height:1.75}
-    #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
-    #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
-    #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
-    #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
-    nav.main-nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
-    nav.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
-    nav.main-nav ul li a{display:block;padding:12px 18px;color:#c8d0dd;text-decoration:none;font-family:Georgia,serif;font-size:9.5pt;letter-spacing:0.3px;transition:background 0.2s,color 0.2s}
-    nav.main-nav ul li a:hover,nav.main-nav ul li a.active{background:#2e4a8a;color:#fff}
-    #contenu{max-width:1120px;margin:42px auto;padding:0 24px}
+#contenu{max-width:1120px;margin:42px auto;padding:0 24px}
     #contenu h2{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin-bottom:18px}
     #contenu h3{font-family:Georgia,serif;font-weight:bold;color:#1a2a4a;margin:30px 0 12px 0;text-transform:uppercase;letter-spacing:0.5px;font-size:9.5pt}
     #contenu p{margin-bottom:16px;text-align:justify}
@@ -183,7 +171,7 @@
     .lang-card{display:flex;flex-direction:column;width:100%;border:1px solid #b8c8e0;border-top:5px solid #2e4a8a;padding:14px 14px;background:#edf2f8;text-decoration:none!important;color:#111;transition:box-shadow 0.2s,border-top-color 0.2s,transform 0.2s}
     .lang-card:hover{box-shadow:0 3px 14px rgba(0,0,0,0.09);border-top-color:#1a2a4a;transform:translateY(-2px);text-decoration:none!important}
     .lang-card-flag-col{display:flex;flex-direction:column;align-items:center;min-width:52px;padding-top:2px}
-    .lang-card-body{flex:1}
+    .lang-card-
     .lang-card h4{font-family:Georgia,serif;font-size:11pt;color:#1a2a4a;margin:0 0 6px 0}
     .lang-card .flag{display:block;width:45px;height:30px;margin:0 0 6px 0;border:1px solid #c8d0dd;box-shadow:0 1px 2px rgba(0,0,0,.08)}
     .flag-fr{background:linear-gradient(90deg,#002395 0 33.33%,#fff 33.33% 66.66%,#ed2939 66.66%)}
@@ -211,13 +199,14 @@
     .author-box-denis-bouzon a{color:#2e4a8a;text-decoration:none}
     .author-box-denis-bouzon a:hover{text-decoration:underline}
 </style>
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/seo.js" defer></script>
 </head>
 <body>
 
@@ -226,27 +215,9 @@
     <span>English version</span>
   </a>
 
-  <div id="bandeau">
-    <img src="../bandeau.jpg" alt="Hydraulique, hydroélectricité, biodiversité et publications techniques Eau-Energie" width="1600" height="500">
-    <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
-      <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
-    </div>
-  </div>
+  <div id="site-head"></div>
+<script src="/assets/head-frame.js"></script>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <ul>
-      <li><a href="../index.html">Présentation</a></li>
-      <li><a href="../hydroelectricite.html">Hydroélectricité</a></li>
-      <li><a href="../reglementaire.html">Réglementaire</a></li>
-      <li><a href="../environnement.html">Environnement</a></li>
-      <li><a href="../hydraulique.html">Hydraulique</a></li>
-      <li><a href="../foncier.html">Foncier</a></li>
-      <li><a href="../publications.html" class="active" aria-current="page">Publications</a></li>
-      <li><a href="../denis-bouzon.html">Denis Bouzon</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
   <main id="contenu">
     <nav class="breadcrumb" aria-label="Fil d'Ariane">
