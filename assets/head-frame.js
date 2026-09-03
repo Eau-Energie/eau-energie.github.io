@@ -1,51 +1,1 @@
-/* Eau-Energie â€” head frame v1.0 â€” 03 septembre 2026 */
-(function(){
-  'use strict';
-
-  const mount = document.getElementById('site-head');
-  if(!mount) return;
-
-  const items = [
-    ['index.html','PrÃ©sentation'],
-    ['hydroelectricite.html','HydroÃ©lectricitÃ©'],
-    ['due-diligence.html','Due Diligence'],
-    ['productible-hydroelectrique.html','Productible'],
-    ['reglementaire.html','RÃ©glementaire'],
-    ['environnement.html','Environnement'],
-    ['partenaires.html','Partenaires'],
-    ['foncier.html','Foncier'],
-    ['publications.html','Publications'],
-    ['actualite.html','ActualitÃ©s'],
-    ['denis-bouzon.html','Denis Bouzon'],
-    ['contact.html','Contact']
-  ];
-
-  let current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  if(current === '') current = 'index.html';
-
-  const nav = items.map(([href,label]) => {
-    const active = current === href.toLowerCase();
-
-    return `<li><a href="/${href}"${active ? ' class="active" aria-current="page"' : ''}>${label}</a></li>`;
-  }).join('');
-
-  mount.innerHTML = `
-    <div id="bandeau">
-      <img
-        src="/bandeau.jpg"
-        alt="Eau-Energie â€” hydraulique et hydroÃ©lectricitÃ©"
-        width="1600"
-        height="500"
-      >
-
-      <div id="bandeau-overlay">
-        <h1>Eau-Energie</h1>
-        <p>Bureau d'Ã©tudes hydraulique â€” Pau, PyrÃ©nÃ©es-Atlantiques</p>
-      </div>
-    </div>
-
-    <nav aria-label="Navigation principale">
-      <ul>${nav}</ul>
-    </nav>
-  `;
-})();   Ã³K^Ã†2'   '              Â¤Â    mimetypePK    ÃMQÃªâ€”Ã¦gâ€™   1             Â¤ÂM   META-INF/manifest.xmlPK    ÂNQZbAh   Ã£              Â¤Â  content.xmlPK      Â²   Âº    
+/* Eau-Energie — head frame v1.1 — 03 septembre 2026 */(function(){  'use strict';  const mount = document.getElementById('site-head');  if(!mount) return;  const lang = (document.documentElement.lang || 'fr').toLowerCase().split('-')[0];  const labels = {    fr: [      'Présentation',      'Hydroélectricité',      'Due Diligence',      'Productible',      'Réglementaire',      'Environnement',      'Partenaires',      'Foncier',      'Publications',      'Actualités',      'Denis Bouzon',      'Contact'    ],    en: [      'Presentation',      'Hydropower',      'Due Diligence',      'Energy yield',      'Regulation',      'Environment',      'Partners',      'Property',      'Publications',      'News',      'Denis Bouzon',      'Contact'    ],    ca: [      'Presentació',      'Hidroelèctrica',      'Due Diligence',      'Productible',      'Reglamentació',      'Medi ambient',      'Col·laboradors',      'Propietat',      'Publicacions',      'Actualitat',      'Denis Bouzon',      'Contacte'    ],    es: [      'Presentación',      'Hidroeléctrica',      'Due Diligence',      'Productible',      'Regulación',      'Medio ambiente',      'Colaboradores',      'Propiedad',      'Publicaciones',      'Actualidad',      'Denis Bouzon',      'Contacto'    ]  };  const t = labels[lang] || labels.fr;  const hrefs = [    'index.html',    'hydroelectricite.html',    'due-diligence.html',    'productible-hydroelectrique.html',    'reglementaire.html',    'environnement.html',    'partenaires.html',    'foncier.html',    'publications.html',    'actualite.html',    'denis-bouzon.html',    'contact.html'  ];  const path = location.pathname.toLowerCase();  let current = (    path.split('/').pop() || 'index.html'  ).toLowerCase();  /*   * Les pages du répertoire /papers/   * héritent de la section Publications,   * sauf les articles actualite*.html,   * qui héritent de la section Actualités.   */  if(path.includes('/papers/')){    current = /actualite\d*\.html$/.test(path)      ? 'actualite.html'      : 'publications.html';  } else if(path.includes('/news/')){    current = 'actualite.html';  }  const nav = hrefs.map((href, i) => {    const active = current === href.toLowerCase();    return `      <li>        <a          href="/${href}"          ${active ? 'class="active" aria-current="page"' : ''}        >${t[i]}</a>      </li>    `;  }).join('');  mount.innerHTML = `    <div id="bandeau">      <img        src="/bandeau.jpg"        alt="Eau-Energie — hydraulique et hydroélectricité"        width="1600"        height="500"      >      <div id="bandeau-overlay">        <h1>Eau-Energie</h1>        <p>          Bureau d'études hydraulique —          Pau, Pyrénées-Atlantiques        </p>      </div>    </div>    <nav aria-label="Navigation principale">      <ul>        ${nav}      </ul>    </nav>  `;})();
