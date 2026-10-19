@@ -1,1 +1,118 @@
-/* Eau-Energie ó SEO commun v1.0 ó 03 septembre 2026 */(function () {  'use strict';  const SITE = {    name: 'Cabinet Eau-Energie',    url: 'https://www.eau-energie.fr',    author: 'Denis Bouzon',    email: 'contact@eau-energie.fr',    image: 'https://www.eau-energie.fr/bandeau.jpg',    locale: 'fr_FR',    language: 'fr-FR',    orcid: 'https://orcid.org/0009-0007-8894-8902',    linkedin: 'https://www.linkedin.com/in/denis-bouzon-a7343a313/'  };  const head = document.head;  function addMeta(attribute, key, content) {    if (!content) return;    let selector;    if (attribute === 'name') {      selector = `meta[name="${key}"]`;    } else if (attribute === 'property') {      selector = `meta[property="${key}"]`;    }    let element = head.querySelector(selector);    if (!element) {      element = document.createElement('meta');      element.setAttribute(attribute, key);      head.appendChild(element);    }    if (!element.getAttribute('content')) {      element.setAttribute('content', content);    }  }  function addLink(rel, href, extra = {}) {    if (!href) return;    let element = head.querySelector(`link[rel="${rel}"]`);    if (!element) {      element = document.createElement('link');      element.rel = rel;      element.href = href;      Object.entries(extra).forEach(([key, value]) => {        element.setAttribute(key, value);      });      head.appendChild(element);    }  }  const canonicalUrl =    SITE.url +    (location.pathname === '/' ? '/' : location.pathname);  const pageTitle =    document.title || SITE.name;  const description =    head.querySelector('meta[name="description"]')?.content ||    'Cabinet Eau-Energie, bureau díÈtudes hydraulique et hydroÈlectrique ‡ Pau.';  /* Canonical */  addLink('canonical', canonicalUrl);  /* Robots */  addMeta(    'name',    'robots',    'index, follow, max-snippet:-1, max-image-preview:large'  );  /* Auteur */  addMeta('name', 'author', SITE.author);  /* Open Graph */  addMeta('property', 'og:title', pageTitle);  addMeta('property', 'og:description', description);  addMeta('property', 'og:type', 'website');  addMeta('property', 'og:url', canonicalUrl);  addMeta('property', 'og:image', SITE.image);  addMeta('property', 'og:site_name', SITE.name);  addMeta('property', 'og:locale', SITE.locale);  /* Twitter / X */  addMeta('name', 'twitter:card', 'summary_large_image');  addMeta('name', 'twitter:title', pageTitle);  addMeta('name', 'twitter:description', description);  addMeta('name', 'twitter:image', SITE.image);  /* Favicons */  addLink('icon', '/favicon48.png', {    sizes: '48x48',    type: 'image/png'  });  addLink('icon', '/favicon32.png', {    sizes: '32x32',    type: 'image/png'  });  addLink('shortcut icon', '/favicon.png', {    type: 'image/png'  });  /* JSON-LD commun */  const existingJsonLd =    head.querySelector('script[data-eau-energie-seo="common"]');  if (!existingJsonLd) {    const script = document.createElement('script');    script.type = 'application/ld+json';    script.dataset.eauEnergieSeo = 'common';    script.textContent = JSON.stringify({      '@context': 'https://schema.org',      '@graph': [        {          '@type': 'WebSite',          '@id': SITE.url + '/#website',          url: SITE.url + '/',          name: SITE.name,          inLanguage: SITE.language,          publisher: {            '@id': SITE.url + '/#organization'          }        },        {          '@type': 'Organization',          '@id': SITE.url + '/#organization',          name: SITE.name,          url: SITE.url + '/',          email: SITE.email,          address: {            '@type': 'PostalAddress',            addressLocality: 'Pau',            addressRegion: 'PyrÈnÈes-Atlantiques',            postalCode: '64000',            addressCountry: 'FR'          },          areaServed: 'France',          knowsAbout: [            'HydroÈlectricitÈ',            'Hydraulique fluviale',            'Droit díeau',            'Productible hydroÈlectrique',            'ContinuitÈ Ècologique',            'RÈglementation IOTA',            'Technical Due Diligence hydroÈlectrique'          ]        },        {          '@type': 'Person',          '@id': SITE.url + '/#denis-bouzon',          name: SITE.author,          url: SITE.orcid,          email: SITE.email,          affiliation: {            '@id': SITE.url + '/#organization'          },          sameAs: [            SITE.orcid,            SITE.linkedin          ]        }      ]    });    head.appendChild(script);  }})();
+/* Eau-Energie ‚Äî SEO commun v2.0 ‚Äî 19 octobre 2026
+ * Test Google Drive : donn√©es compl√©mentaires uniquement.
+ * Les balises statiques et le JSON-LD sp√©cifiques √† chaque page font autorit√©.
+ * Aucun changement visuel et aucune suppression des directives noindex.
+ */
+(function () {
+  'use strict';
+
+  const BASE = 'https://www.eau-energie.fr';
+  const SITE = {
+    name: 'Cabinet Eau-Energie',
+    author: 'Denis Bouzon',
+    email: 'contact@eau-energie.fr',
+    image: BASE + '/bandeau.jpg',
+    orcid: 'https://orcid.org/0009-0007-8894-8902',
+    linkedin: 'https://www.linkedin.com/in/denis-bouzon-a7343a313/'
+  };
+  const head = document.head;
+  if (!head) return;
+
+  const path = window.location.pathname || '/';
+  const canonical = head.querySelector('link[rel="canonical"]');
+  const canonicalUrl = canonical && canonical.href
+    ? canonical.href
+    : BASE + path;
+  const robots = head.querySelector('meta[name="robots"]');
+  const noindex = robots && /(?:^|[,\s])noindex(?:$|[,\s])/i.test(robots.content || '');
+  const description = head.querySelector('meta[name="description"]');
+  const descriptionText = description ? description.content : '';
+  const title = document.title || SITE.name;
+
+  /* Compl√©ter uniquement les m√©tadonn√©es manquantes ; pr√©server tout contenu explicite. */
+  function addMeta(attribute, key, value) {
+    if (!value || head.querySelector('meta[' + attribute + '="' + key + '"]')) return;
+    const item = document.createElement('meta');
+    item.setAttribute(attribute, key);
+    item.setAttribute('content', value);
+    head.appendChild(item);
+  }
+  if (!canonical) {
+    const link = document.createElement('link');
+    link.rel = 'canonical';
+    link.href = canonicalUrl;
+    head.appendChild(link);
+  }
+  /* Ne jamais injecter index sur une page dont la directive robots est absente ou noindex. */
+  addMeta('name', 'author', SITE.author);
+  addMeta('property', 'og:title', title);
+  addMeta('property', 'og:description', descriptionText);
+  addMeta('property', 'og:type', 'website');
+  addMeta('property', 'og:url', canonicalUrl);
+  addMeta('property', 'og:image', SITE.image);
+  addMeta('property', 'og:site_name', SITE.name);
+  addMeta('property', 'og:locale', 'fr_FR');
+  addMeta('name', 'twitter:card', 'summary_large_image');
+  addMeta('name', 'twitter:title', title);
+  addMeta('name', 'twitter:description', descriptionText);
+  addMeta('name', 'twitter:image', SITE.image);
+
+  /* Respecter les graphes statiques existants, y compris les tableaux et @graph. */
+  const types = new Set();
+  const ids = new Set();
+  function scan(value) {
+    if (!value || typeof value !== 'object') return;
+    if (Array.isArray(value)) { value.forEach(scan); return; }
+    if (typeof value['@id'] === 'string') ids.add(value['@id']);
+    const type = value['@type'];
+    if (Array.isArray(type)) type.forEach(t => types.add(t));
+    else if (typeof type === 'string') types.add(type);
+    if (value['@graph']) scan(value['@graph']);
+  }
+  head.querySelectorAll('script[type="application/ld+json"]').forEach(script => {
+    try { scan(JSON.parse(script.textContent)); } catch (_) { /* JSON-LD de page inchang√© */ }
+  });
+
+  const graph = [];
+  function appendIfMissing(type, id, value) {
+    if (!types.has(type) && !ids.has(id)) {
+      graph.push(value);
+      types.add(type);
+      ids.add(id);
+    }
+  }
+  appendIfMissing('WebSite', BASE + '/#website', {
+    '@type': 'WebSite', '@id': BASE + '/#website',
+    url: BASE + '/', name: SITE.name, inLanguage: 'fr-FR',
+    publisher: { '@id': BASE + '/#organization' }
+  });
+  appendIfMissing('Organization', BASE + '/#organization', {
+    '@type': 'Organization', '@id': BASE + '/#organization',
+    name: SITE.name, url: BASE + '/', email: SITE.email,
+    address: { '@type': 'PostalAddress', addressLocality: 'Pau',
+      addressRegion: 'Pyr√©n√©es-Atlantiques', addressCountry: 'FR' }
+  });
+  appendIfMissing('Person', BASE + '/#denis-bouzon', {
+    '@type': 'Person', '@id': BASE + '/#denis-bouzon',
+    name: SITE.author, url: BASE + '/denis-bouzon.html',
+    sameAs: [SITE.orcid, SITE.linkedin],
+    worksFor: { '@id': BASE + '/#organization' }
+  });
+
+  /* Pages indexables uniquement. Les pages noindex et redirections restent intactes. */
+  if (!noindex) {
+    appendIfMissing('WebPage', canonicalUrl + '#webpage', {
+      '@type': 'WebPage', '@id': canonicalUrl + '#webpage',
+      url: canonicalUrl, name: title,
+      isPartOf: { '@id': BASE + '/#website' },
+      ...(descriptionText ? { description: descriptionText } : {})
+    });
+  }
+  if (graph.length && !head.querySelector('script[data-eau-energie-seo="v2"]')) {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-eau-energie-seo', 'v2');
+    script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+    head.appendChild(script);
+  }
+})();
