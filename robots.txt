@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.eau-energie.fr/sitemap.xml
-Sitemap: https://www.eau-energie.fr/sitemap-news.xml
