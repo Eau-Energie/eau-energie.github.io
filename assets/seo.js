@@ -11,6 +11,7 @@
     name: 'Cabinet Eau-Energie',
     author: 'Denis Bouzon',
     email: 'contact@eau-energie.fr',
+    telephone: '+33 6 99 59 39 60',
     image: BASE + '/bandeau.jpg',
     orcid: 'https://orcid.org/0009-0007-8894-8902',
     linkedin: 'https://www.linkedin.com/in/denis-bouzon-a7343a313/'
@@ -89,6 +90,7 @@
   appendIfMissing('Organization', BASE + '/#organization', {
     '@type': 'Organization', '@id': BASE + '/#organization',
     name: SITE.name, url: BASE + '/', email: SITE.email,
+    telephone: SITE.telephone,
     address: { '@type': 'PostalAddress', addressLocality: 'Pau',
       addressRegion: 'Pyrénées-Atlantiques', addressCountry: 'FR' }
   });
