@@ -147,7 +147,7 @@
     #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
     #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
     #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay .site-brand{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
     #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
     nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
     nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
@@ -196,7 +196,7 @@
     footer a{color:#2e4a8a;text-decoration:none}
     @media(max-width:640px){#contenu{padding:0 14px}.actions{display:block}.actions a{margin:0 0 8px 0;display:block}}
     @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
-  
+
     .author-box-denis-bouzon{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:32px 0}
     .author-box-denis-bouzon h2{font-size:15pt;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin-bottom:10px}
     .author-box-denis-bouzon p{font-size:10.5pt;margin:0;text-align:left}
@@ -208,13 +208,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon48.png">
+<style>main#contenu h1{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin:0 0 18px;overflow-wrap:anywhere}.landing-head h1{border:0!important;padding:0!important;margin:0 0 8px!important}</style>
 </head>
 <body>
 
   <div id="bandeau">
     <img src="../bandeau.jpg" alt="Hydraulique, hydroélectricité et publications techniques Eau-Energie" width="1600" height="500">
     <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
+      <p class="site-brand">Eau-Energie</p>
       <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
     </div>
   </div>
@@ -237,7 +238,7 @@
 
     <div class="landing-head">
       <p class="numero">Cahiers techniques Eau-Energie — n° 4 — Juin 2026</p>
-      <h2>Avis technique et juridique sur la proposition de loi n° 2334 rectifié du 13 janvier 2026</h2>
+      <h1>Avis technique et juridique sur la proposition de loi n° 2334 rectifié du 13 janvier 2026</h1>
       <div class="official-source" role="navigation" aria-label="Source officielle du texte analysé">
         <div class="official-source-label">Source primaire analysée</div>
         <a class="an-button" href="https://www.assemblee-nationale.fr/dyn/17/textes/l17b2334_proposition-loi" target="_blank" rel="noopener" aria-label="Ouvrir le texte officiel de la proposition de loi n° 2334 sur le site de l’Assemblée nationale">
@@ -258,7 +259,7 @@
     </div>
 
     <div class="actions">
-      <a class="primary" href="cahier4.pdf">&#8595; Télécharger le PDF</a>
+      <a class="primary" href="/papers/cahier4.pdf">&#8595; Télécharger le PDF</a>
       <a href="https://doi.org/10.5281/zenodo.20552893" target="_blank" rel="noopener">DOI Zenodo</a>
       <a href="https://hal.science/hal-05645588" target="_blank" rel="noopener">Notice HAL</a>
       <a href="https://www.assemblee-nationale.fr/dyn/17/textes/l17b2334_proposition-loi" target="_blank" rel="noopener">Texte Assemblée nationale</a>
@@ -281,7 +282,7 @@
       <p><strong>Notice Zenodo :</strong> <a href="https://zenodo.org/records/20552893" target="_blank" rel="noopener">zenodo.org/records/20552893</a></p>
       <p><strong>Notice HAL :</strong> <a href="https://hal.science/hal-05645588" target="_blank" rel="noopener">hal-05645588</a> — DocID HAL : <a href="https://hal.science/view/index/docid/5645594" target="_blank" rel="noopener">5645594</a></p>
       <p><strong>Texte analysé :</strong> <a href="https://www.assemblee-nationale.fr/dyn/17/textes/l17b2334_proposition-loi" target="_blank" rel="noopener">Proposition de loi n° 2334 rectifié du 13 janvier 2026 — Assemblée nationale</a></p>
-      <p><strong>Version de référence :</strong> page HTML Eau-Energie et PDF <a href="cahier4.pdf">cahier4.pdf</a>, version 1.4 du 05 juin 2026.</p>
+      <p><strong>Version de référence :</strong> page HTML Eau-Energie et PDF <a href="/papers/cahier4.pdf">cahier4.pdf</a>, version 1.4 du 05 juin 2026.</p>
     </div>
 
     <h3>Point central</h3>
@@ -322,7 +323,7 @@
 
   </main>
 
-  
+
     <section class="author-box-denis-bouzon" aria-label="À propos de l’auteur">
       <h2>À propos de l’auteur</h2>
       <p>Ce cahier technique est publié par <a href="../denis-bouzon.html">Denis Bouzon</a>, fondateur d’Eau-Energie, bureau d’études hydraulique à Pau. Voir aussi son <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a>, son <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr" target="_blank" rel="me noopener">profil Google Scholar</a> et la page des <a href="../publications.html">publications techniques Eau-Energie</a>.</p>

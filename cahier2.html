@@ -241,7 +241,7 @@
     #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
     #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
     #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay .site-brand{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
     #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
     nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
     nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
@@ -306,7 +306,7 @@
     footer a{color:#2e4a8a;text-decoration:none}
     @media(max-width:680px){.grid{grid-template-columns:1fr}.retour-exp table,.qa table{font-size:8.5pt}}
     @media print{nav,#bandeau,.actions,.breadcrumb{display:none}#contenu{max-width:none;margin:0;padding:0}.publication{box-shadow:none}}
-  
+
     .author-box-denis-bouzon{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:32px 0}
     .author-box-denis-bouzon h2{font-size:15pt;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin-bottom:10px}
     .author-box-denis-bouzon p{font-size:10.5pt;margin:0;text-align:left}
@@ -320,13 +320,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png">
+<style>main#contenu h1{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin:0 0 18px;overflow-wrap:anywhere}.landing-head h1{border:0!important;padding:0!important;margin:0 0 8px!important}</style>
 </head>
 <body>
 
   <div id="bandeau">
     <img src="../bandeau.jpg" alt="Hydraulique, continuité écologique, réglementation Loi sur l'Eau — Eau-Energie" width="1600" height="500">
     <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
+      <p class="site-brand">Eau-Energie</p>
       <p>Bureau d'études hydraulique — Pau, Pyrénées-Atlantiques</p>
     </div>
   </div>
@@ -353,7 +354,7 @@
       Nivellement technique de seuils anciens dégradés
     </nav>
 
-    <h2>Cahiers techniques Eau-Energie — n° 2</h2>
+    <h1>Cahiers techniques Eau-Energie — n° 2</h1>
 
     <article id="nivellement-hydro" class="publication" itemscope itemtype="https://schema.org/ScholarlyArticle">
       <meta itemprop="inLanguage" content="fr-FR">
@@ -372,7 +373,7 @@
       <p style="font-style:italic;color:#444;margin-bottom:10px;font-size:13pt">Cadre de qualification technique, réglementaire et obligations applicables</p>
 
       <div class="actions">
-        <a class="button" href="cahier2.pdf" type="application/pdf">⬇ Télécharger le PDF</a>
+        <a class="button" href="/papers/cahier2.pdf" type="application/pdf">⬇ Télécharger le PDF</a>
         <a class="button zen" href="https://doi.org/10.5281/zenodo.20355968" target="_blank" rel="noopener">DOI Zenodo</a>
         <a class="button hal" href="https://hal.science/hal-05630435" target="_blank" rel="noopener">Notice HAL</a>
         <a class="button" style="background:#0a66c2;border-color:#0a66c2" href="https://www.linkedin.com/posts/denis-bouzon-a7343a313_hydroaezlectricitaez-loisurleau-iota-share-7463597595379044354-rtCZ" target="_blank" rel="noopener">LinkedIn</a>
@@ -594,7 +595,7 @@
 
   </main>
 
-  
+
     <section class="author-box-denis-bouzon" aria-label="À propos de l’auteur">
       <h2>À propos de l’auteur</h2>
       <p>Ce cahier technique est publié par <a href="../denis-bouzon.html">Denis Bouzon</a>, fondateur d’Eau-Energie, bureau d’études hydraulique à Pau. Voir aussi son <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a>, son <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr" target="_blank" rel="me noopener">profil Google Scholar</a> et la page des <a href="../publications.html">publications techniques Eau-Energie</a>.</p>

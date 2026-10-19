@@ -224,7 +224,7 @@
     #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
     #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
     #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay .site-brand{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
     #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
     nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
     nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1100px;margin:0 auto}
@@ -281,7 +281,7 @@
     footer a{color:#2e4a8a;text-decoration:none}
     @media(max-width:680px){.grid{grid-template-columns:1fr}.language-switch{top:12px;right:12px;padding:7px 10px;font-size:8.5pt}.language-switch .lang-label{max-width:150px;overflow:hidden;text-overflow:ellipsis}}
     @media print{nav,#bandeau,.actions,.breadcrumb{display:none}#contenu{max-width:none;margin:0;padding:0}.publication{box-shadow:none}}
-  
+
     .author-box-denis-bouzon{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:32px 0}
     .author-box-denis-bouzon h2{font-size:15pt;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin-bottom:10px}
     .author-box-denis-bouzon p{font-size:10.5pt;margin:0;text-align:left}
@@ -295,6 +295,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png">
+<style>main#contenu h1{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin:0 0 18px;overflow-wrap:anywhere}.landing-head h1{border:0!important;padding:0!important;margin:0 0 8px!important}</style>
 </head>
 <body>
 
@@ -304,7 +305,7 @@
     </a>
     <img src="../bandeau.jpg" alt="Hidráulica, hidroelectricidad y biodiversidad pirenaica — Eau-Energie" width="1600" height="500">
     <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
+      <p class="site-brand">Eau-Energie</p>
       <p>Consultoría hidráulica — Pau, Pirineos Atlánticos</p>
     </div>
   </div>
@@ -331,7 +332,7 @@
       Desmán ibérico y tomas de agua en los Pirineos
     </nav>
 
-    <h2>🇪🇸 Nota técnica — España, Aragón, Cataluña, Navarra y País Vasco</h2>
+    <h1>🇪🇸 Nota técnica — España, Aragón, Cataluña, Navarra y País Vasco</h1>
 
     <article id="desman-hydro-es" class="publication" itemscope itemtype="https://schema.org/ScholarlyArticle">
       <meta itemprop="inLanguage" content="es-ES">
@@ -344,7 +345,7 @@
       <link itemprop="sameAs" href="https://doi.org/10.5281/zenodo.20426020">
       <link itemprop="sameAs" href="https://www.eau-energie.fr/papers/cahier1-es.pdf">
 
-      <h3 itemprop="headline" style="margin-top:0;font-size:13.5pt"><img src="flag-es.jpg" alt="Versión española" style="height:1em;vertical-align:middle;margin-right:8px;border:1px solid #ccc;"> Desmán ibérico y tomas de agua en los Pirineos</h3>
+      <h3 itemprop="headline" style="margin-top:0;font-size:13.5pt"><img src="/papers/flag-es.jpg" alt="Versión española" style="height:1em;vertical-align:middle;margin-right:8px;border:1px solid #ccc;"> Desmán ibérico y tomas de agua en los Pirineos</h3>
       <p style="font-style:italic;color:#444;margin-bottom:10px;font-size:10pt">Marco normativo territorial, análisis técnico del riesgo y propuesta de criterios verificables</p>
 
       <p class="metadata">
@@ -370,14 +371,14 @@
 
       <div class="grid" aria-label="Elementos estructurantes">
         <div class="fact"><strong>DOI Zenodo</strong><a href="https://doi.org/10.5281/zenodo.20426020" target="_blank" rel="noopener">10.5281/zenodo.20426020</a></div>
-        <div class="fact"><strong>PDF español</strong><a href="cahier1-es.pdf" type="application/pdf">cahier1-es.pdf</a></div>
+        <div class="fact"><strong>PDF español</strong><a href="/papers/cahier1-es.pdf" type="application/pdf">cahier1-es.pdf</a></div>
         <div class="fact"><strong>HAL</strong><a href="https://hal.science/hal-05635824" target="_blank" rel="noopener">hal-05635824</a></div>
         <div class="fact"><strong>Relación editorial</strong>Versión traducida, revisada y adaptada a partir de la publicación francesa original.</div>
         <div class="fact"><strong>DOI original francés</strong><a href="https://doi.org/10.5281/zenodo.20352515" target="_blank" rel="noopener">10.5281/zenodo.20352515</a></div>
       </div>
 
       <div class="actions">
-        <a class="button es" href="cahier1-es.pdf" type="application/pdf">⬇ Descargar el PDF español</a>
+        <a class="button es" href="/papers/cahier1-es.pdf" type="application/pdf">⬇ Descargar el PDF español</a>
         <a class="button zen" href="https://doi.org/10.5281/zenodo.20426020" target="_blank" rel="noopener">DOI Zenodo España</a>
         <a class="button hal" href="https://hal.science/hal-05635824" target="_blank" rel="noopener">Ficha HAL España</a>
         <a class="button secondary" href="cahier1-fr.html" hreflang="fr-FR">🇫🇷 Versión francesa original</a>
@@ -453,7 +454,7 @@
 
   </main>
 
-  
+
     <section class="author-box-denis-bouzon" aria-label="Sobre el autor">
       <h2>Sobre el autor</h2>
       <p>Esta nota técnica está publicada por <a href="../denis-bouzon.html">Denis Bouzon</a>, fundador de Eau-Energie, consultoría hidráulica con sede en Pau, Francia. Véase también su <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a>, su <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr" target="_blank" rel="me noopener">perfil Google Scholar</a> y las <a href="../publications.html">publicaciones técnicas de Eau-Energie</a>.</p>

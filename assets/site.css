@@ -7,7 +7,7 @@ body{font-family:Georgia,'Times New Roman',serif;font-size:13pt;color:#111;backg
 #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
 #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
 #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.60));padding:14px 28px}
-#bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+#bandeau-overlay .site-brand{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
 #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:.5px}
 nav{background:#1a2a4a;border-bottom:3px solid #2e4a8a}
 nav ul{list-style:none;display:flex;flex-wrap:wrap;max-width:1180px;margin:0 auto}
@@ -62,3 +62,23 @@ footer a{color:#2e4a8a;text-decoration:none}
   .actions{display:block}.actions a{margin:0 0 8px;display:block}
 }
 @media print{nav,#bandeau,.actions{display:none}#contenu{margin:0;padding:0}}
+
+/* Project guidance and confidential contact */
+.seo-guide{margin:24px 0;padding:18px 20px;border:1px solid #d8dde8;background:#f8f9fb;overflow-wrap:anywhere}
+#contenu .seo-guide p{text-align:left}
+#contenu .seo-guide h3:first-child{margin-top:0}
+#contenu a.seo-contact{display:inline-block;background:#1a2a4a;color:#fff;padding:10px 16px;text-decoration:none}
+.seo-confidential{font-size:10pt;color:#46536a}
+@media(max-width:640px){.seo-guide{padding:14px}.seo-contact{width:100%;text-align:center}}
+/* Clear project routes and page headings */
+#bandeau-overlay .site-brand{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px;margin:0}
+main#contenu h1{font-size:17pt;font-weight:normal;color:#1a2a4a;line-height:1.45;overflow-wrap:anywhere;margin-bottom:20px}
+.project-intro{background:#f8f9fb;border:1px solid #d8dde8;padding:22px;margin:0 0 28px;overflow-wrap:anywhere}
+#contenu .project-intro p{text-align:left}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0}
+.project-grid section{padding:16px;border:1px solid #c8d0dd;background:#fff;min-width:0}
+#contenu .project-grid h2{font-size:13pt;line-height:1.5;margin:0 0 10px;border:0;padding:0}
+#contenu .project-grid p{font-size:11pt;margin:0}
+#contenu a.project-contact{display:inline-block;color:#fff;background:#1a2a4a;padding:10px 16px;text-decoration:none}
+.project-note{font-size:10pt;color:#46536a}
+@media(max-width:640px){.project-grid{grid-template-columns:1fr}.project-intro{padding:16px}.project-contact{width:100%;text-align:center}}

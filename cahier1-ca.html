@@ -193,7 +193,7 @@
     #bandeau{width:100%;height:150px;overflow:hidden;position:relative;background:#1a2a4a}
     #bandeau img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
     #bandeau-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.60));padding:14px 28px}
-    #bandeau-overlay h1{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
+    #bandeau-overlay .site-brand{font-family:Georgia,serif;font-size:20pt;font-weight:normal;color:#fff;letter-spacing:1px}
     #bandeau-overlay p{font-size:9.5pt;color:#ddd;letter-spacing:0.5px}
 
     /* --- Navigation --- */
@@ -293,7 +293,7 @@
       nav.main-nav,#bandeau,.actions,.breadcrumb{display:none}
       #contenu{max-width:none;margin:0;padding:0}
     }
-  
+
     .author-box-denis-bouzon{border:1px solid #c8d0dd;border-left:4px solid #2e4a8a;background:#f8f9fb;padding:18px 22px;margin:32px 0}
     .author-box-denis-bouzon h2{font-size:15pt;color:#1a2a4a;border-bottom:1px solid #c8d0dd;padding-bottom:6px;margin-bottom:10px}
     .author-box-denis-bouzon p{font-size:10.5pt;margin:0;text-align:left}
@@ -307,6 +307,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png">
+<style>main#contenu h1{font-family:Georgia,serif;font-size:17pt;font-weight:normal;color:#1a2a4a;border-bottom:1px solid #2e4a8a;padding-bottom:8px;margin:0 0 18px;overflow-wrap:anywhere}.landing-head h1{border:0!important;padding:0!important;margin:0 0 8px!important}</style>
 </head>
 <body>
 
@@ -317,7 +318,7 @@
     </a>
     <img src="../bandeau.jpg" alt="Hidràulica, hidroelèctrica i biodiversitat pirinenca — Eau-Energie" width="1600" height="500">
     <div id="bandeau-overlay">
-      <h1>Eau-Energie</h1>
+      <p class="site-brand">Eau-Energie</p>
       <p>Bureau d'estudis hidràulics — Pau, Pirineus Atlàntics</p>
     </div>
   </div>
@@ -349,8 +350,8 @@
     <div class="landing-head">
       <p class="numero">Quaderns tècnics Eau-Energie — n° 1 — 2026 — Versió catalana</p>
       <div class="landing-head-title">
-        <img src="flag-ca.jpg" alt="Bandera d'Andorra — versió catalana">
-        <h2>Almesquera dels Pirineus i captacions d'aigua de centrals hidroelèctriques d'alta caiguda</h2>
+        <img src="/papers/flag-ca.jpg" alt="Bandera d'Andorra — versió catalana">
+        <h1>Almesquera dels Pirineus i captacions d'aigua de centrals hidroelèctriques d'alta caiguda</h1>
       </div>
       <p><em>Anàlisi crítica de les prescripcions existents i proposta d'un doble criteri de protecció proporcionat</em></p>
       <p class="pub-meta">
@@ -394,7 +395,7 @@
       </div>
 
       <div class="actions">
-        <a class="button primary" href="desman-hydro-ca.pdf" type="application/pdf">⬇ Descarregar el PDF català</a>
+        <a class="button primary" href="/papers/desman-hydro-ca.pdf" type="application/pdf">⬇ Descarregar el PDF català</a>
         <a class="button zen" href="https://doi.org/10.5281/zenodo.20397063" target="_blank" rel="noopener">DOI Zenodo</a>
         <a class="button hal" href="https://hal.science/hal-05633526" target="_blank" rel="noopener">Avís HAL</a>
         <a class="button" style="background:#0a66c2;border-color:#0a66c2" href="https://www.linkedin.com/in/denis-bouzon-a7343a313/" target="_blank" rel="noopener">LinkedIn</a>
@@ -504,7 +505,7 @@
 
   </main>
 
-  
+
     <section class="author-box-denis-bouzon" aria-label="Sobre l’autor">
       <h2>Sobre l’autor</h2>
       <p>Aquest quadern tècnic és publicat per <a href="../denis-bouzon.html">Denis Bouzon</a>, fundador d’Eau-Energie, bureau d’estudis hidràulics amb seu a Pau, França. Vegeu també el seu <a href="https://orcid.org/0009-0007-8894-8902" target="_blank" rel="me noopener">ORCID</a>, el seu <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&amp;hl=fr" target="_blank" rel="me noopener">perfil Google Scholar</a> i les <a href="../publications.html">publicacions tècniques d’Eau-Energie</a>.</p>
