@@ -68,7 +68,7 @@
     const type = value['@type'];
     if (Array.isArray(type)) type.forEach(t => types.add(t));
     else if (typeof type === 'string') types.add(type);
-    if (value['@graph']) scan(value['@graph']);
+    Object.values(value).forEach(scan);
   }
   head.querySelectorAll('script[type="application/ld+json"]').forEach(script => {
     try { scan(JSON.parse(script.textContent)); } catch (_) { /* JSON-LD de page inchangé */ }
@@ -91,11 +91,12 @@
     '@type': 'Organization', '@id': BASE + '/#organization',
     name: SITE.name, url: BASE + '/', email: SITE.email,
     telephone: SITE.telephone,
+    areaServed: { '@type': 'Country', name: 'France' },
     address: { '@type': 'PostalAddress', addressLocality: 'Pau',
       addressRegion: 'Pyrénées-Atlantiques', addressCountry: 'FR' }
   });
-  appendIfMissing('Person', BASE + '/#denis-bouzon', {
-    '@type': 'Person', '@id': BASE + '/#denis-bouzon',
+  appendIfMissing('Person', BASE + '/denis-bouzon.html#person', {
+    '@type': 'Person', '@id': BASE + '/denis-bouzon.html#person',
     name: SITE.author, url: BASE + '/denis-bouzon.html',
     sameAs: [SITE.orcid, SITE.linkedin],
     worksFor: { '@id': BASE + '/#organization' }
