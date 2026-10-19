@@ -1,0 +1,4 @@
+Test de connexion en écriture ChatGPT / GitHub
+Dépôt : Eau-Energie/eau-energie.github.io
+Date : 2026-10-19
+Branche de test sans effet sur le site publié.
