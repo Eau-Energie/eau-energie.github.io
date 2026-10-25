@@ -46,7 +46,13 @@ Pour une modification :
 4. Mettre à jour le sitemap et les métadonnées SEO lorsque la structure des pages change.
 5. Enregistrer les changements dans Git avec un message de commit explicite, puis vérifier le site publié.
 
-La copie du projet dans **Google Drive / Mon Drive / Eau-energie** peut servir d'espace de travail et de sauvegarde. La synchronisation entre cette copie et GitHub doit être réalisée ou vérifiée explicitement ; la présence de fichiers dans Drive ne déclenche pas un commit GitHub.
+La copie de travail est le clone Git tenu dans Google Drive : **`G:\Mon Drive\Eau-energie\Github`**. Les modifications s'y font, puis sont publiées depuis GitHub Desktop :
+
+1. **Commit to main** avec un message explicite.
+2. **Push origin** vers `Eau-Energie/eau-energie.github.io`.
+3. GitHub Pages republie www.eau-energie.fr en une ou deux minutes (onglet *Actions*, ligne « pages build and deployment »).
+
+L'ancien dossier `Eau-energie\Web (archive)` (ex-`03-site Web`) est conservé pour mémoire, avec les brouillons SEO du 19 octobre 2026 ; il ne sert plus à publier.
 
 ## Référencement et maintenance
 
