@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Bureau d'études hydroélectricité et hydraulique en France | Eau-Energie</title>
-  <meta name="description" content="Bureau d'études en hydroélectricité et hydraulique fluviale : études de faisabilité, productible, droits d'eau, audits et expertise réglementaire partout en France.">
+  <title>Bureau d’études hydroélectricité, moulins et droits d’eau | Eau-Énergie</title>
+  <meta name="description" content="Études de faisabilité hydroélectrique, diagnostic de droit d’eau, productible et accompagnement réglementaire des moulins et petites centrales en France.">
   <meta name="author" content="Denis Bouzon">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <link rel="canonical" href="https://www.eau-energie.fr/">
@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="/assets/site.css">
   <script src="/assets/seo.js" defer></script>
 
-  <meta property="og:title" content="Bureau d&#x27;études hydroélectricité et hydraulique en France | Eau-Energie">
-  <meta property="og:description" content="Bureau d&#x27;études en hydroélectricité et hydraulique fluviale : études de faisabilité, productible, droits d&#x27;eau, audits et expertise réglementaire partout en France.">
+  <meta property="og:title" content="Bureau d’études hydroélectricité, moulins et droits d’eau | Eau-Énergie">
+  <meta property="og:description" content="Études de faisabilité hydroélectrique, diagnostic de droit d’eau, productible et accompagnement réglementaire des moulins et petites centrales en France.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.eau-energie.fr/">
   <meta property="og:image" content="https://www.eau-energie.fr/bandeau.jpg">
@@ -22,8 +22,8 @@
   <meta property="og:locale" content="fr_FR">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Bureau d&#x27;études hydroélectricité et hydraulique en France | Eau-Energie">
-  <meta name="twitter:description" content="Bureau d&#x27;études en hydroélectricité et hydraulique fluviale : études de faisabilité, productible, droits d&#x27;eau, audits et expertise réglementaire partout en France.">
+  <meta name="twitter:title" content="Bureau d’études hydroélectricité, moulins et droits d’eau | Eau-Énergie">
+  <meta name="twitter:description" content="Études de faisabilité hydroélectrique, diagnostic de droit d’eau, productible et accompagnement réglementaire des moulins et petites centrales en France.">
 
   <meta name="citation_title" content="Eau-Energie — Bureau d’études hydraulique, hydroélectricité et droit d’eau">
   <meta name="citation_author" content="Bouzon, Denis">
@@ -183,6 +183,11 @@
       .story-grid{display:block}
       .story-grid .module{margin:10px 0}
     }
+    /* Parcours par profil de porteur de projet — copie SEO de travail */
+    .project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .project-grid section{min-width:0}
+    .project-grid section p{overflow-wrap:anywhere}
+    @media(max-width:760px){.project-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -192,16 +197,27 @@
 <main id="contenu">
 
     <section class="project-intro" aria-labelledby="accueil-projet">
-      <h1 id="accueil-projet">Bureau d’études hydraulique : moulins, droits d’eau et petites centrales</h1>
-      <p>Vous souhaitez acheter un moulin, estimer sa production électrique ou préparer sa remise en service ? Eau-Energie, bureau d’études fondé par Denis Bouzon et intervenant dans toute la France, vous accompagne dans l’analyse hydraulique, foncière, environnementale et réglementaire de votre ouvrage.</p>
-      <div class="project-grid">
-        <section><h2><a href="/hydroelectricite.html">Étudier la faisabilité d’un projet</a></h2><p>Comprendre le site, les ouvrages et les données nécessaires avant de choisir un équipement hydroélectrique.</p></section>
-        <section><h2><a href="/productible-hydroelectrique.html">Estimer la production électrique</a></h2><p>Évaluer le productible à partir des débits, de la chute nette et des conditions d’exploitation.</p></section>
-        <section><h2><a href="/foncier.html">Préparer l’achat d’un moulin</a></h2><p>Examiner les documents disponibles, la propriété des ouvrages, les canaux, les accès et les servitudes.</p></section>
-        <section><h2><a href="/reglementaire.html">Analyser le droit d’eau et le dossier</a></h2><p>Identifier les documents établis, les informations manquantes et les démarches à examiner pour votre projet.</p></section>
+      <h1 id="accueil-projet">Votre moulin ou votre centrale hydroélectrique : par où commencer ?</h1>
+      <p>Eau-Energie vous accompagne pour qualifier un ouvrage hydraulique existant, évaluer son potentiel de production et déterminer les études nécessaires avant de vous engager. Choisissez la situation qui correspond à votre projet.</p>
+      <div class="project-grid" aria-label="Choisir un parcours de projet">
+        <section>
+          <h2><a href="/foncier.html">Je possède un moulin</a></h2>
+          <p>Je veux connaître les droits attachés à mon ouvrage, envisager sa remise en service et savoir si une production électrique est possible.</p>
+          <p><a href="/reglementaire.html">Examiner mon droit d’eau</a> · <a href="/productible-hydroelectrique.html">Évaluer mon productible</a></p>
+        </section>
+        <section>
+          <h2><a href="/hydroelectricite.html">Je développe un projet hydroélectrique</a></h2>
+          <p>Je souhaite cadrer la faisabilité : débits, chute, équipements, production, contraintes environnementales et démarches administratives.</p>
+          <p><a href="/productible-hydroelectrique.html">Calculer la production</a> · <a href="/environnement.html">Identifier les enjeux environnementaux</a></p>
+        </section>
+        <section>
+          <h2><a href="/due-diligence.html">Je souhaite acquérir une centrale</a></h2>
+          <p>Avant de m’engager, je veux analyser les ouvrages, les droits d’eau, le productible, les besoins de travaux et les risques techniques et réglementaires.</p>
+          <p><a href="/foncier.html">Vérifier le foncier</a> · <a href="/due-diligence.html">Découvrir l’audit technique</a></p>
+        </section>
       </div>
-      <p>Un enjeu de rivière, de débit ou de franchissement ? Consultez notre approche de l’<a href="/environnement.html">environnement aquatique et de la continuité écologique</a>.</p>
-      <p><a class="project-contact" href="/contact.html">Présenter mon projet à Eau-Energie</a></p>
+      <p><strong>Première prise de contact :</strong> indiquez la localisation du site, sa situation actuelle, votre objectif et les documents disponibles (plans, titres, photographies, études antérieures). Ces éléments permettent de définir le périmètre d’une première mission, sans présumer de sa faisabilité.</p>
+      <p><a class="project-contact" href="/contact.html">Présenter mon ouvrage et demander une étude</a></p>
       <p class="project-note">Les documents et résultats des études clients restent confidentiels.</p>
     </section>
 
@@ -286,6 +302,12 @@
   
     <p class="author-links">Ressources auteur : <a href="denis-bouzon.html">page Denis Bouzon</a> · <a href="https://orcid.org/0009-0007-8894-8902" rel="noopener">ORCID</a> · <a href="https://scholar.google.com/citations?user=MrwaiKwAAAAJ&hl=fr" rel="noopener">Google Scholar</a> · <a href="publications.html">publications techniques</a>.</p></section>
 
+
+  <!-- SEO-2026-10-29: ajout éditorial en attente de validation -->
+  <section class="seo-complement" aria-label="Complément d’information">
+    <h2>Vos études hydroélectriques : du droit d’eau au productible</h2>
+    <p>Un projet de remise en service de moulin, de petite centrale ou de valorisation d’un ouvrage hydraulique commence par la qualification des droits et contraintes du site. Le cabinet intervient sur les études techniques, foncières et réglementaires nécessaires à la décision.</p><p>Découvrez le <a href="foncier.html">diagnostic foncier et des droits d’eau d’un moulin</a>, l’<a href="hydroelectricite.html">étude de faisabilité hydroélectrique</a> et le <a href="productible-hydroelectrique.html">calcul du productible annuel</a>. Pour une première analyse du site, <a href="contact.html">présentez votre projet</a>.</p>
+  </section>
 </main>
 
   <footer>
